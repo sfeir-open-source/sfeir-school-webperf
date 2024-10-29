@@ -1,0 +1,19 @@
+{
+  "name": "sfeir-school-webperf",
+  "version": "1.0.0",
+  "description": "Template repository for SFEIR School, this template could be use to start a school with revealJS and SFEIR School theme",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "steps/*",
+    "docs"
+  ]
+}

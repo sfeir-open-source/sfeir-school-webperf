@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titre de la page</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="preload" href="/fonts/WorkSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/WorkSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <script src="/scripts/main.js"></script>
+</head>
+<body>
+    {% include "header.njk" %}
+    <main>
+        <section class="container product-top">
+            <div class="product-images">
+                <div class="product-thumbnails">
+                    {% for image in product.colors[0].images %}
+                        <button class="product-thumbnail">
+                            <img src="{{ image.source }}" alt="{{ image.name }}" width="64px" height="64px"/>
+                        </button>
+                    {% endfor %}
+                </div>
+                <img class="product-main-image" src="{{ product.colors[0].images[0].source }}" alt="{{ product.colors[0].images[0].name }}" width="530px" height="530px" />
+            </div>
+            <div>
+                <h1>{{ product.name }}</h1>
+                <div>
+                    <span>4/5</span>
+                    <button>Read Reviews</button>
+                </div>
+                <p>{{ product.descriptionShort }}</p>
+                <button>View detailed description</button>
+
+                <div id="conversion"></div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Description</h2>
+            <p>{{ product.description }}</p>
+        </section>
+    </main>
+
+</body>
+</html>
