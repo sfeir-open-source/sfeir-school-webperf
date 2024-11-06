@@ -1,3 +1,3 @@
 # Images
 
-## The problem
+## Le problème

@@ -1,3 +1,3 @@
-# Asynchronous content
+# Contenus asynchrones
 
-## Solution : load under the viewport
+## Solution : charger sous la zone de flottaison

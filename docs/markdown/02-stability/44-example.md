@@ -1,3 +1,3 @@
-# Asynchronous content
+# Contenus asynchrones
 
-## Solution : reserve space
+## Solution : reserver de l'espace

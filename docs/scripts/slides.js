@@ -32,7 +32,6 @@ function stabilitySlides() {
     '02-stability/12-example-2.md',
     '02-stability/13-cls.md',
     '02-stability/14-cls-calc.md',
-    '02-stability/15-cls-calc-example.md',
     '02-stability/16-causes.md',
     '02-stability/20-webfonts.md',
     '02-stability/21-problem.md',

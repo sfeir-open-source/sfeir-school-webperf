@@ -1,5 +1,5 @@
 <!-- .slide: class="transition-bg-blue-1" -->
 
-# Visual Stability
+# Stabilité visuelle
 
-## 1. Font loading
+## 1. Chargement des fonts

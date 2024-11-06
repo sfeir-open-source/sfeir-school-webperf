@@ -1,3 +1,3 @@
-# Asynchronous content
+# Contenus asynchrones
 
-## Not only for the page loading
+## Pas seulement pour le chargement de page

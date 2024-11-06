@@ -1,3 +1,3 @@
 # Images
 
-## Solution : resize in CSS
+## Solution : redimensionnement en CSS

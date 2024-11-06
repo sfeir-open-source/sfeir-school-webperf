@@ -1,5 +1,7 @@
 # Causes
 
-- Custom fonts
-- Images without explicit dimensions
-- Asynchronous / dynamic loading of content
+- Chargement des fonts
+- Images sans dimensions fixes
+- Elements sans aspect ratio défini
+- Contenus chargés de manière asynchrone
+- Contenus chargés dynamiqueement

@@ -1,3 +1,3 @@
-# Asynchronous content
+# Contenus asynchrones
 
-## The problem
+## Le problème

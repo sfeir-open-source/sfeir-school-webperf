@@ -1,6 +1,6 @@
 <!-- .slide: class="exercice" -->
 
-<h1 id="stability" style="margin-bottom: 30px;">02.01 - Routing</h1>
+<h1 id="stability" style="margin-bottom: 30px;">02.01 - Stabilité visuelle</h1>
 
 ## Lab
 

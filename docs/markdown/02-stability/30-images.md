@@ -1,5 +1,5 @@
 <!-- .slide: class="transition-bg-blue-1" -->
 
-# Visual Stability
+# Stabilité visuelle
 
-## 2. Images aspect ratio
+## 2. Chargement des images

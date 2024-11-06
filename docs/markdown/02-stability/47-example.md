@@ -1,3 +1,3 @@
-# Asynchronous content
+# Contenus asynchrones
 
-## Solution : request a user action
+## Solution : demander une action à l'utilisateur
