@@ -1,3 +1,3 @@
 # Images
 
-## Et les autres éléments qu'\<img /\> ?
+## Et les autres éléments ?

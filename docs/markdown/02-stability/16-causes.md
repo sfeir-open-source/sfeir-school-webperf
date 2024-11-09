@@ -4,4 +4,4 @@
 - Images sans dimensions fixes
 - Elements sans aspect ratio défini
 - Contenus chargés de manière asynchrone
-- Contenus chargés dynamiqueement
+- Contenus chargés dynamiquement
