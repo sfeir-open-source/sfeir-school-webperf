@@ -1,3 +1,5 @@
-
+.columns-40-60 .grid-div {
+  grid-template-columns: 40% 60% !important;
+}
 
 /*# sourceMappingURL=slides.css.map */
