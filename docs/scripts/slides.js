@@ -52,10 +52,8 @@ function stabilitySlides() {
     '02-stability/41-problem.md',
     '02-stability/42-not-only-loading.md',
     '02-stability/43-reserve-space.md',
-    '02-stability/44-example.md',
-    '02-stability/45-viewport.md',
-    '02-stability/46-user-action.md',
-    '02-stability/47-example.md',
+    '02-stability/44-reserve-space-2.md',
+    '02-stability/45-user-action.md',
     '02-stability/50-lab.md',
   ];
 }
