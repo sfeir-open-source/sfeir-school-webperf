@@ -26,7 +26,35 @@ function introSlides() {
 
 function stabilitySlides() {
   return [
-    '02-stability/01-title.md', //
+    '02-stability/01-title.md',
+    '02-stability/10-intro.md',
+    '02-stability/11-example-1.md',
+    '02-stability/12-example-2.md',
+    '02-stability/13-cls.md',
+    '02-stability/14-cls-calc.md',
+    '02-stability/16-causes.md',
+    '02-stability/20-webfonts.md',
+    '02-stability/21-problem.md',
+    '02-stability/22-foit.md',
+    '02-stability/23-fout.md',
+    '02-stability/24-pre-loading.md',
+    '02-stability/25-font-display.md',
+    '02-stability/26-size-adjust.md',
+    '02-stability/30-images.md',
+    '02-stability/31-images-issue.md',
+    '02-stability/32-example.md',
+    '02-stability/33-solution.md',
+    '02-stability/34-css.md',
+    '02-stability/35-responsive.md',
+    '02-stability/36-videos.md',
+    '02-stability/37-aspect-ratio.md',
+    '02-stability/40-space.md',
+    '02-stability/41-problem.md',
+    '02-stability/42-not-only-loading.md',
+    '02-stability/43-reserve-space.md',
+    '02-stability/44-reserve-space-2.md',
+    '02-stability/45-user-action.md',
+    '02-stability/50-lab.md',
   ];
 }
 
