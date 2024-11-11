@@ -4,4 +4,4 @@
 
 ## <small>Demo</small>
 
-<img src="./assets/images/04-interactivity/mainthread-devtool.png" class="02-cls" style="width: 2000px; height: auto; display: block; margin: 0;"  />
+<img src="./assets/images/04-interactivity/mainthread-devtool.png" style="width: 2000px; height: auto; display: block; margin: 0;"  />
