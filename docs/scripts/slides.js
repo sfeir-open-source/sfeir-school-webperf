@@ -72,7 +72,37 @@ function speedSlides() {
 
 function interactivitySlides() {
   return [
-    '04-interactivity/01-title.md', //
+    '04-interactivity/01-title.md',
+    '04-interactivity/02-intro.md',
+    '04-interactivity/10-main-thread.md',
+    '04-interactivity/11-js-mono-threaded.md',
+    '04-interactivity/12-blocking.md',
+    '04-interactivity/13-event-loop.md',
+    '04-interactivity/14-event-loop-quizz.md',
+    '04-interactivity/15-thread-visualisation.md',
+    '04-interactivity/16-long-task.md',
+    '04-interactivity/17-long-task-input.md',
+    '04-interactivity/20-inp.md',
+    '04-interactivity/21-inp-intro.md',
+    '04-interactivity/21-inp-schema.md',
+    '04-interactivity/22-inp-submetrics.md',
+    '04-interactivity/30-tti.md',
+    '04-interactivity/31-tbt.md',
+    '04-interactivity/32-devtools.md',
+    '04-interactivity/40-solutions.md',
+    '04-interactivity/41-solution-onload.md',
+    '04-interactivity/42-solution-onload-example.md',
+    '04-interactivity/43-style-recalc.md',
+    '04-interactivity/44-style-recalc-causes.md',
+    '04-interactivity/45-split.md',
+    '04-interactivity/46-settimeout.md',
+    '04-interactivity/47-settimeout-third.md',
+    '04-interactivity/48-settimeout-delayed-render.md',
+    '04-interactivity/49-priority.md',
+    '04-interactivity/50-workers.md',
+    '04-interactivity/51-workers-limitations.md',
+    '04-interactivity/60-conclusion.md',
+    '04-interactivity/70-lab.md',
   ];
 }
 
