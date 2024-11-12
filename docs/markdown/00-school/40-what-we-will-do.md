@@ -1,10 +1,10 @@
-# What we will do
+# Au programme
 
-- **Explore key concepts of Next.js**
-  <br/>I will show slides and do some live coding
+- **Exploration des concepts de la WebPerf**
+  <br/>On vous présente des slides et des moments de démo / livecoding
 
-- **Practice with hands-on exercises**
-  <br/>You will code, I will help<br/>
+- **Exercices pratiques**
+  <br/>Vous allez coder, on va vous aider<br/>
 
-- **Breaks when appropriate**
-  <br/>Have lunch, play darts 🎯
+- **Pauses quand nécessaire**
+  <br/>Pour manger, pour jouer aux fléchettes 🎯

@@ -2,16 +2,17 @@
 
 # Présentation
 
-![speaker](./assets/images/jf.jpg)
-![badge](./assets/images/gde.png)
-![company](./assets/images/logo-sfeir-blanc.png)
+![speaker](./assets/images/00-school/speaker-antoine.png)
+![badge first-badge](./assets/images/00-school/logo-react.png)
+![badge second-badge](./assets/images/00-school/logo-svelte.png)
+![company](./assets/images/00-school/logo-sfeir-blanc.png)
 
-## Jean-François Garreau
+## Antoine Richard
 
-### CTO front
+### Développeur & EM
 
 <!-- .element: class="icon-rule icon-first" -->
 
-### @jefbinomed
+### @arichard-info
 
-<!-- .element: class="icon-twitter icon-second" -->
+<!-- .element: class="icon-github icon-second" -->

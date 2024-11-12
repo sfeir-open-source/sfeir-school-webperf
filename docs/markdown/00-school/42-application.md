@@ -5,8 +5,8 @@
   }
   </style>
 
-# What we will do
+# Au programme
 
-## The application
+## L'application test
 
 <img src="./assets/images/00-school/application.png" class="application-41"  />

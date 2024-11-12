@@ -1,7 +1,7 @@
-# Practical information
+# Informations pratiques
 
 <p class="center">
-When's the break ?<br>
-When do we eat?<br>
-Are there any constraints?<br/>
+C'est quand la pause ?<br>
+Quand est-ce qu'on mange ?<br>
+Des contraintes ?<br/>
 </p>
