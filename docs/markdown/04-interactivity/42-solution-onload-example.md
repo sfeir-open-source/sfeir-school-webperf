@@ -53,6 +53,13 @@ Solutions
 - Faire le maximum de rendu du côté serveur
 - Découper les scripts (code splitting)
 
+<div style="margin-top: 200px;">
+
+Pour un bon compromis entre compression, temps de téléchargement et durée d'évaluation, Google recommande une limite de taille de <strong>100Ko</strong> par script
+
+<!-- .element: class="admonition info" -->
+</div>
+
 ##--##
 
 <img src="./assets/images/04-interactivity/load-split.svg" style="width: 2000px; height: auto; display: block; margin-top: 140px;" />

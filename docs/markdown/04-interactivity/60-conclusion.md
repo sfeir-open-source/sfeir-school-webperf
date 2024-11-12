@@ -1,6 +1,15 @@
 # Pour résumer
 
-## Ce que l'on veut
+## à retenir :
+
+Pour l'interactivité, deux choses sont importantes :
+
+- Réduire le nombre de tâches
+- Découper les tâches restantes au maximum
+
+Dans certains cas particuliers :
+
+- Prioriser les tâches entre elles (API Scheduler)
 
 Notes:
 
