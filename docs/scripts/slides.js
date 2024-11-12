@@ -20,7 +20,13 @@ function schoolSlides() {
 
 function introSlides() {
   return [
-    '01-intro/01-title.md', //
+    '01-intro/01-title.md',
+    '01-intro/10-definition.md',
+    '01-intro/20-criterias.md',
+    '01-intro/30-goals.md',
+    '01-intro/40-metrics.md',
+    '01-intro/50-how-to-measure.md',
+    '01-intro/60-letsgo.md',
   ];
 }
 
