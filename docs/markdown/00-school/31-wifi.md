@@ -2,7 +2,7 @@
 
 <br>
 
-### Wifi available
+### Wifi
 
 <br>
 
@@ -10,7 +10,7 @@
 
 <br>
 
-Credentials
+Identifiants
 
 <!-- .element: class="center" -->
 <br>

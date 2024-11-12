@@ -1,12 +1,13 @@
-## Requirements
+## Pré-requis
 
-- Basic knowledge of HTML, CSS and JavaScript
+- Connaissances de base HTML, CSS et JavaScript
 
 <br/><br/>
 
-**Technical requirements**
+**Pré-requis techniques**
 
 - Node > 22
 - npm
-- IDE : VSCode or Webstorm recommanded
+- IDE : VSCode ou Webstorm
 - Git
+- Google Chrome

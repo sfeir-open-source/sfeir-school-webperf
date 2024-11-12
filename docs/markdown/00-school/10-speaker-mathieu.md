@@ -2,16 +2,17 @@
 
 # Présentation
 
-![speaker](./assets/images/jf.jpg)
-![badge](./assets/images/gde.png)
-![company](./assets/images/logo-sfeir-blanc.png)
+![speaker](./assets/images/00-school/speaker-mathieu.png)
+![badge first-badge](./assets/images/00-school/logo-react.png)
+![badge second-badge](./assets/images/00-school/logo-svelte.png)
+![company](./assets/images/00-school/logo-sfeir-blanc.png)
 
-## Jean-François Garreau
+## Mathieu Lemaire
 
-### CTO front
+### Développeur frontend
 
 <!-- .element: class="icon-rule icon-first" -->
 
-### @jefbinomed
+### @mlemaire
 
-<!-- .element: class="icon-twitter icon-second" -->
+<!-- .element: class="icon-github icon-second" -->

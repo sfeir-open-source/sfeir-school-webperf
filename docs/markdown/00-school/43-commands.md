@@ -1,8 +1,8 @@
 <!-- .slide: class="two-column with-code" -->
 
-# What we will do
+# Au programme
 
-## The application
+## Les commandes
 
 ```bash
 npm install
