@@ -69,6 +69,12 @@ fastify.get('/product/:id/conversion', { preHandler: [addDelay(2000)] }, (reques
   reply.view('partials/conversion-outofstock.njk', { product });
 });
 
+fastify.get('/product/:id/video', { preHandler: [addDelay(1000)] }, (request, reply) => {
+  const product = products.find((p) => p.id === request.params.id);
+
+  reply.view('partials/video.njk', { product });
+});
+
 fastify.listen({ port: 3000 }, (err, address) => {
   if (err) {
     fastify.log.error(err);

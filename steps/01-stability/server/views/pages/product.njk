@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titre de la page</title>
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link
+      rel="preload"
+      href="/fonts/WorkSans-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="crossorigin"
+    />
+    <link
+      rel="preload"
+      href="/fonts/WorkSans-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="crossorigin"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=block"
+    />
+
+    <script src="/scripts/main.js"></script>
+  </head>
+  <body>
+    {% include "partials/header.njk" %}
+    <main>
+      <section class="container product-top">
+        <div class="product-images">
+          <div class="product-thumbnails">
+            {% for image in product .colors[0] .images %}
+            <button class="product-thumbnail">
+              <img
+                src="{{ image.source }}"
+                alt="{{ image.name }}"
+                width="4000"
+                height="4000"
+              />
+            </button>
+            {% endfor %}
+          </div>
+          <img
+            class="product-main-image"
+            src="{{ product.colors[0].images[0].source }}"
+            alt="{{ product.colors[0].images[0].name }}"
+          />
+        </div>
+        <div>
+          <h1 class="product-title">{{ product.name }}</h1>
+          <div class="product-preview-review">
+            <span class="product-preview-review-stars">
+              {% for i in range(0, product.reviews.score) %}
+              <span class="product-preview-review-star">★</span>
+              {% endfor %}
+            </span>
+            <span class="product-preview-review-count">
+              ({{ product.reviews.score }} reviews)
+            </span>
+            <a href="#reviews" class="product-preview-review-link">Read all reviews</a>
+          </div>
+          <p>{{ product.descriptionShort }}</p>
+          <a href="description" class="product-preview-link">Read more</a>
+
+          <div id="conversion"></div>
+        </div>
+      </section>
+
+      <section class="container">
+        <h2>Description</h2>
+        <p>{{ product.description }}</p>
+        <div id="video"></div>
+      </section>
+
+      <section class="container" id="reviews">
+        <h2>Reviews</h2>
+        <div class="reviews">
+          {% for review in product.reviews.userReviews %}
+          <div class="review">
+            <div class="review__header">
+              <img
+                class="review__avatar"
+                fetchpriority="high"
+                src="{{ review.author.avatar }}"
+                alt="{{ review.author.name }}"
+                width="500"
+              />
+              <div class="review__author">
+                <span class="review__author-name">{{ review.author.name }}</span>
+                <span class="review__date">{{ review.date }}</span>
+                <span class="review__rating-stars">
+                  {% for i in range(0, review.rating) %}
+                  <span class="review__rating-star">★</span>
+                  {% endfor %}
+                </span>
+              </div>
+            </div>
+            {{ review.text }}
+          </div>
+          {%endfor %}
+        </div>
+      </section>
+    </main>
+    {% include "partials/footer.njk" %}
+  </body>
+    <link rel="stylesheet" href="/styles/main.css" />
+</html>
