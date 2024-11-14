@@ -1,14 +1,17 @@
 <h2>
-    Colors :
+    Taille :
 </h2>
-<div>
-     {% for color in product.colors %}
-        <button class="color-button">
-           {{ color.name }}
-        </button>
-    {% endfor %}
-</div>
-<div>
-    <span></span>
-    <button>Add to cart</button>
-</div>
+<form>
+  <ul class="sizes">
+      {% for size in product.sizes %}
+        <li class="sizes__item">
+          <input type="radio" id="option-{{size.id}}" name="size" value="{{size.id}}" class="vh sizes__item-radio" {% if size.availableQuantity === 0 %} disabled {% endif %}"/>
+          <label for="option-{{size.id}}" class="sizes__item-button">{{size.name}}</label>
+        </li>
+      {% endfor %}
+  </ul>
+  <div>
+      <span>{{ product.price.amount }}€</span>
+      <button class="btn btn-primary btn-big"><strong>Ajouter au panier</strong></button>
+  </div>
+</form>

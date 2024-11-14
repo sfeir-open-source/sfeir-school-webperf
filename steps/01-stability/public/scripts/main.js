@@ -7,8 +7,6 @@ const loadConversion = async () => {
   conversionWrapper.innerHTML = conversionContent;
 };
 
-loadConversion();
-
 const loadVideo = async () => {
   const productId = window.location.pathname.split('/')[2];
 
@@ -18,7 +16,13 @@ const loadVideo = async () => {
   descriptionVideoWrapper.innerHTML = descriptionVideo;
 };
 
-loadVideo();
+const loadHeaderAd = async () => {
+  const productId = window.location.pathname.split('/')[2];
+  const adContent = await fetch(`/product/${productId}/ad`).then((res) => res.text());
+  const adWrapper = document.getElementById('header-ad');
+  if (!adWrapper) return;
+  adWrapper.innerHTML = adContent;
+};
 
 const playVideo = () => {
   document.querySelector('.video-cover').style.display = 'none';
@@ -26,3 +30,7 @@ const playVideo = () => {
   videoIframe.src = 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1';
   videoIframe.style.display = 'block';
 };
+
+loadConversion();
+loadHeaderAd();
+loadVideo();

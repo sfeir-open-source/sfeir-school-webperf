@@ -1,32 +1,65 @@
 export default [
   {
     id: '964663',
-    name: 'A beautiful plant',
+    name: 'Peluche Axolotl',
     descriptionShort:
-      'Add a touch of nature to your space with this potted indoor plant, perfect for creating a calming and stylish atmosphere in any room. Low-maintenance and ideal for beginners.',
-    description:
-      'Bring a breath of fresh air and well-being to your space with our potted indoor plant, carefully selected for its blend of beauty and easy care. This perennial plant adapts well to various light conditions, making it perfect for modern, minimalist, or cozy interiors. Its lush foliage and vibrant color enhance any room while promoting a relaxing ambiance.',
+      "Découvrez la peluche Axolotl de SFEIR, un adorable compagnon bleu qui incarne à merveille l'esprit innovant et chaleureux de notre entreprise !<br>Ce petit axolotl, véritable mascotte de SFEIR, est conçu pour apporter de la douceur et de la bonne humeur à vos journées, que ce soit au bureau ou à la maison.",
+    description: `
+    <p>
+Découvrez la peluche Axolotl de SFEIR, un adorable compagnon bleu qui incarne à merveille l'esprit innovant et
+chaleureux de notre entreprise !<br>Ce petit axolotl, véritable mascotte de SFEIR, est conçu pour apporter de la douceur
+et de la bonne humeur à vos journées, que ce soit au bureau ou à la maison.
+</p>
+<h3>Caractéristiques :</h3>
+<ul>
+    <li><strong>Douceur irrésistible :</strong> Fabriqué avec des matériaux de qualité supérieure, l'axolotl SFEIR est
+        incroyablement moelleux et doux au toucher, idéal pour des câlins réconfortants.</li>
+    <li><strong>Design unique :</strong> Avec son sourire bienveillant, ses grands yeux expressifs et ses petites
+        nageoires toutes mignonnes, notre mascotte bleue est instantanément reconnaissable. Elle reflète l'originalité
+        et l'audace qui font l'ADN de SFEIR.</li>
+    <li><strong>Taille idéale :</strong> Compact mais suffisamment grand pour être un compagnon visible et inspirant, il
+        est facile à emporter partout ou à exposer fièrement sur votre bureau.</li>
+</ul>
+    `,
     categories: [],
-    colors: [
+    sizes: [
       {
         id: '572108',
-        name: 'Default color',
-        code: 'default',
-        images: [
-          {
-            source: '/images/product/964663/1.jpg',
-            name: 'Plant in a pot on a windowsill',
-          },
-          {
-            source: '/images/product/964663/2.jpg',
-            name: 'Plant in a single pot',
-          },
-          {
-            source: '/images/product/964663/3.jpg',
-            name: "Zoom in on the plant's leaves",
-          },
-        ],
+        name: 'Petite',
+        code: 'small',
         availableQuantity: 8,
+      },
+      {
+        id: '572109',
+        name: 'Moyenne',
+        code: 'mid',
+        availableQuantity: 0,
+      },
+      {
+        id: '572110',
+        name: 'Grande',
+        code: 'big',
+        availableQuantity: 0,
+      },
+      {
+        id: '572111',
+        name: 'Très grande',
+        code: 'very-big',
+        availableQuantity: 6,
+      },
+    ],
+    images: [
+      {
+        source: '/images/product/964663/1.jpg',
+        name: 'Visuel de la peluche',
+      },
+      {
+        source: '/images/product/964663/2.jpg',
+        name: 'Un groupe de peluches',
+      },
+      {
+        source: '/images/product/964663/3.jpg',
+        name: 'La peluche qui tient un téléphone',
       },
     ],
     price: {

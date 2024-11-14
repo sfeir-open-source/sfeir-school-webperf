@@ -48,9 +48,20 @@ fastify.register(fastifyStatic, {
   root: path.join(process.cwd(), 'public'),
 });
 
+fastify.addHook('onRequest', async (request, reply) => {
+  if (request.url.startsWith('/images')) {
+    await addDelay(500)();
+  }
+});
+
 fastify.register(fastifyView, {
   engine: { nunjucks },
   templates: ['server/views', 'server/partials'],
+});
+
+fastify.get('/', (_, reply) => {
+  const product = products[0];
+  reply.redirect(`/product/${product.id}`);
 });
 
 fastify.get('/product/:id', { preHandler: [addDelay()] }, (request, reply) => {
@@ -58,15 +69,19 @@ fastify.get('/product/:id', { preHandler: [addDelay()] }, (request, reply) => {
   reply.view('pages/product.njk', { product });
 });
 
-fastify.get('/product/:id/conversion', { preHandler: [addDelay(2000)] }, (request, reply) => {
+fastify.get('/product/:id/conversion', { preHandler: [addDelay(3000)] }, (request, reply) => {
   const product = products.find((p) => p.id === request.params.id);
-  const hasStock = product?.colors.some((c) => c.availableQuantity > 0);
+  const hasStock = product?.sizes.some((c) => c.availableQuantity > 0);
   if (hasStock) {
     reply.view('partials/conversion-stock.njk', { product });
     return;
   }
 
   reply.view('partials/conversion-outofstock.njk', { product });
+});
+
+fastify.get('/product/:id/ad', { preHandler: [addDelay(2000)] }, (request, reply) => {
+  reply.view('partials/header-ad.njk');
 });
 
 fastify.get('/product/:id/video', { preHandler: [addDelay(1000)] }, (request, reply) => {
