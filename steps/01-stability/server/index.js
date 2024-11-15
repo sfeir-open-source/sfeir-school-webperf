@@ -50,7 +50,11 @@ fastify.register(fastifyStatic, {
 
 fastify.addHook('onRequest', async (request, reply) => {
   if (request.url.startsWith('/images')) {
-    await addDelay(500)();
+    await addDelay(800)();
+  }
+
+  if (request.url.startsWith('/styles')) {
+    await addDelay(250)();
   }
 });
 
@@ -84,7 +88,7 @@ fastify.get('/product/:id/ad', { preHandler: [addDelay(2000)] }, (request, reply
   reply.view('partials/header-ad.njk');
 });
 
-fastify.get('/product/:id/video', { preHandler: [addDelay(1000)] }, (request, reply) => {
+fastify.get('/product/:id/video', { preHandler: [addDelay(3000)] }, (request, reply) => {
   const product = products.find((p) => p.id === request.params.id);
 
   reply.view('partials/video.njk', { product });

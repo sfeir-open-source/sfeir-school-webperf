@@ -33,19 +33,13 @@ et de la bonne humeur à vos journées, que ce soit au bureau ou à la maison.
         id: '572109',
         name: 'Moyenne',
         code: 'mid',
-        availableQuantity: 0,
+        availableQuantity: 98,
       },
       {
         id: '572110',
         name: 'Grande',
         code: 'big',
         availableQuantity: 0,
-      },
-      {
-        id: '572111',
-        name: 'Très grande',
-        code: 'very-big',
-        availableQuantity: 6,
       },
     ],
     images: [
@@ -62,6 +56,10 @@ et de la bonne humeur à vos journées, que ce soit au bureau ou à la maison.
         name: 'La peluche qui tient un téléphone',
       },
     ],
+    video: {
+      iframeUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+      cover: '/images/product/964663/2.jpg',
+    },
     price: {
       discountPercent: 0,
       amount: '25.9',

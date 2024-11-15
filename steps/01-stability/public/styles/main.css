@@ -64,6 +64,14 @@ body {
   width: 1px;
 }
 
+.floor {
+  margin-bottom: 4rem;
+}
+
+.product-top {
+  margin-bottom: 2rem;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -71,7 +79,10 @@ body {
   margin-right: auto;
   padding-left: var(--spacing-4);
   padding-right: var(--spacing-4);
-  margin-bottom: var(--spacing-8);
+}
+
+.container-small {
+  max-width: 800px;
 }
 
 .title-bg {
@@ -110,7 +121,6 @@ body {
 
 .btn-primary:hover {
   background-color: var(--color-sunset);
-  transform: rotate(-4deg);
 }
 
 .btn-secondary {
@@ -123,20 +133,45 @@ body {
   background-color: #c1c3ed;
 }
 
+.conversion {
+  margin-top: var(--spacing-4);
+  padding: var(--spacing-4);
+  background-color: var(--color-bg-secondary);
+}
+
+.conversion__price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.conversion_add {
+  width: 100%;
+  display: block;
+  margin-top: var(--spacing-4);
+}
+
+.conversion__sizes {
+  border: none;
+  padding: 0;
+}
+
+.conversion__sizes legend {
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+}
+
 .sizes {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-4);
+  gap: var(--spacing-2);
   list-style: none;
   padding: 0;
   margin-bottom: var(--spacing-4);
 }
 
-.sizes__item-radio {
-}
-
 .sizes__item-button {
-  border: 1px solid #c2c2c2;
+  border: 1px solid grey;
+  background-color: #fff;
   padding: var(--spacing-3) var(--spacing-4);
   cursor: pointer;
   display: inline-block;
@@ -149,10 +184,11 @@ body {
 }
 
 .sizes__item-radio:checked + .sizes__item-button {
-  background: tomato;
+  box-shadow: 0 0 0 1px #000;
+  border-color: #000;
 }
 .sizes__item-radio:not(:disabled):not(:checked) + .sizes__item-button:hover {
-  background: blue;
+  border-color: #000;
 }
 
 .header-ad {
@@ -260,6 +296,11 @@ body {
   display: block;
 }
 
+/* Product infos */
+.product-info {
+  margin-left: var(--spacing-6);
+}
+
 /* Product title */
 .product-title {
   font-size: var(--font-size-xl);
@@ -304,6 +345,18 @@ body {
   &:hover {
     text-decoration: underline;
   }
+}
+
+.videosection {
+  background-color: var(--color-anthracite);
+  padding: 1rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.videosection__title {
+  align-self: center;
+  margin: 0 0 1rem;
 }
 
 /* Description */

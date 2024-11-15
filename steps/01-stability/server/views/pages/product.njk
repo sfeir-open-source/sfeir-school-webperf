@@ -48,7 +48,7 @@
             alt="{{ product.images[0].name }}"
           />
         </div>
-        <div>
+        <div class="product-info">
           <h1 class="product-title">{{ product.name }}</h1>
           <div class="product-preview-review">
             <span class="product-preview-review-stars">
@@ -65,11 +65,13 @@
           <a href="description" class="btn btn-secondary btn-small">Lire plus</a>
 
           <div id="conversion"></div>
+
+          <p>Livraison offerte à partir de 50€ d'achat</p>
         </div>
       </section>
 
-      <section class="container descriptionblock">
-        <h2 class="descriptionblock__title title-bg">Description</h2>
+      <section class="floor container descriptionblock">
+        <h2 class="descriptionblock__title title-bg">DESCRIPTION</h2>
         <div class="descriptionblock__content">
           <div class="descriptionblock__content-inner">
             {{ product.description|safe }}
@@ -77,12 +79,15 @@
         </div>
       </section>
 
-      <section class="container">
-        <div id="video"></div>
-      </section>
+      {% if product.video %}
+        <section class="floor videosection ">
+          <h2 class="videosection__title title-bg">EN VIDEO</h2>
+          <div id="video"></div>
+        </section>
+      {% endif %}
 
-      <section class="container" id="reviews">
-        <h2>Reviews</h2>
+      <section class="floor container container-small" id="reviews">
+        <h2 class="title-bg">AVIS CLIENTS</h2>
         <div class="reviews">
           {% for review in product.reviews.userReviews %}
           <div class="review">
