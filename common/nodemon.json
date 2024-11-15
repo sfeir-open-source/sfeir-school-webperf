@@ -1,0 +1,4 @@
+{
+  "watch": ["server/", "../steps/**/server/"],
+  "ext": "js,json,njk,css"
+}

@@ -3,15 +3,30 @@
   "version": "1.0.0",
   "description": "Template repository for SFEIR School, this template could be use to start a school with revealJS and SFEIR School theme",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@fastify/compress": "^8.0.1",
+    "@fastify/static": "^8.0.2",
+    "@fastify/view": "^10.0.1",
+    "dotenv": "^16.4.5",
+    "fastify": "^5.0.0",
+    "nunjucks": "^3.2.4",
+    "pino": "^9.5.0",
+    "pino-pretty": "^11.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
   "workspaces": [
     "steps/*",
     "docs"

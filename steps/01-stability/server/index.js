@@ -8,8 +8,8 @@ import fastifyCompress from '@fastify/compress';
 
 import nunjucks from 'nunjucks';
 
-import products from './data/products.js';
-import logger from './utils/logger.js';
+import products from '../../../common/server/data/products.js';
+import logger from '../../../common/server/utils/logger.js';
 
 import 'dotenv/config';
 
@@ -24,8 +24,8 @@ const fastifyConfiguration = {
 
 if (process.env.ENABLE_SSL === 'true') {
   try {
-    const key = fs.readFileSync(path.join(process.cwd(), 'server/certificates/localhost.key'));
-    const cert = fs.readFileSync(path.join(process.cwd(), 'server/certificates/localhost.crt'));
+    const key = fs.readFileSync(path.join(process.cwd(), '../../common/server/certificates/localhost.key'));
+    const cert = fs.readFileSync(path.join(process.cwd(), '../../common/server/certificates/localhost.crt'));
     fastifyConfiguration.https = {
       key,
       cert,
