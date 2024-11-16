@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'url';
 import path from 'path';
 import fs from 'fs';
 
@@ -9,7 +10,7 @@ import fastifyCompress from '@fastify/compress';
 import nunjucks from 'nunjucks';
 import Logger from 'pino';
 
-import products from './data/products.js';
+import products from 'shared/data/products.js';
 
 import 'dotenv/config';
 
@@ -24,6 +25,11 @@ const addDelay =
   () =>
     new Promise((resolve) => setTimeout(() => resolve('done'), delay));
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const certificatesPath = path.resolve(__dirname, '../../shared/certificates/');
+
 const fastifyConfiguration = {
   loggerInstance: logger,
 };
@@ -33,8 +39,8 @@ const fastifyConfiguration = {
  */
 if (process.env.ENABLE_SSL === 'true') {
   try {
-    const key = fs.readFileSync(path.join(process.cwd(), 'server/certificates/localhost.key'));
-    const cert = fs.readFileSync(path.join(process.cwd(), 'server/certificates/localhost.crt'));
+    const key = fs.readFileSync(path.join(certificatesPath, 'localhost.key'));
+    const cert = fs.readFileSync(path.join(certificatesPath, 'localhost.crt'));
     fastifyConfiguration.https = {
       key,
       cert,
