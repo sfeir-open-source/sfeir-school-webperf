@@ -63,7 +63,7 @@ fastify.register(fastifyCompress);
  * Statics
  */
 fastify.register(fastifyStatic, {
-  root: path.join(process.cwd(), 'public'),
+  root: path.join(__dirname, '../public'),
 });
 
 fastify.addHook('onRequest', async (request, reply) => {
