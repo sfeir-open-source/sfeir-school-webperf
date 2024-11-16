@@ -7,11 +7,17 @@ import fastifyStatic from '@fastify/static';
 import fastifyCompress from '@fastify/compress';
 
 import nunjucks from 'nunjucks';
+import Logger from 'pino';
 
 import products from './data/products.js';
-import logger from './utils/logger.js';
 
 import 'dotenv/config';
+
+/**
+ * Utils
+ */
+
+const logger = Logger({ level: 'info', transport: { target: 'pino-pretty' } });
 
 const addDelay =
   (delay = 500) =>
@@ -22,6 +28,9 @@ const fastifyConfiguration = {
   loggerInstance: logger,
 };
 
+/**
+ * SSL / HTTP2
+ */
 if (process.env.ENABLE_SSL === 'true') {
   try {
     const key = fs.readFileSync(path.join(process.cwd(), 'server/certificates/localhost.key'));
@@ -44,6 +53,9 @@ const fastify = Fastify(fastifyConfiguration);
 
 fastify.register(fastifyCompress);
 
+/**
+ * Statics
+ */
 fastify.register(fastifyStatic, {
   root: path.join(process.cwd(), 'public'),
 });
@@ -58,6 +70,9 @@ fastify.addHook('onRequest', async (request, reply) => {
   }
 });
 
+/**
+ * Views
+ */
 fastify.register(fastifyView, {
   engine: { nunjucks },
   templates: ['server/views', 'server/partials'],
@@ -68,6 +83,9 @@ fastify.get('/', (_, reply) => {
   reply.redirect(`/product/${product.id}`);
 });
 
+/**
+ * Product page
+ */
 fastify.get('/product/:id', { preHandler: [addDelay()] }, (request, reply) => {
   const product = products.find((p) => p.id === request.params.id);
   reply.view('pages/product.njk', { product });
