@@ -346,7 +346,6 @@ body {
 
 /* Product infos */
 .product-info {
-  margin-left: var(--spacing-6);
 }
 
 /* Conversion */
@@ -611,5 +610,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-8);
+  }
+  .product-info {
+    margin-left: var(--spacing-6);
   }
 }
