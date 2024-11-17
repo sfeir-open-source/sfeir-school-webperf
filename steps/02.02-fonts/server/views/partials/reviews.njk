@@ -1,0 +1,26 @@
+ <h2 class="title-bg">AVIS CLIENTS</h2>
+<div class="reviews">
+  {% for review in userReviews %}
+  <div class="review">
+    <div class="review__header">
+      <img
+        class="review__avatar"
+        fetchpriority="high"
+        src="{{ review.author.avatar }}"
+        alt="{{ review.author.name }}"
+        width="500"
+      />
+      <div class="review__author">
+        <span class="review__author-name">{{ review.author.name }}</span>
+        <span class="review__date">{{ review.date }}</span>
+        <span class="review__rating-stars">
+          {% for i in range(0, review.rating) %}
+          <span class="review__rating-star">★</span>
+          {% endfor %}
+        </span>
+      </div>
+    </div>
+    {{ review.text }}
+  </div>
+  {%endfor %}
+</div>
