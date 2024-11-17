@@ -84,8 +84,8 @@ fastify.register(fastifyView, {
   templates: ['server/views', 'server/partials'],
 });
 
-fastify.get('/', (_, reply) => {
-  return reply.redirect(`/product/${productDb.first().id}`);
+fastify.get('/', async (_, reply) => {
+  return reply.redirect(`/product/${(await productDb.first()).id}`);
 });
 
 /**
