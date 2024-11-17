@@ -4,28 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SFEIR Shop</title>
-    <link rel="stylesheet" href="/styles/footer.css" />
-    <link
-      rel="preload"
-      href="/fonts/WorkSans-Bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="crossorigin"
-    />
-    <link
-      rel="preload"
-      href="/fonts/WorkSans-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="crossorigin"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
-    />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" >
-
-    <script src="/scripts/main.js"></script>
   </head>
   <body>
     {% include "partials/header.njk" %}
@@ -34,7 +13,11 @@
         <div class="product-images">
           <div class="product-thumbnails">
             {% for image in product.images %}
-            <button class="product-thumbnail">
+            <button
+              class="product-thumbnail {% if loop.index0 === 0 %} product-thumbnail__current {% endif %}"
+              aria-controls="main-image"
+              {% if loop.index0 === 0 %} aria-current="true" {% endif %}
+              >
               <img
                 src="{{ image.source }}"
                 alt="{{ image.name }}"
@@ -44,6 +27,7 @@
           </div>
           <img
             class="product-main-image"
+            id="main-image"
             src="{{ product.images[0].source }}"
             alt="{{ product.images[0].name }}"
           />
@@ -64,7 +48,7 @@
           <p>{{ product.descriptionShort|safe }}</p>
           <a href="description" class="btn btn-secondary btn-small">Lire plus</a>
 
-          <div id="conversion"></div>
+          <div id="conversion" class="conversion-container"></div>
 
           <p>Livraison offerte à partir de 50€ d'achat</p>
         </div>
@@ -82,40 +66,29 @@
       {% if product.video %}
         <section class="floor videosection ">
           <h2 class="videosection__title title-bg">EN VIDEO</h2>
-          <div id="video"></div>
+          <div class="video-container">
+            <div class="video-cover" onclick="playVideo()">
+              <img src="{{product.video.cover}}" alt="Plant in a pot on a windowsill" class="cover-image">
+              <span class="play-button">▶</span>
+            </div>
+            <!--
+            <iframe id="rickroll-video" src="{{product.video.iframeUrl}}" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media"
+              allowfullscreen style="display: none;">
+            </iframe>
+            -->
+          </div>
         </section>
       {% endif %}
 
       <section class="floor container container-small" id="reviews">
-        <h2 class="title-bg">AVIS CLIENTS</h2>
-        <div class="reviews">
-          {% for review in product.reviews.userReviews %}
-          <div class="review">
-            <div class="review__header">
-              <img
-                class="review__avatar"
-                fetchpriority="high"
-                src="{{ review.author.avatar }}"
-                alt="{{ review.author.name }}"
-                width="500"
-              />
-              <div class="review__author">
-                <span class="review__author-name">{{ review.author.name }}</span>
-                <span class="review__date">{{ review.date }}</span>
-                <span class="review__rating-stars">
-                  {% for i in range(0, review.rating) %}
-                  <span class="review__rating-star">★</span>
-                  {% endfor %}
-                </span>
-              </div>
-            </div>
-            {{ review.text }}
-          </div>
-          {%endfor %}
-        </div>
+        {% include "partials/reviews.njk" %}
       </section>
     </main>
     {% include "partials/footer.njk" %}
+
+    <script src="/scripts/main.js"></script>
   </body>
+
   <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/footer.css" />
 </html>

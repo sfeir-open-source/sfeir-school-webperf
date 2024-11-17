@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SFEIR Shop</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" >
+  </head>
+  <body>
+    {% include "partials/header.njk" %}
+    <main>
+      <section class="container product-top">
+        <div class="product-images">
+          <div class="product-thumbnails">
+            {% for image in product.images %}
+            <button
+              class="product-thumbnail {% if loop.index0 === 0 %} product-thumbnail__current {% endif %}"
+              aria-controls="main-image"
+              {% if loop.index0 === 0 %} aria-current="true" {% endif %}
+              >
+              <img
+                width="100"
+                height="100"
+                src="{{ image.source }}"
+                alt="{{ image.name }}"
+              />
+            </button>
+            {% endfor %}
+          </div>
+          <img
+            width="1000"
+            height="1000"
+            class="product-main-image"
+            id="main-image"
+            src="{{ product.images[0].source }}"
+            alt="{{ product.images[0].name }}"
+          />
+        </div>
+        <div class="product-info">
+          <h1 class="product-title">{{ product.name }}</h1>
+          <div class="product-preview-review">
+            <span class="product-preview-review-stars">
+              {% for i in range(0, product.reviews.score) %}
+              <span class="product-preview-review-star">★</span>
+              {% endfor %}
+            </span>
+            <span class="product-preview-review-count">
+              ({{ product.reviews.score }} avis)
+            </span>
+            <a href="#reviews" class="btn btn-secondary btn-small">Voir tous les avis</a>
+          </div>
+          <p>{{ product.descriptionShort|safe }}</p>
+          <a href="description" class="btn btn-secondary btn-small">Lire plus</a>
+
+          <div id="conversion" class="conversion-container"></div>
+
+          <p>Livraison offerte à partir de 50€ d'achat</p>
+        </div>
+      </section>
+
+      <section class="floor container descriptionblock">
+        <h2 class="descriptionblock__title title-bg">DESCRIPTION</h2>
+        <div class="descriptionblock__content">
+          <div class="descriptionblock__content-inner">
+            {{ product.description|safe }}
+          </div>
+        </div>
+      </section>
+
+      {% if product.video %}
+        <section class="floor videosection ">
+          <h2 class="videosection__title title-bg">EN VIDEO</h2>
+          <div class="video-container">
+            <div class="video-cover" onclick="playVideo()">
+              <img src="{{product.video.cover}}" alt="Plant in a pot on a windowsill" class="cover-image">
+              <span class="play-button">▶</span>
+            </div>
+            <!--
+            <iframe id="rickroll-video" src="{{product.video.iframeUrl}}" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media"
+              allowfullscreen style="display: none;">
+            </iframe>
+            -->
+          </div>
+        </section>
+      {% endif %}
+
+      <section class="floor container container-small" id="reviews">
+        {% include "partials/reviews.njk" %}
+      </section>
+    </main>
+    {% include "partials/footer.njk" %}
+
+    <script src="/scripts/main.js"></script>
+  </body>
+
+  <link rel="stylesheet" href="/styles/footer.css" />
+</html>

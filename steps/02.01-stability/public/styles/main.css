@@ -1,20 +1,127 @@
 @font-face {
-  font-family: 'Work Sans';
-  src: url('/fonts/WorkSans-Regular.woff2') format('woff');
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Thin.woff2') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Thin.woff2') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-ExtraLight.woff2') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-ExtraLightItalic.woff2') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Light.woff2') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-LightItalic.woff2') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Regular.woff2') format('woff');
   font-weight: 400;
-  font-display: block;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Work Sans';
-  src: url('/fonts/WorkSans-Bold.woff2') format('woff');
-  font-weight: 800;
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Italic.woff2') format('woff');
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face {
-  font-family: 'Work Sans';
-  src: url('/fonts/WorkSans-SemiBold.woff2') format('woff');
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Medium.woff2') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-MediumItalic.woff2') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-SemiBold.woff2') format('woff');
   font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-SemiBoldItalic.woff2') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Bold.woff2') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-BoldItalic.woff2') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-ExtraBold.woff2') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-ExtraBoldItalic.woff2') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Black.woff2') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-BlackItalic.woff2') format('woff');
+  font-weight: 900;
+  font-style: italic;
 }
 
 :root {
@@ -39,6 +146,8 @@
   --font-size-lg: 1.25rem;
   --font-size-xl: 1.5rem;
 }
+
+/* Global */
 
 * {
   box-sizing: border-box;
@@ -94,6 +203,7 @@ body {
   font-family: var(--font-title-special);
 }
 
+/* Button */
 .btn {
   padding: var(--spacing-2) var(--spacing-4);
   color: #fff;
@@ -133,15 +243,109 @@ body {
   background-color: #c1c3ed;
 }
 
-.conversion {
+/* Banner ad */
+.header-ad {
+  background-color: var(--color-anthracite);
+  color: #fff;
+  margin: 0;
+  padding: var(--spacing-6);
+  text-align: center;
+  font-weight: 600;
+}
+
+.header-ad a {
+  margin-left: var(--spacing-4);
+}
+
+/* Header */
+.header {
+  display: flex;
+  padding: var(--spacing-4) var(--spacing-8);
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__title {
+}
+
+.header__nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: var(--spacing-4);
   margin-top: var(--spacing-4);
+  margin-bottom: var(--spacing-4);
+}
+
+.header__nav-item-link {
+  display: block;
+  padding: var(--spacing-2) var(--spacing-4);
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+  color: #000;
+  &:hover {
+    background-color: var(--color-sunset);
+    color: #fff;
+  }
+}
+
+/* Product images */
+.product-images {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: var(--spacing-4);
+}
+
+.product-main-image {
+  display: block;
+  order: 0;
+  width: 100%;
+  height: auto;
+}
+
+.product-thumbnails {
+  order: 1;
+  display: flex;
+  gap: var(--spacing-2);
+}
+
+.product-thumbnail {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.product-thumbnail__current {
+  border-color: #fff;
+  box-shadow: 0 0 0 2px #000;
+}
+
+.product-thumbnail > img {
+  width: 4rem;
+  height: 4rem;
+  display: block;
+}
+
+/* Product infos */
+.product-info {
+  margin-left: var(--spacing-6);
+}
+
+/* Conversion */
+.conversion-container {
+  margin-top: var(--spacing-4);
+}
+
+.conversion {
   padding: var(--spacing-4);
   background-color: var(--color-bg-secondary);
 }
 
 .conversion__price {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .conversion_add {
@@ -183,27 +387,62 @@ body {
   cursor: not-allowed;
 }
 
-.sizes__item-radio:checked + .sizes__item-button {
+.sizes__item-radio:focus + .sizes__item-button {
+  box-shadow: 0 0 0 2px var(--color-majorelle);
+  border-color: #000;
+}
+
+.sizes__item-radio:checked:not(:focus) + .sizes__item-button {
   box-shadow: 0 0 0 1px #000;
   border-color: #000;
 }
+
 .sizes__item-radio:not(:disabled):not(:checked) + .sizes__item-button:hover {
   border-color: #000;
 }
 
-.header-ad {
-  background-color: var(--color-anthracite);
-  color: #fff;
-  margin: 0;
-  padding: var(--spacing-6);
-  text-align: center;
-  font-weight: 600;
+/* Product title */
+.product-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  margin-bottom: var(--spacing-4);
 }
 
-.header-ad a {
-  margin-left: var(--spacing-4);
+/* Product preview */
+.product-preview-review {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
 }
 
+.product-preview-review-stars {
+  display: flex;
+}
+
+.product-preview-review-star {
+}
+
+.product-preview-review-count {
+}
+
+.product-preview-review-link {
+  text-decoration: none;
+  font-weight: 700;
+  padding-left: var(--spacing-2);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.product-preview-link {
+  text-decoration: none;
+  font-weight: 700;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Description block */
 .descriptionblock {
   display: flex;
   flex-direction: column;
@@ -232,121 +471,7 @@ body {
   margin-top: var(--spacing-4);
 }
 
-/* Header */
-.header {
-  display: flex;
-  padding: var(--spacing-4) var(--spacing-8);
-  flex-direction: column;
-  align-items: center;
-}
-
-.header__title {
-}
-
-.header__nav-list {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  gap: var(--spacing-4);
-  margin-top: var(--spacing-4);
-  margin-bottom: var(--spacing-4);
-}
-
-.header__nav-item-link {
-  display: block;
-  padding: var(--spacing-2) var(--spacing-4);
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.2s ease-in-out;
-  color: #000;
-  &:hover {
-    background-color: var(--color-sunset);
-    color: #fff;
-  }
-}
-
-/* Product images */
-.product-images {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  gap: var(--spacing-4);
-}
-
-.product-main-image {
-  display: block;
-  order: 0;
-  width: 100%;
-  height: auto;
-}
-
-.product-thumbnails {
-  order: 1;
-  display: flex;
-  gap: var(--spacing-2);
-}
-
-.product-thumbnail {
-  padding: 0;
-  border: none;
-}
-
-.product-thumbnail > img {
-  width: 4rem;
-  height: 4rem;
-  display: block;
-}
-
-/* Product infos */
-.product-info {
-  margin-left: var(--spacing-6);
-}
-
-/* Product title */
-.product-title {
-  font-size: var(--font-size-xl);
-  font-weight: bold;
-  margin-bottom: var(--spacing-4);
-}
-
-/* Product preview */
-.product-preview-review {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-2);
-}
-
-.product-preview-review-stars {
-  display: flex;
-}
-
-.product-preview-review-star {
-  color: var(--color-slate-700);
-}
-
-.product-preview-review-count {
-  color: var(--color-slate-700);
-}
-
-.product-preview-review-link {
-  color: var(--color-slate-700);
-  text-decoration: none;
-  font-weight: bold;
-  border-left: 1px solid var(--color-slate-100);
-  padding-left: var(--spacing-2);
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.product-preview-link {
-  color: var(--color-slate-700);
-  text-decoration: none;
-  font-weight: bold;
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
+/* Video block */
 .videosection {
   background-color: var(--color-anthracite);
   padding: 1rem 0 2rem;
@@ -359,7 +484,6 @@ body {
   margin: 0 0 1rem;
 }
 
-/* Description */
 .video-container {
   position: relative;
   width: 100%;
@@ -407,7 +531,7 @@ body {
   flex-direction: column;
   gap: var(--spacing-2);
   & + & {
-    border-top: 1px solid var(--color-slate-100);
+    border-top: 1px solid grey;
     padding-top: var(--spacing-4);
   }
 }
@@ -433,12 +557,11 @@ body {
 
 .review__author-name {
   font-size: var(--font-size-sm);
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .review__date {
   font-size: var(--font-size-xs);
-  color: var(--color-slate-700);
 }
 
 .review__rating-stars {
@@ -447,7 +570,6 @@ body {
 
 .review__rating-star {
   font-size: var(--font-size-xs);
-  color: var(--color-slate-700);
 }
 
 @media screen and (min-width: 600px) {
