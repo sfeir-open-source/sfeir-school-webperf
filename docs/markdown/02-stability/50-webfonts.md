@@ -2,4 +2,4 @@
 
 # Stabilité visuelle
 
-## 3. Contenus asynchrones
+## 3. Chargement des fonts

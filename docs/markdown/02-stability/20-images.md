@@ -2,4 +2,4 @@
 
 # Stabilité visuelle
 
-## 1. Chargement des fonts
+## 1. Chargement des images

@@ -2,4 +2,4 @@
 
 # Stabilité visuelle
 
-## 2. Chargement des images
+## 2. Contenus asynchrones
