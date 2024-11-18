@@ -72,8 +72,15 @@ function speedSlides() {
     '03-speed/20-images.md',
     '03-speed/30-loading-javascript.md',
     '03-speed/40-critical-path.md',
-    '03-speed/50-network.md',
-    '03-speed/60-cache.md',
+    '03-speed/50-http.md',
+    '03-speed/51-http-intro.md',
+    '03-speed/52-http1.md',
+    '03-speed/53-http1.1.md',
+    '03-speed/54-http2.md',
+    '03-speed/55-http3.md',
+    '03-speed/56-http-devtools.md',
+    '03-speed/60-compression.md',
+    '03-speed/70-cache.md',
   ];
 }
 

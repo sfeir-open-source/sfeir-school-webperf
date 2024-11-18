@@ -2,4 +2,4 @@
 
 # Vitesse de chargement
 
-## 1. Introduction
+## 5. Protocole HTTP
