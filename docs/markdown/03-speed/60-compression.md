@@ -1,5 +1,5 @@
 <!-- .slide: class="transition-bg-blue-1" -->
 
-# Loading Speed
+# Vitesse de chargement
 
-## 5. Network optimization
+## 6. La compression

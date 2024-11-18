@@ -1,5 +1,5 @@
 <!-- .slide: class="transition-bg-blue-1" -->
 
-# Loading Speed
+# Vitesse de chargement
 
-## 3. Loading JavaScript
+## 3. Charger JavaScript

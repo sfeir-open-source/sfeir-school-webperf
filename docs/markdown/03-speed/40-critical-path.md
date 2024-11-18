@@ -1,5 +1,5 @@
 <!-- .slide: class="transition-bg-blue-1" -->
 
-# Loading Speed
+# Vitesse de chargement
 
-## 4. The critical path
+## 4. Le chemin critique

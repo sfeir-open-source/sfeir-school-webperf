@@ -1,5 +1,5 @@
 <!-- .slide: class="transition-bg-blue-1" -->
 
-# Loading Speed
+# Vitesse de chargement
 
-## 6. Caching
+## 7. Le cache HTTP

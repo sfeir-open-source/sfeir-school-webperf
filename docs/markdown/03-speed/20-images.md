@@ -1,5 +1,5 @@
 <!-- .slide: class="transition-bg-blue-1" -->
 
-# Loading Speed
+# Vitesse de chargement
 
-## 2. Image Optimization
+## 2. Optimisation d'images
