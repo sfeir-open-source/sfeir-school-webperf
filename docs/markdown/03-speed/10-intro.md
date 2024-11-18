@@ -1,5 +1,6 @@
-<!-- .slide: class="transition-bg-blue-1" -->
-
 # Vitesse de chargement
 
-## 1. Introduction
+Pourquoi la vitesse de chargement est-elle cruciale ?
+
+- L'UX (l'expérience utilisateur)
+- Le SEO

@@ -1,0 +1,1 @@
+// image d'exemple responsive
