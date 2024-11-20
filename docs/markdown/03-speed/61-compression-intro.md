@@ -2,7 +2,7 @@
 
 # 6. La compression
 
-## à quoi ça sert ?
+## Objectif
 
 - Réduire le poids de transfert
 - être moins dépendant du réseau
