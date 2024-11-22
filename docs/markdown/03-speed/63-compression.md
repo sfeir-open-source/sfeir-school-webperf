@@ -22,6 +22,11 @@ MamxGb3AGg6lovQeEDTwpnsYTk4PUBUa9jmJIb/0mp3IDn+N9nyqcHH44iqzsIJ/e1Xpcr4IHDChL1NC
 6vdPr6V1uz9FgJNqaTipVBn8XFsjoijOPronU7M/9rirBksRXCEv4=
 ```
 
+</div>
+<!-- .element: class="fragment" data-fragment-index="1"-->
+
+<div>
+
 Minifié + compressé (Brotli)
 
 ```txt
@@ -30,3 +35,4 @@ G4MAwOToJunPibsSnUJn9U45cCuqeRrod+KD8sE5hqWqRRinnxGW46lwhlu6MFZYAQLtKCfSZ7wOfz6R
 ```
 
 </div>
+<!-- .element: class="fragment" data-fragment-index="2"-->

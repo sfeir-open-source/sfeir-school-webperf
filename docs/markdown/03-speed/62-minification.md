@@ -48,10 +48,35 @@ function validatePassword(password) {
 Après :
 
 ```js
-function validatePassword(t) {
-  return !!(!(t.length < 10) && /[A-Z]/.test(t) && /[!@#$%^&*(),.?":{}|<>]/.test(t) && /[0-9]/.test(t));
-}
+function validatePassword(t){return !!(!(t.length < 10) && /[A-Z]/.test(t) && /[!@#$%^&*(),.?":{}|<>]/.test(t) && /[0-9]/.test(t));}
 ```
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="2"-->
+
+##==##
+
+<!-- .slide: class="two-column with-code" -->
+
+# 6. La compression
+
+## La minification
+
+- Supprime les caractères inutiles
+- Raccourcit les noms de variables
+- Utilise des syntaxes plus courtes
+- Conserve la syntaxe : pas besoin de "dé-minifier"
+- Le plus efficace
+
+##--##
+
+<div style="margin-top: 205px">
+
+**Pour quels fichiers ?**
+
+- JavaScript
+- CSS
+- HTML
+- SVG
+- JSON
+</div>

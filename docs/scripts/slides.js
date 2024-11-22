@@ -85,8 +85,7 @@ function speedSlides() {
     '03-speed/63-compression.md',
     '03-speed/64-comparision.md',
     '03-speed/65-who.md',
-    '03-speed/66-warning.md',
-    '03-speed/67-devtools.md',
+    '03-speed/66-devtools.md',
     '03-speed/70-cache.md',
   ];
 }
