@@ -80,6 +80,12 @@ function speedSlides() {
     '03-speed/55-http3.md',
     '03-speed/56-http-devtools.md',
     '03-speed/60-compression.md',
+    '03-speed/61-compression-intro.md',
+    '03-speed/62-minification.md',
+    '03-speed/63-compression.md',
+    '03-speed/64-comparision.md',
+    '03-speed/65-who.md',
+    '03-speed/66-devtools.md',
     '03-speed/70-cache.md',
   ];
 }
