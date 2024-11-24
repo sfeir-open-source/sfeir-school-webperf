@@ -1,3 +1,3 @@
 # Impacts
 
-// video / image de temps de chargment de la page
+<img src="./assets/images/03-speed/load-example.svg" class="03-load" style="width: 1000px; height: auto;"  />

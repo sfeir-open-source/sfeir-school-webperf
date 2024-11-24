@@ -17,5 +17,3 @@ LCP : 1,720 ms
 | Load Delay   | 44%      | 760 ms |
 | Load Time    | 7%       | 120 ms |
 | Render Delay | 32%      | 550 ms |
-
-// image de rendu d'une page avec le LCP
