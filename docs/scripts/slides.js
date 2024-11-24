@@ -87,6 +87,12 @@ function speedSlides() {
     '03-speed/65-who.md',
     '03-speed/66-devtools.md',
     '03-speed/70-cache.md',
+    '03-speed/71-cache-intro.md',
+    '03-speed/72-cache-headers.md',
+    '03-speed/73-cache-public.md',
+    '03-speed/74-bfcache.md',
+    '03-speed/75-serviceworker.md',
+    '03-speed/76-cache-recap.md',
   ];
 }
 
