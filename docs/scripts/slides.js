@@ -126,9 +126,9 @@ function interactivitySlides() {
   ];
 }
 
-function observabilitySlides() {
+function customMetricsSlides() {
   return [
-    '05-observability/01-title.md', //
+    '05-custom-metrics/01-title.md', //
   ];
 }
 
@@ -138,9 +138,15 @@ function automationSlides() {
   ];
 }
 
+function observabilitySlides() {
+  return [
+    '07-observability/01-title.md', //
+  ];
+}
+
 function conclusionSlides() {
   return [
-    '07-conclusion/01-title.md', //
+    '08-conclusion/01-title.md', //
   ];
 }
 
@@ -151,8 +157,9 @@ function formation() {
     ...stabilitySlides(),
     ...speedSlides(),
     ...interactivitySlides(),
-    ...observabilitySlides(),
+    ...customMetricsSlides(),
     ...automationSlides(),
+    ...observabilitySlides(),
     ...conclusionSlides(),
   ].map((slidePath) => {
     return { path: slidePath };
