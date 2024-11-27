@@ -157,7 +157,14 @@ function interactivitySlides() {
 
 function customMetricsSlides() {
   return [
-    '05-custom-metrics/01-title.md', //
+    '05-custom-metrics/01-title.md',
+    '05-custom-metrics/02-intro.md',
+    '05-custom-metrics/10-user-timing.md',
+    '05-custom-metrics/20-performance-observer.md',
+    '05-custom-metrics/30-element-timing.md',
+    '05-custom-metrics/40-loaf.md',
+    '05-custom-metrics/50-event.md',
+    '05-custom-metrics/60-resource-timing.md',
   ];
 }
 
