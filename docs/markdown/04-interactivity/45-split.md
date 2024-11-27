@@ -9,7 +9,7 @@ On pourrait penser que pour découper les tâches longues, il faut découper nos
 ```JavaScript
 function main() {
   longTask1();
-  longTask1();
+  longTask2();
   longTask3();
   longTask4();
 }
