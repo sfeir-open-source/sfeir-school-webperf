@@ -176,7 +176,13 @@ function automationSlides() {
 
 function observabilitySlides() {
   return [
-    '07-observability/01-title.md', //
+    '07-monitoring/01-title.md',
+    '07-monitoring/10-intro.md',
+    '07-monitoring/20-tools.md',
+    '07-monitoring/30-metrics.md',
+    '07-monitoring/40-sampling.md',
+    '07-monitoring/50-reporting.md',
+    '07-monitoring/60-alerting.md',
   ];
 }
 
