@@ -48,6 +48,10 @@ To run a workshop solution :
 npm run dev -w <workshop-number>-solution
 ```
 
+## Resources :
+
+- [JavaScript Visualizer](https://www.jsv9000.app/)
+
 ## Contributing
 
 ### Contributing Guidelines
