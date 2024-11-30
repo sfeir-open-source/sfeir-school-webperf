@@ -1,63 +1,31 @@
-import { fileURLToPath } from 'url';
 import path from 'path';
-import fs from 'fs';
+import { fileURLToPath } from 'url';
 
 import Fastify from 'fastify';
 import fastifyView from '@fastify/view';
 import fastifyStatic from '@fastify/static';
-import fastifyCompress from '@fastify/compress';
 
 import nunjucks from 'nunjucks';
-import Logger from 'pino';
 
 import { product as productDb, merch as merchDb } from 'shared/db/index.js';
+import { promiseDelay, getFastifyConfiguration, imageTransformerHook } from 'shared/functions/index.js';
 
 import 'dotenv/config';
-
-/**
- * Utils
- */
-
-const logger = Logger({ level: 'info', transport: { target: 'pino-pretty' } });
-
-const addDelay =
-  (delay = 500) =>
-  () =>
-    new Promise((resolve) => setTimeout(() => resolve('done'), delay));
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const certificatesPath = path.resolve(__dirname, '../../shared/certificates/');
+const fastify = Fastify(getFastifyConfiguration());
 
-const fastifyConfiguration = {
-  loggerInstance: logger,
-};
+// Add default delay to simulate real server latency
+fastify.addHook('onRequest', async (request) => {
+  await promiseDelay(300);
 
-/**
- * SSL / HTTP2
- */
-if (process.env.ENABLE_SSL === 'true') {
-  try {
-    const key = fs.readFileSync(path.join(certificatesPath, 'localhost.key'));
-    const cert = fs.readFileSync(path.join(certificatesPath, 'localhost.crt'));
-    fastifyConfiguration.https = {
-      key,
-      cert,
-    };
-    fastifyConfiguration.http2 = process.env.ENABLE_HTTP2 === 'true';
-  } catch (err) {
-    logger.warn('Impossible to configure SSL, will fallback on default HTTP');
+  // Add a special delay to fonts to better visualize the layouts shifts
+  if (request.url.startsWith('/fonts')) {
+    await promiseDelay(1000);
   }
-}
-
-if (process.env.ENABLE_HTTP2 === 'true' && process.env.ENABLE_SSL !== 'true') {
-  logger.warn('HTTP/2 needs SSL to be activated, will fallback on HTTP/1.1');
-}
-
-const fastify = Fastify(fastifyConfiguration);
-
-fastify.register(fastifyCompress);
+});
 
 /**
  * Statics
@@ -66,15 +34,7 @@ fastify.register(fastifyStatic, {
   root: path.join(__dirname, '../public'),
 });
 
-fastify.addHook('onRequest', async (request, reply) => {
-  if (request.url.startsWith('/images')) {
-    await addDelay(800)();
-  }
-
-  if (request.url.startsWith('/styles')) {
-    await addDelay(250)();
-  }
-});
+fastify.addHook('onRequest', imageTransformerHook);
 
 /**
  * Views
@@ -84,6 +44,9 @@ fastify.register(fastifyView, {
   templates: ['server/views', 'server/partials'],
 });
 
+/**
+ * Homepage
+ */
 fastify.get('/', async (_, reply) => {
   return reply.redirect(`/product/${(await productDb.first()).id}`);
 });

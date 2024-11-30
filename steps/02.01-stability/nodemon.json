@@ -1,6 +1,7 @@
 {
-    "watch": [
-        "server/"
-    ],
-    "ext": "js,json,njk"
+  "watch": [
+    "server/",
+    "../shared/"
+  ],
+  "ext": "js,json,njk"
 }

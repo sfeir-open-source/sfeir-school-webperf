@@ -6,16 +6,16 @@ export const product = {
     return products[0];
   },
   findOne: async (id) => {
-    await promiseDelay(500);
+    await promiseDelay(300);
     return products.find((p) => p.id === id);
   },
   getSizes: async (id) => {
-    await promiseDelay(3000);
+    await promiseDelay(2700);
     const product = products.find((p) => p.id === id);
     return product?.sizes;
   },
   getReviews: async (id) => {
-    await promiseDelay(2000);
+    await promiseDelay(1700);
     const product = products.find((p) => p.id === id);
     return product?.reviews?.userReviews;
   },
@@ -23,7 +23,7 @@ export const product = {
 
 export const merch = {
   getAdBanner: async () => {
-    await promiseDelay(2000);
+    await promiseDelay(1700);
     return {
       text: "SOLDES : Retrouvez toutes nos promotions jusqu'à -50%",
       link: {
