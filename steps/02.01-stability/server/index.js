@@ -1,64 +1,26 @@
-import { fileURLToPath } from 'url';
 import path from 'path';
-import fs from 'fs';
+import { fileURLToPath } from 'url';
 
 import Fastify from 'fastify';
 import fastifyView from '@fastify/view';
 import fastifyStatic from '@fastify/static';
-import fastifyCompress from '@fastify/compress';
 
 import nunjucks from 'nunjucks';
-import Logger from 'pino';
-import sharp from 'sharp';
 
 import { product as productDb, merch as merchDb } from 'shared/db/index.js';
+import { promiseDelay, getFastifyConfiguration, imageTransformerHook } from 'shared/functions/index.js';
 
 import 'dotenv/config';
-
-/**
- * Utils
- */
-
-const logger = Logger({ level: 'info', transport: { target: 'pino-pretty' } });
-
-const addDelay =
-  (delay = 500) =>
-  () =>
-    new Promise((resolve) => setTimeout(() => resolve('done'), delay));
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const certificatesPath = path.resolve(__dirname, '../../shared/certificates/');
+const fastify = Fastify(getFastifyConfiguration());
 
-const fastifyConfiguration = {
-  loggerInstance: logger,
-};
-
-/**
- * SSL / HTTP2
- */
-if (process.env.ENABLE_SSL === 'true') {
-  try {
-    const key = fs.readFileSync(path.join(certificatesPath, 'localhost.key'));
-    const cert = fs.readFileSync(path.join(certificatesPath, 'localhost.crt'));
-    fastifyConfiguration.https = {
-      key,
-      cert,
-    };
-    fastifyConfiguration.http2 = process.env.ENABLE_HTTP2 === 'true';
-  } catch (err) {
-    logger.warn('Impossible to configure SSL, will fallback on default HTTP');
-  }
-}
-
-if (process.env.ENABLE_HTTP2 === 'true' && process.env.ENABLE_SSL !== 'true') {
-  logger.warn('HTTP/2 needs SSL to be activated, will fallback on HTTP/1.1');
-}
-
-const fastify = Fastify(fastifyConfiguration);
-
-fastify.register(fastifyCompress);
+// Add default delay to simulate real server latency
+fastify.addHook('onRequest', async () => {
+  await promiseDelay(300);
+});
 
 /**
  * Statics
@@ -67,38 +29,7 @@ fastify.register(fastifyStatic, {
   root: path.join(__dirname, '../public'),
 });
 
-fastify.addHook('onRequest', async (request, reply) => {
-  if (request.url.startsWith('/images')) {
-    await addDelay(800)();
-
-    const transformations = {};
-    if (request.query.width) transformations.width = Number(request.query.width);
-    if (request.query.quality) transformations.quality = Number(request.query.quality);
-    if (['webp', 'png', 'jpg', 'avif'].includes(request.query.format)) transformations.format = request.query.format;
-
-    if (Object.keys(transformations).length > 0) {
-      const imagePath = request.url.split('?')[0];
-      const tmpDir = path.join(__dirname, 'tmp');
-      if (!fs.existsSync(tmpDir)) fs.mkdirSync(tmpDir);
-
-      let image = await sharp(path.join(__dirname, '../public', imagePath));
-
-      const format = transformations.format || 'jpeg';
-      image = image.toFormat(format, { quality: transformations.quality || 100, force: false });
-
-      if (transformations.width) {
-        image = image.resize(transformations.width);
-      }
-
-      const bufferImage = await image.toBuffer();
-      reply.type(`image/${format}`).send(bufferImage);
-    }
-  }
-
-  if (request.url.startsWith('/styles')) {
-    await addDelay(250)();
-  }
-});
+fastify.addHook('onRequest', imageTransformerHook);
 
 /**
  * Views
@@ -108,6 +39,9 @@ fastify.register(fastifyView, {
   templates: ['server/views', 'server/partials'],
 });
 
+/**
+ * Homepage
+ */
 fastify.get('/', async (_, reply) => {
   return reply.redirect(`/product/${(await productDb.first()).id}`);
 });
