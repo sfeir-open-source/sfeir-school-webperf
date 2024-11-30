@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "live-server --port=4242 --open=\"./index.html\" --watch=\"markdown,scripts/\"",
     "start": "parallelshell \"npm run serve\" \"npm run sass\"",
-    "prepare": "node ./scripts/dont-touch/prepare-script.js"
+    "prepare-script": "node ./scripts/dont-touch/prepare-script.js"
   },
   "repository": {
     "type": "git",
