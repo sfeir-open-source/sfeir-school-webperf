@@ -1,5 +1,5 @@
 
-<form class="conversion">
+<form class="conversion" id="conversion-form">
   <fieldset class="conversion__sizes">
     <legend>
       Taille
@@ -13,7 +13,6 @@
               name="size"
               value="{{size.id}}"
               class="vh sizes__item-radio"
-              checked="false"
               {% if size.availableQuantity === 0 %} disabled {% endif %}
               />
             <label for="option-{{size.id}}" class="sizes__item-button">
@@ -25,6 +24,8 @@
   </fieldset>
   <div class="conversion__buy">
       <span class="conversion__price">{{ sizes[0].price.amount }}€</span>
-      <button id="btn-add-to-cart" class="btn btn-primary btn-big conversion_add" disabled="disabled"><strong>Ajouter au panier</strong></button>
+      <button id="btn-add-to-cart" class="btn btn-primary btn-big conversion_add" disabled="disabled">
+        <strong>Ajouter au panier</strong>
+      </button>
   </div>
 </form>

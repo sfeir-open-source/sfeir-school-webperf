@@ -33,3 +33,9 @@ export const merch = {
     };
   },
 };
+
+export const cart = {
+  addItem: async () => {
+    await promiseDelay(2000);
+  },
+};

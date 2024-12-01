@@ -7,7 +7,7 @@ import fastifyStatic from '@fastify/static';
 
 import nunjucks from 'nunjucks';
 
-import { product as productDb, merch as merchDb } from 'shared/db/index.js';
+import { product as productDb, merch as merchDb, cart as cartDb } from 'shared/db/index.js';
 import { promiseDelay, getFastifyConfiguration, imageTransformerHook } from 'shared/functions/index.js';
 
 import 'dotenv/config';
@@ -18,8 +18,13 @@ const __dirname = path.dirname(__filename);
 const fastify = Fastify(getFastifyConfiguration());
 
 // Add default delay to simulate real server latency
-fastify.addHook('onRequest', async () => {
+fastify.addHook('onRequest', async (request) => {
   await promiseDelay(300);
+
+  // Add a special delay to fonts to better visualize the layouts shifts
+  if (request.url.startsWith('/fonts')) {
+    await promiseDelay(1000);
+  }
 });
 
 /**
@@ -79,6 +84,14 @@ fastify.get('/partials/product/:id/reviews', async (request, reply) => {
 fastify.get('/partials/banner-ad', async (request, reply) => {
   const adData = await merchDb.getAdBanner();
   return reply.view('partials/header-ad.njk', { ad: adData });
+});
+
+/**
+ * Global
+ */
+fastify.post('/addtocart', async (request, reply) => {
+  await cartDb.addItem();
+  return reply.status(200).send({ status: 'success' });
 });
 
 fastify.listen({ port: 3000 }, (err, address) => {

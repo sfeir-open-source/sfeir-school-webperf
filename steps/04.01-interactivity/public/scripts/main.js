@@ -29,6 +29,7 @@ const loadConversionContent = async () => {
     const conversionHTML = await fetch(`/partials/product/${productId}/conversion`).then((res) => res.text());
     conversionWrapper.innerHTML = conversionHTML;
     initProductSize();
+    initAddtoCart();
   } catch (error) {
     console.error('Error loading conversion content:', error);
   }
@@ -128,9 +129,53 @@ const initImageZoom = () => {
   if (closeButton) closeButton.addEventListener('click', closeImageZoom);
 };
 
+// --- Cart functions---
+const handleAddToCart = async (event) => {
+  event.preventDefault();
+  try {
+    const productId = getProductIdFromURL();
+    const sizeElement = document.querySelector('input[name=size]:checked');
+
+    if (!sizeElement) {
+      return;
+    }
+
+    await fetch('/addtocart', { method: 'post', body: JSON.stringify({ productId, size: sizeElement.value }) }).then(
+      (res) => res.text()
+    );
+    displayAlert('Article ajouté au panier');
+  } catch (error) {
+    displayAlert("Erreur lors de l'ajout au panier", 'error');
+  }
+};
+
+const initAddtoCart = () => {
+  const form = document.getElementById('conversion-form');
+  form?.addEventListener('submit', handleAddToCart);
+};
+
 // --- Helper Functions ---
 const getProductIdFromURL = () => {
   return window.location.pathname.split('/')[2];
+};
+
+const displayAlert = (text, variant = 'success', duration = 3000) => {
+  let alertElement = document.getElementById('alert');
+
+  if (!alertElement) {
+    alertElement = document.createElement('div');
+    alertElement.id = 'alert';
+    document.body.insertAdjacentElement('beforeend', alertElement);
+    alertElement.getBoundingClientRect(); // Force reflow to animate
+  }
+
+  alertElement.className = variant;
+  alertElement.innerText = text;
+  alertElement.classList.add('open');
+
+  setTimeout(() => {
+    alertElement.classList.remove('open');
+  }, duration);
 };
 
 // --- Initialize App ---

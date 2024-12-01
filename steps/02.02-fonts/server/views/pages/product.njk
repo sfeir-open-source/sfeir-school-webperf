@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SFEIR Shop</title>
+    <link rel="preload" href="/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/PixelifySans.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/styles/main.css" />
   </head>
   <body>
@@ -34,6 +37,7 @@
             id="main-image"
             src="{{ product.images[0].source }}"
             alt="{{ product.images[0].name }}"
+            role="button"
           />
         </div>
         <div class="product-info">
@@ -90,6 +94,18 @@
     </main>
     {% include "partials/footer.njk" %}
 
+    <div class="image-zoom" id="image-zoom">
+
+      <div class="image-zoom__inner">
+        <button class="image-zoom__close" id="btn-image-zoom-close">
+          <span aria-hidden="true">&times;</span>
+          <span class="vh">close</span>
+        </button>
+        <img class="image-zoom__img" src="" width="1000" height="1000" alt="" />
+      </div>
+    </div>
+
+    <script src="/scripts/tracking.js"></script>
     <script src="/scripts/main.js"></script>
   </body>
 

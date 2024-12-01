@@ -260,6 +260,37 @@ body {
   background-color: #c1c3ed;
 }
 
+.btn.loading {
+  position: relative;
+  color: transparent;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.btn.loading::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 4px solid transparent;
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease infinite;
+}
+
 /* Banner ad */
 .header-ad-container {
   min-height: 85px;
@@ -594,6 +625,8 @@ body {
   font-size: var(--font-size-xs);
 }
 
+/* Image zoom */
+
 .image-zoom {
   position: fixed;
   top: 0;
@@ -638,6 +671,30 @@ body {
   display: block;
   width: 100%;
   height: auto;
+}
+
+/* Alert */
+
+#alert {
+  position: fixed;
+  top: 50%;
+  right: 1rem;
+  padding: 1rem;
+  color: #fff;
+  transform: translateX(calc(100% + 2rem));
+  transition: all 0.2s ease;
+}
+
+#alert.open {
+  transform: translateX(0);
+}
+
+#alert.success {
+  background-color: var(--color-majorelle);
+}
+
+#alert.error {
+  background-color: tomato;
 }
 
 @media screen and (min-width: 600px) {
