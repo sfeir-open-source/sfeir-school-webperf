@@ -15,5 +15,8 @@
   "workspaces": [
     "steps/*",
     "docs"
-  ]
+  ],
+  "dependencies": {
+    "@fastify/etag": "^6.0.1"
+  }
 }

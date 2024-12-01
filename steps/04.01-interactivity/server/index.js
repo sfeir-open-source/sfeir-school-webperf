@@ -8,7 +8,12 @@ import fastifyStatic from '@fastify/static';
 import nunjucks from 'nunjucks';
 
 import { product as productDb, merch as merchDb, cart as cartDb } from 'shared/db/index.js';
-import { promiseDelay, getFastifyConfiguration, imageTransformerHook } from 'shared/functions/index.js';
+import {
+  promiseDelay,
+  getFastifyConfiguration,
+  imageTransformerHook,
+  cacheConfigHook,
+} from 'shared/functions/index.js';
 
 import 'dotenv/config';
 
@@ -30,6 +35,7 @@ fastify.register(fastifyStatic, {
 });
 
 fastify.addHook('onRequest', imageTransformerHook);
+fastify.addHook('onSend', cacheConfigHook);
 
 /**
  * Views

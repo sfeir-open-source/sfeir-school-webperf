@@ -335,7 +335,9 @@ body {
   align-items: center;
 }
 
-.header__title {
+.header__title a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .header__nav-list {
