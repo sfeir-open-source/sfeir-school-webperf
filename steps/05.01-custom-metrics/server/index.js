@@ -8,7 +8,12 @@ import fastifyStatic from '@fastify/static';
 import nunjucks from 'nunjucks';
 
 import { product as productDb, merch as merchDb, cart as cartDb } from 'shared/db/index.js';
-import { promiseDelay, getFastifyConfiguration, imageTransformerHook } from 'shared/functions/index.js';
+import {
+  promiseDelay,
+  getFastifyConfiguration,
+  imageTransformerHook,
+  cacheConfigHook,
+} from 'shared/functions/index.js';
 
 import 'dotenv/config';
 
@@ -22,52 +27,6 @@ fastify.addHook('onRequest', async () => {
   await promiseDelay(300);
 });
 
-fastify.addHook('onSend', async (request, reply, payload, done) => {
-  if ([request.url, request.headers?.referer]?.some((url) => url?.includes('product/200'))) {
-    reply.header('Cache-Control', 'public, max-age=30');
-    return done(null, payload);
-  }
-
-  if ([request.url, request.headers?.referer]?.some((url) => url?.includes('product/300'))) {
-    reply.header('Cache-Control', 'no-cache');
-    return done(null, payload);
-  }
-
-  if ([request.url, request.headers?.referer]?.some((url) => url?.includes('product/400'))) {
-    reply.header('Cache-Control', 'no-store');
-    return done(null, payload);
-  }
-
-  if ([request.url, request.headers?.referer]?.some((url) => url?.includes('product/500'))) {
-    reply.header('Cache-Control', 'max-age=30, immutable');
-    return done(null, payload);
-  }
-
-  if ([request.url, request.headers?.referer]?.some((url) => url?.includes('product/600'))) {
-    // Static assets
-    if (request.url.endsWith('.js') || request.url.endsWith('.css') || request.url.endsWith('.woff2')) {
-      reply.header('Cache-Control', 'public, max-age=31536000, immutable');
-      return done(null, payload);
-    }
-
-    // Images
-    if (request.url.startsWith('/images')) {
-      reply.header('Cache-Control', 'public, max-age=3600');
-      return done(null, payload);
-    }
-
-    // Page
-    if (request.url.startsWith('/product')) {
-      reply.header('Cache-Control', 'public, max-age=300');
-      return done(null, payload);
-    }
-
-    // The rest
-    reply.header('Cache-Control', 'private, no-cache');
-    return done(null, payload);
-  }
-});
-
 /**
  * Statics
  */
@@ -76,6 +35,7 @@ fastify.register(fastifyStatic, {
 });
 
 fastify.addHook('onRequest', imageTransformerHook);
+fastify.addHook('onSend', cacheConfigHook);
 
 /**
  * Views
@@ -89,20 +49,12 @@ fastify.register(fastifyView, {
  * Homepage
  */
 fastify.get('/', async (_, reply) => {
-  return reply.view('pages/home.njk');
+  return reply.redirect(`/product/${(await productDb.first()).id}`);
 });
 
 /**
  * Product page
  */
-
-fastify.get('/product/600', async (request, reply) => {
-  const [productData, reviewsData] = await Promise.all([
-    productDb.findOne('600'), //
-    productDb.getReviews('600'),
-  ]);
-  return reply.view('pages/product-build.njk', { product: productData, userReviews: reviewsData, buildId: '1234' });
-});
 
 fastify.get('/product/:id', async (request, reply) => {
   const productId = request.params.id;
