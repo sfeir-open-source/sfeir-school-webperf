@@ -1,0 +1,30 @@
+
+<form class="conversion">
+  <fieldset class="conversion__sizes">
+    <legend>
+      Taille
+    </legend>
+    <ul class="sizes">
+        {% for size in sizes %}
+          <li class="sizes__item">
+            <input
+              type="radio"
+              id="option-{{size.id}}"
+              name="size"
+              value="{{size.id}}"
+              class="vh sizes__item-radio"
+              checked="false"
+              {% if size.availableQuantity === 0 %} disabled {% endif %}
+              />
+            <label for="option-{{size.id}}" class="sizes__item-button">
+              {{size.name}}
+            </label>
+          </li>
+        {% endfor %}
+    </ul>
+  </fieldset>
+  <div class="conversion__buy">
+      <span class="conversion__price">{{ sizes[0].price.amount }}€</span>
+      <button id="btn-add-to-cart" class="btn btn-primary btn-big conversion_add" disabled="disabled"><strong>Ajouter au panier</strong></button>
+  </div>
+</form>
