@@ -168,7 +168,17 @@ function customMetricsSlides() {
 
 function automationSlides() {
   return [
-    '06-automation/01-title.md', //
+    '06-automation/01-title.md',
+    '06-automation/02-intro.md',
+    '06-automation/03-tools.md',
+    '06-automation/04-integration.md',
+    '06-automation/05-example.md',
+    '06-automation/06-best-practice.md',
+    '06-automation/10-load-testing.md',
+    '06-automation/11-intro.md',
+    '06-automation/12-tools.md',
+    '06-automation/13-example.md',
+    '06-automation/14-metric.md',
   ];
 }
 
