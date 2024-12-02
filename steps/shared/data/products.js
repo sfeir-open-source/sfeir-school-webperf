@@ -57,21 +57,21 @@ Plongez dans un océan de douceur avec ce doudou bleu axolotl, aussi adorable qu
     ],
     images: [
       {
-        source: '/images/product/964663/1.jpg',
+        source: '/images/product/200/1.jpg',
         name: 'Visuel de la peluche',
       },
       {
-        source: '/images/product/964663/2.jpg',
+        source: '/images/product/200/2.jpg',
         name: 'Un groupe de peluches',
       },
       {
-        source: '/images/product/964663/3.jpg',
+        source: '/images/product/200/3.jpg',
         name: 'La peluche qui tient un téléphone',
       },
     ],
     video: {
       iframeUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      cover: '/images/product/964663/2.jpg',
+      cover: '/images/product/200/2.jpg',
     },
     reviews: {
       score: 4,
@@ -190,7 +190,7 @@ Plongez dans un océan de douceur avec ce doudou bleu axolotl, aussi adorable qu
     ],
     video: {
       iframeUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      cover: '/images/product/964663/2.jpg',
+      cover: '/images/product/300/2.jpg',
     },
     reviews: {
       score: 4,
@@ -273,21 +273,21 @@ Plongez dans un océan de douceur avec ce doudou bleu axolotl, aussi adorable qu
     ],
     images: [
       {
-        source: '/images/product/964664/1.jpg',
+        source: '/images/product/400/1.jpg',
         name: 'Sticker Montgolfière avec Axolotl Bleu',
       },
       {
-        source: '/images/product/964664/2.jpg',
+        source: '/images/product/400/2.jpg',
         name: 'Sticker sur une tablette',
       },
       {
-        source: '/images/product/964664/3.jpg',
+        source: '/images/product/400/3.jpg',
         name: 'Sticker sur une bouteille',
       },
     ],
     video: {
       iframeUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      cover: '/images/product/964664/2.jpg',
+      cover: '/images/product/400/2.jpg',
     },
     reviews: {
       score: 4.5,
@@ -370,21 +370,21 @@ Plongez dans un océan de douceur avec ce doudou bleu axolotl, aussi adorable qu
     ],
     images: [
       {
-        source: '/images/product/964665/1.jpg',
+        source: '/images/product/500/1.jpg',
         name: 'Sac à dos noir Sfeir avec logo',
       },
       {
-        source: '/images/product/964665/2.jpg',
+        source: '/images/product/500/2.jpg',
         name: 'Sac à dos sur un bureau',
       },
       {
-        source: '/images/product/964665/3.jpg',
+        source: '/images/product/500/3.jpg',
         name: 'Sac à dos porté',
       },
     ],
     video: {
       iframeUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      cover: '/images/product/964665/2.jpg',
+      cover: '/images/product/500/2.jpg',
     },
     reviews: {
       score: 4.8,
@@ -467,21 +467,21 @@ Plongez dans un océan de douceur avec ce doudou bleu axolotl, aussi adorable qu
     ],
     images: [
       {
-        source: '/images/product/964666/1.jpg',
+        source: '/images/product/600/1.jpg',
         name: 'Mug noir Sfeir avec logo',
       },
       {
-        source: '/images/product/964666/2.jpg',
+        source: '/images/product/600/2.jpg',
         name: 'Mug sur une table',
       },
       {
-        source: '/images/product/964666/3.jpg',
+        source: '/images/product/600/3.jpg',
         name: 'Mug Sfeir avec café',
       },
     ],
     video: {
       iframeUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      cover: '/images/product/964666/2.jpg',
+      cover: '/images/product/600/2.jpg',
     },
     reviews: {
       score: 4.9,

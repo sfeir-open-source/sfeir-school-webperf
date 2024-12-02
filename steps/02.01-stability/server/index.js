@@ -31,7 +31,7 @@ fastify.addHook('onRequest', async (request) => {
  * Statics
  */
 fastify.register(fastifyStatic, {
-  root: path.join(__dirname, '../public'),
+  root: [path.join(__dirname, '../public'), path.join(__dirname, '../../shared/public')],
 });
 
 fastify.addHook('onRequest', imageTransformerHook);
