@@ -57,11 +57,16 @@ fastify.get('/', async (_, reply) => {
 
 fastify.get('/product/:id', async (request, reply) => {
   const productId = request.params.id;
-  const [productData, reviewsData] = await Promise.all([
+  const [productData, reviewsData, relatedProductsData] = await Promise.all([
     productDb.findOne(productId), //
     productDb.getReviews(productId),
+    productDb.getRelatedProducts(productId),
   ]);
-  return reply.view('pages/product.njk', { product: productData, userReviews: reviewsData });
+  return reply.view('pages/product.njk', {
+    product: productData,
+    userReviews: reviewsData,
+    relatedProducts: relatedProductsData,
+  });
 });
 
 fastify.get('/partials/product/:id/conversion', async (request, reply) => {
@@ -76,6 +81,11 @@ fastify.get('/partials/product/:id/conversion', async (request, reply) => {
 fastify.get('/partials/product/:id/reviews', async (request, reply) => {
   const reviewsData = await productDb.getReviews(request.params.id);
   return reply.view('partials/reviews.njk', { userReviews: reviewsData });
+});
+
+fastify.get('/partials/product/:id/relatedProduct', async (request, reply) => {
+  const relatedProductsData = await productDb.getRelatedProducts(request.params.id);
+  return reply.view('partials/related-products.njk', { getRelatedProducts: relatedProductsData });
 });
 
 /**
