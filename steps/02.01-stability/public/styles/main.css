@@ -286,7 +286,6 @@ body {
 
 /* Banner ad */
 .header-ad-container {
-  min-height: 85px;
   background-color: var(--color-anthracite);
 }
 
@@ -380,7 +379,6 @@ body {
 
 /* Conversion */
 .conversion-container {
-  min-height: 230px;
   margin-top: var(--spacing-4);
 }
 
