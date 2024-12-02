@@ -19,6 +19,11 @@ export const product = {
     const product = products.find((p) => p.id === id);
     return product?.reviews?.userReviews;
   },
+  getRelatedProducts: async (id) => {
+    await promiseDelay(2300);
+    const product = products.filter((p) => p.id !== id);
+    return product;
+  },
 };
 
 export const merch = {

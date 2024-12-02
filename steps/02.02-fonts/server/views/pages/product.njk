@@ -8,6 +8,7 @@
     <link rel="preload" href="/fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/PixelifySans.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/relatedProducts.css" />
   </head>
   <body>
     {% include "partials/header.njk" %}
@@ -87,6 +88,10 @@
           </div>
         </section>
       {% endif %}
+
+      <section class="floor container container-small" id="related-products">
+        {% include "partials/related-products.njk" %}
+      </section>
 
       <section class="floor container container-small" id="reviews">
         {% include "partials/reviews.njk" %}
