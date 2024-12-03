@@ -386,6 +386,12 @@ body {
 }
 
 .conversion__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conversion__price-amount {
   font-size: 1.5rem;
   font-weight: 700;
 }
