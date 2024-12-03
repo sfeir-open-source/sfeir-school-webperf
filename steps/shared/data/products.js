@@ -19,6 +19,7 @@ Plongez dans un océan de douceur avec ce doudou bleu axolotl, aussi adorable qu
         est facile à emporter partout ou à exposer fièrement sur votre bureau.</li>
 </ul>
     `,
+    sale: true,
     categories: [],
     sizes: [
       {
@@ -174,6 +175,7 @@ Plongez dans un océan de douceur avec ce doudou bleu axolotl, aussi adorable qu
         },
       },
     ],
+    sale: false,
     images: [
       {
         source: '/images/product/300/1.jpg',
@@ -257,6 +259,7 @@ Plongez dans un océan de douceur avec ce doudou bleu axolotl, aussi adorable qu
         <li><strong>Durabilité :</strong> Conçu avec des matériaux de qualité, ce sticker résiste à l’eau et aux rayures pour une utilisation durable.</li>
       </ul>
     `,
+    sale: false,
     categories: ['Décoration', 'Accessoires', 'Stickers'],
     sizes: [
       {
@@ -354,6 +357,7 @@ Plongez dans un océan de douceur avec ce doudou bleu axolotl, aussi adorable qu
         <li><strong>Durabilité :</strong> Fabriqué avec des matériaux résistants, ce sac à dos est conçu pour durer, même dans les conditions les plus exigeantes.</li>
       </ul>
     `,
+    sale: false,
     categories: ['Accessoires', 'Sacs', 'Sacs à Dos'],
     sizes: [
       {
@@ -451,6 +455,7 @@ Plongez dans un océan de douceur avec ce doudou bleu axolotl, aussi adorable qu
         <li><strong>Facile à entretenir :</strong> Passe au lave-vaisselle et au micro-ondes, pour une utilisation pratique et quotidienne.</li>
       </ul>
     `,
+    sale: false,
     categories: ['Accessoires', 'Mugs', 'Mugs Sfeir'],
     sizes: [
       {

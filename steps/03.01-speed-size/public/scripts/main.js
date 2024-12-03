@@ -5,6 +5,7 @@ const initializeApp = () => {
   loadHeaderAdContent();
   initProductImage();
   initImageZoom();
+  initMobileImg();
 };
 
 // --- Product Size Selection ---
@@ -176,6 +177,17 @@ const displayAlert = (text, variant = 'success', duration = 3000) => {
   setTimeout(() => {
     alertElement.classList.remove('open');
   }, duration);
+};
+
+const initMobileImg = () => {
+  const id = getProductIdFromURL();
+  let isMobile = window.innerWidth <= 600;
+  const mainImage = document.getElementById('main-image');
+  if (isMobile) {
+    mainImage.src = `/images/product/${id}/1.jpg?width=500&height=300`;
+  } else {
+    mainImage.src = `/images/product/${id}/1.jpg`;
+  }
 };
 
 // --- Initialize App ---
