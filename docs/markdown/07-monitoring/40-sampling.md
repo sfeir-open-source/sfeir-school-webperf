@@ -18,5 +18,5 @@ Il est primordial de récolter un maximum de contexte pour pouvoir segmenter cor
 
 ##--##
 
-<img src="./assets/images/07-monitoring/ff.png" style="width: 1200px; height: auto; display: block; margin-top: 205px;" />
+<img src="./assets/images/07-monitoring/ff.png" style="width: 1400px; height: auto; display: block; margin-top: 205px;" />
 <!-- .element: class="fragment" data-fragment-index="1"-->

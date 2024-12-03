@@ -44,6 +44,10 @@ Le tree shaking, c'est pas automatique
 
 <!-- .element: class="admonition info" -->
 
+[bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
+
+<img src="./assets/images/03-speed/bundle.gif" style="width: 800px; height: auto; display: block; margin: auto;"  />
+
 </div>
 <!-- .element: class="fragment" data-fragment-index="1"-->
 

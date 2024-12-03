@@ -20,7 +20,7 @@
 
 ## Pourquoi collecter de la donnée utilisateur ?
 
-|            | Local                                                         | Automatisé       | Utilisateur                                                                                                                                         |
+|            | Local                                                         | Automatisé       | Utilisateur (RUM)                                                                                                                                   |
 | ---------- | ------------------------------------------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Rôle       | - Pendant les développements <br/>- Optimisation <br/>- Debug | - Non régression | - Détection d'anomalies en prod <br/>- Prioriser les correctifs / optimisations <br/>- Mesurer les effets des changements <br/>- Faire du reporting |
 | Pertinence | 👍                                                            | 👍👍             | 👍👍👍                                                                                                                                              |
