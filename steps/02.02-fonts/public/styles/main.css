@@ -449,6 +449,27 @@ body {
   border-color: #000;
 }
 
+/* Quantity */
+.quantity {
+  display: flex;
+  align-items: stretch;
+  gap: var(--spacing-2);
+}
+
+.btn-quantity {
+  color: var(--color-anthracite);
+  min-width: 2rem;
+}
+
+.btn-quantity:disabled {
+  color: var(--color-bg-secondary);
+}
+
+.input-quantity {
+  width: 4rem;
+  text-align: center;
+}
+
 /* Product title */
 .product-title {
   font-size: var(--font-size-xl);

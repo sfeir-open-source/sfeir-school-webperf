@@ -311,7 +311,7 @@ body {
 
 /* Banner ad */
 .header-ad-container {
-  min-height: 85px;
+  min-height: 5.3rem;
   background-color: var(--color-anthracite);
 }
 
@@ -335,9 +335,7 @@ body {
   align-items: center;
 }
 
-.header__title a {
-  color: #fff;
-  text-decoration: none;
+.header__title {
 }
 
 .header__nav-list {
@@ -401,13 +399,9 @@ body {
   display: block;
 }
 
-/* Product infos */
-.product-info {
-}
-
 /* Conversion */
 .conversion-container {
-  min-height: 230px;
+  min-height: 14.5rem;
   margin-top: var(--spacing-4);
 }
 
@@ -417,6 +411,12 @@ body {
 }
 
 .conversion__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conversion__price-amount {
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -472,6 +472,27 @@ body {
 
 .sizes__item-radio:not(:disabled):not(:checked) + .sizes__item-button:hover {
   border-color: #000;
+}
+
+/* Quantity */
+.quantity {
+  display: flex;
+  align-items: stretch;
+  gap: var(--spacing-2);
+}
+
+.btn-quantity {
+  color: var(--color-anthracite);
+  min-width: 2rem;
+}
+
+.btn-quantity:disabled {
+  color: var(--color-bg-secondary);
+}
+
+.input-quantity {
+  width: 4rem;
+  text-align: center;
 }
 
 /* Product title */
