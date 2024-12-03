@@ -29,4 +29,3 @@ if (product.sale) {
 ## JavaScript
 
 <img src="./assets/images/03-speed/js-blocking.svg" style="width: 1800px; height: auto;"   />
-```

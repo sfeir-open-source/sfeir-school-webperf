@@ -8,11 +8,13 @@
 
 **1. Images**
 
-- Corriger ...
+- Utiliser des résolutions d'images adaptées
+- Charger uniquement les images nécessaires
 
 **2. Ressouces**
 
-- Optimiser ...
+- Nettoyer le code
+- Optimiser les ressources
 
 <br/> <br/>
 

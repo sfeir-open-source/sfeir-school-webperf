@@ -4,6 +4,13 @@
 
 ## Lab
 
+<small>
+
+- Ordonnancement
+- Defer / async
+- Mieux gérer l'image principale
+- Charger de manière asynchrone les reviews
+
 <br/> <br/>
 
 **Running the lab**<br/>
