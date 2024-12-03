@@ -20,8 +20,8 @@
 ```html
 <head>
   <link rel="stylesheet" href="/critical.css" />
-  <link rel="stylesheet" href="/footer.css" />
   <script type="application/javascript" src="/critical.js"></script>
+  <link rel="stylesheet" href="/footer.css" />
   <script type="application/javascript" src="/footer.js"></script>
 </head>
 ```

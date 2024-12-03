@@ -207,6 +207,7 @@ function observabilitySlides() {
 function conclusionSlides() {
   return [
     '08-conclusion/01-title.md', //
+    '08-conclusion/02-qr-code.md',
   ];
 }
 

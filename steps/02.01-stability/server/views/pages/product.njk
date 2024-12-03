@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles/relatedProducts.css" />
     <link rel="stylesheet" href="/styles/footer.css" />
     <script src="/scripts/tracking.js"></script>
+    <link rel="stylesheet" href="/styles/main.css" />
   </head>
   <body>
     {% include "partials/header.njk" %}
@@ -21,8 +22,6 @@
               {% if loop.index0 === 0 %} aria-current="true" {% endif %}
               >
               <img
-                width="100"
-                height="100"
                 src="{{ image.source }}"
                 alt="{{ image.name }}"
               />
@@ -30,8 +29,6 @@
             {% endfor %}
           </div>
           <img
-            width="1000"
-            height="1000"
             class="product-main-image"
             id="main-image"
             src="{{ product.images[0].source }}"
@@ -109,6 +106,5 @@
     </div>
 
     <script src="/scripts/main.js"></script>
-    <link rel="stylesheet" href="/styles/main.css" />
   </body>
 </html>

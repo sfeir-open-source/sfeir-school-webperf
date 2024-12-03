@@ -373,10 +373,6 @@ body {
   display: block;
 }
 
-/* Product infos */
-.product-info {
-}
-
 /* Conversion */
 .conversion-container {
   margin-top: var(--spacing-4);

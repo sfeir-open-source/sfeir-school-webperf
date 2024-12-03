@@ -26,6 +26,7 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  aspect-ratio: 1/1;
   border-bottom: 2px solid #eee;
 }
 
