@@ -384,6 +384,12 @@ body {
 }
 
 .conversion__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conversion__price-amount {
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -439,6 +445,27 @@ body {
 
 .sizes__item-radio:not(:disabled):not(:checked) + .sizes__item-button:hover {
   border-color: #000;
+}
+
+/* Quantity */
+.quantity {
+  display: flex;
+  align-items: stretch;
+  gap: var(--spacing-2);
+}
+
+.btn-quantity {
+  color: var(--color-anthracite);
+  min-width: 2rem;
+}
+
+.btn-quantity:disabled {
+  color: var(--color-bg-secondary);
+}
+
+.input-quantity {
+  width: 4rem;
+  text-align: center;
 }
 
 /* Product title */
