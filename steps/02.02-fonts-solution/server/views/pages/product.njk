@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SFEIR Shop</title>
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="preload" href="/fonts/PixelifySans.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="/fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="/fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" />
     <link rel="stylesheet" href="/styles/relatedProducts.css" />
     <link rel="stylesheet" href="/styles/footer.css" />
     <script src="/scripts/tracking.js"></script>
+    <link rel="stylesheet" href="/styles/main.css" />
   </head>
   <body>
     {% include "partials/header.njk" %}
@@ -31,13 +35,13 @@
             {% endfor %}
           </div>
           <img
-            width="1000"
-            height="1000"
             class="product-main-image"
             id="main-image"
             src="{{ product.images[0].source }}"
             alt="{{ product.images[0].name }}"
             role="button"
+            width="500"
+            height="500"
           />
         </div>
         <div class="product-info">

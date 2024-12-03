@@ -6,13 +6,9 @@
 
 <small>
 
-**1. Webfont loading**
-
-- TODO
-
-**2. Reserve space**
-
-- TODO
+- Afficher le texte de contenu des que possible
+- Pour les titres attendre la font pour l'afficher
+- Eviter de charger trop de variants
 
 <br/> <br/>
 

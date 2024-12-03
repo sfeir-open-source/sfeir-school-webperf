@@ -23,7 +23,10 @@ fastify.addHook('onRequest', async (request) => {
 
   // Add a special delay to fonts to better visualize the layouts shifts
   if (request.url.startsWith('/fonts')) {
-    await promiseDelay(3000);
+    await promiseDelay(1000);
+  }
+  if (request.url.startsWith('/images')) {
+    await promiseDelay(1000);
   }
 });
 
