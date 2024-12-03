@@ -5,10 +5,11 @@
     <div class="review__header">
       <img
         class="review__avatar"
-        fetchpriority="high"
-        src="{{ review.author.avatar }}"
+        loading="lazy"
+        src="{{ review.author.avatar }}?width=50"
         alt="{{ review.author.name }}"
-        width="500"
+        width="100"
+        height="100"
       />
       <div class="review__author">
         <span class="review__author-name">{{ review.author.name }}</span>

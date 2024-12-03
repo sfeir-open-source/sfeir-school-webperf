@@ -18,16 +18,8 @@ const __dirname = path.dirname(__filename);
 const fastify = Fastify(getFastifyConfiguration());
 
 // Add default delay to simulate real server latency
-fastify.addHook('onRequest', async (request) => {
+fastify.addHook('onRequest', async () => {
   await promiseDelay(300);
-
-  // Add a special delay to fonts to better visualize the layouts shifts
-  if (request.url.startsWith('/fonts')) {
-    await promiseDelay(1000);
-  }
-  if (request.url.startsWith('/images')) {
-    await promiseDelay(1000);
-  }
 });
 
 /**
