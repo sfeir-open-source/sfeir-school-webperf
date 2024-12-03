@@ -25,6 +25,9 @@ fastify.addHook('onRequest', async (request) => {
   if (request.url.startsWith('/fonts')) {
     await promiseDelay(1000);
   }
+  if (request.url.startsWith('/images')) {
+    await promiseDelay(1000);
+  }
 });
 
 /**

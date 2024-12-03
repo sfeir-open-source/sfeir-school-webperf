@@ -6,13 +6,14 @@
 
 <small>
 
-**1. Webfont loading**
+**1. Images**
 
-- TODO
+- Corriger les images produit
+- Corriger les images des recommandations produit
 
-**2. Reserve space**
+**2. Contenu asynchrone**
 
-- TODO
+- Optimiser les contenus asynchrones
 
 <br/> <br/>
 
