@@ -24,4 +24,12 @@
     {{ review.text }}
   </div>
   {%endfor %}
+
+  <form>
+    <textarea id="review-content-textarea">
+    </textarea>
+    <span>Mots<span id="words-count">0</span></span>
+
+    <button type="submit">Envoyer</button>
+  </form>
 </div>

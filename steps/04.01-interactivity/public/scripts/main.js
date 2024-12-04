@@ -10,6 +10,7 @@ const initializeApp = () => {
   initProducThumbnails();
   initMainImage();
   initImageZoom();
+  initReviewForm();
 };
 
 // --- Product Size Selection ---
@@ -217,6 +218,27 @@ const initMainImage = () => {
   container?.addEventListener('mousemove', handleZoom);
   container?.addEventListener('mouseover', handleZoom);
   container?.addEventListener('mouseleave', handleLeave);
+};
+
+const debounce = (callback, wait) => {
+  let timeoutId = null;
+  return (...args) => {
+    window.clearTimeout(timeoutId);
+    timeoutId = window.setTimeout(() => {
+      callback(...args);
+    }, wait);
+  };
+};
+
+const initReviewForm = () => {
+  const textareaElement = document.getElementById('review-content-textarea');
+  const wordCountElement = document.getElementById('words-count');
+  textareaElement?.addEventListener('keyup', (event) => {
+    const content = event.target.value;
+    const words = content.trim().split(/\s+/);
+    wordCountElement.innerText = content.trim() === '' ? 0 : words.length;
+    window.sendTrackingEvent('reviews_type', event.target.value);
+  });
 };
 
 // --- Initialize App ---
