@@ -47,7 +47,7 @@ const initProductSize = () => {
 const loadConversionContent = async () => {
   performance.mark('conversion_start');
 
-  longBlockingTask(100);
+  longBlockingTask(55);
   const productId = getProductIdFromURL();
   const conversionWrapper = document.getElementById('conversion');
   if (!conversionWrapper) return;
@@ -81,7 +81,7 @@ const loadReviewsContent = async () => {
 
 // --- Header Advertisement ---
 const loadHeaderAdContent = async () => {
-  longBlockingTask(200);
+  longBlockingTask(125);
   const adWrapper = document.getElementById('header-ad');
   if (!adWrapper) return;
 
@@ -131,7 +131,7 @@ const handleThumbnailClick = (event) => {
 };
 
 const initProducThumbnails = () => {
-  longBlockingTask(150);
+  longBlockingTask(110);
   const thumbnails = document.querySelectorAll('button.product-thumbnail');
   thumbnails.forEach((thumbnail) => thumbnail.addEventListener('click', handleThumbnailClick));
 };
@@ -170,7 +170,7 @@ const handleOverlayClick = (event) => {
 };
 
 const initImageZoom = () => {
-  longBlockingTask(400);
+  longBlockingTask(120);
   const mainImage = document.getElementById('main-image');
   const overlay = document.getElementById('image-zoom');
   const closeButton = document.getElementById('btn-image-zoom-close');
@@ -277,7 +277,7 @@ const handleReviewUpdate = (event) => {
 };
 
 const initReviewForm = () => {
-  longBlockingTask(150);
+  longBlockingTask(120);
   const textareaElement = document.getElementById('review-content-textarea');
   textareaElement?.addEventListener('keyup', handleReviewUpdate);
 };

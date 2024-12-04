@@ -20,6 +20,7 @@ const initializeApp = async () => {
   await yieldToMain();
   initImageZoom();
   await yieldToMain();
+  initPerformanceObserver();
 };
 
 // Simulate some heavy operations
@@ -44,7 +45,9 @@ const initProductSize = () => {
 
 // --- Conversion Content ---
 const loadConversionContent = async () => {
-  longBlockingTask(100);
+  performance.mark('conversion_start');
+
+  longBlockingTask(55);
   const productId = getProductIdFromURL();
   const conversionWrapper = document.getElementById('conversion');
   if (!conversionWrapper) return;
@@ -57,6 +60,8 @@ const loadConversionContent = async () => {
   } catch (error) {
     console.error('Error loading conversion content:', error);
   }
+  performance.mark('conversion_end');
+  performance.measure('conversion', 'conversion_start', 'conversion_end');
 };
 
 // --- Reviews Content ---
@@ -76,7 +81,7 @@ const loadReviewsContent = async () => {
 
 // --- Header Advertisement ---
 const loadHeaderAdContent = async () => {
-  longBlockingTask(200);
+  longBlockingTask(125);
   const adWrapper = document.getElementById('header-ad');
   if (!adWrapper) return;
 
@@ -126,7 +131,7 @@ const handleThumbnailClick = (event) => {
 };
 
 const initProducThumbnails = () => {
-  longBlockingTask(150);
+  longBlockingTask(110);
   const thumbnails = document.querySelectorAll('button.product-thumbnail');
   thumbnails.forEach((thumbnail) => thumbnail.addEventListener('click', handleThumbnailClick));
 };
@@ -165,7 +170,7 @@ const handleOverlayClick = (event) => {
 };
 
 const initImageZoom = () => {
-  longBlockingTask(400);
+  longBlockingTask(120);
   const mainImage = document.getElementById('main-image');
   const overlay = document.getElementById('image-zoom');
   const closeButton = document.getElementById('btn-image-zoom-close');
@@ -272,9 +277,45 @@ const handleReviewUpdate = (event) => {
 };
 
 const initReviewForm = () => {
-  longBlockingTask(150);
+  longBlockingTask(120);
   const textareaElement = document.getElementById('review-content-textarea');
   textareaElement?.addEventListener('keyup', handleReviewUpdate);
+};
+
+// --- Performance Observer ---
+const initPerformanceObserver = () => {
+  const observer = new PerformanceObserver((list) => {
+    list.getEntries().forEach((entry) => {
+      if (entry.entryType === 'measure' && entry.name === 'conversion') {
+        console.log('loading conversion zone (ms):', entry.duration + entry.startTime);
+      }
+      if (entry.entryType === 'element') {
+        console.log(`loading "${entry.identifier} "(ms):`, entry.startTime);
+      }
+    });
+  });
+
+  observer.observe({ entryTypes: ['measure', 'mark', 'element'] });
+
+  let cacheHits = 0;
+  let resourcesCount = 0;
+  let totalSize = 0;
+  const resourceObserver = new PerformanceObserver((list) => {
+    list.getEntries().forEach((entry) => {
+      resourcesCount++;
+      if (entry.transferSize === 0) {
+        cacheHits++;
+      }
+      totalSize += entry.transferSize;
+    });
+  });
+
+  resourceObserver.observe({ type: 'resource', buffered: true });
+
+  window.onbeforeunload = () => {
+    console.log('Total transfer', (totalSize / 1000).toFixed(2) + 'ko');
+    console.log('Hit ratio :', ((cacheHits / resourcesCount) * 100).toFixed(2) + '%');
+  };
 };
 
 // --- Initialize App ---
