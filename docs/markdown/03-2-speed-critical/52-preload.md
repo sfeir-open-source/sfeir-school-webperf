@@ -28,7 +28,10 @@
 - js et css critiques
 
 ```html
-<link rel="preload" href="critical.css" as="style" /> <link rel="preload" href="script.js" as="script" />
+<link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="styles.css" /></noscript>
+
+<link rel="preload" href="script.js" as="script" />
 ```
 
 </div>
