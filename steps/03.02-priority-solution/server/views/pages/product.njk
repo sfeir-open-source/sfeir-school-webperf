@@ -86,22 +86,14 @@
         </div>
       </section>
 
-      {% if product.video %}
-        <section class="floor videosection ">
-          <h2 class="videosection__title title-bg">EN VIDEO</h2>
-          <div class="video-container">
-            <div class="video-cover" onclick="playVideo()">
-              <img loading="lazy" src="{{product.video.cover}}?width=800" alt="Plant in a pot on a windowsill" class="cover-image">
-              <span class="play-button">▶</span>
-            </div>
-            <!--
-            <iframe id="rickroll-video" src="{{product.video.iframeUrl}}" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media"
-              allowfullscreen style="display: none;">
-            </iframe>
-            -->
-          </div>
-        </section>
-      {% endif %}
+      <section class="floor herosection ">
+        <h2 class="herosection__title title-bg">EN IMAGES</h2>
+        <picture class="hero-container" >
+          <source srcset="{{product.images[1].source}}?height=300&width=600" media="(min-width: 600px)">
+          <source srcset="{{product.images[1].source}}">
+          <img src="{{product.images[1].source}}" alt="" loading="lazy">
+        </picture>
+      </section>
 
       <section class="floor container container-small" id="related-products">
         {% include "partials/related-products.njk" %}
