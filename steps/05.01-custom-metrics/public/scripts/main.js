@@ -20,7 +20,6 @@ const initializeApp = async () => {
   await yieldToMain();
   initImageZoom();
   await yieldToMain();
-  initPerformanceObserver();
 };
 
 // Simulate some heavy operations
@@ -45,8 +44,6 @@ const initProductSize = () => {
 
 // --- Conversion Content ---
 const loadConversionContent = async () => {
-  performance.mark('conversion_start');
-
   longBlockingTask(55);
   const productId = getProductIdFromURL();
   const conversionWrapper = document.getElementById('conversion');
@@ -60,8 +57,6 @@ const loadConversionContent = async () => {
   } catch (error) {
     console.error('Error loading conversion content:', error);
   }
-  performance.mark('conversion_end');
-  performance.measure('conversion', 'conversion_start', 'conversion_end');
 };
 
 // --- Reviews Content ---
@@ -280,42 +275,6 @@ const initReviewForm = () => {
   longBlockingTask(120);
   const textareaElement = document.getElementById('review-content-textarea');
   textareaElement?.addEventListener('keyup', handleReviewUpdate);
-};
-
-// --- Performance Observer ---
-const initPerformanceObserver = () => {
-  const observer = new PerformanceObserver((list) => {
-    list.getEntries().forEach((entry) => {
-      if (entry.entryType === 'measure' && entry.name === 'conversion') {
-        console.log('loading conversion zone (ms):', entry.duration + entry.startTime);
-      }
-      if (entry.entryType === 'element') {
-        console.log(`loading "${entry.identifier} "(ms):`, entry.startTime);
-      }
-    });
-  });
-
-  observer.observe({ entryTypes: ['measure', 'mark', 'element'] });
-
-  let cacheHits = 0;
-  let resourcesCount = 0;
-  let totalSize = 0;
-  const resourceObserver = new PerformanceObserver((list) => {
-    list.getEntries().forEach((entry) => {
-      resourcesCount++;
-      if (entry.transferSize === 0) {
-        cacheHits++;
-      }
-      totalSize += entry.transferSize;
-    });
-  });
-
-  resourceObserver.observe({ type: 'resource', buffered: true });
-
-  window.onbeforeunload = () => {
-    console.log('Total transfer', (totalSize / 1000).toFixed(2) + 'ko');
-    console.log('Hit ratio :', ((cacheHits / resourcesCount) * 100).toFixed(2) + '%');
-  };
 };
 
 // --- Initialize App ---
