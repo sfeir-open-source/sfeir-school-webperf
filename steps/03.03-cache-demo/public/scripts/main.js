@@ -2,6 +2,7 @@
 const initializeApp = () => {
   // Load async contents
   loadConversionContent();
+  loadReviewsContent();
   loadHeaderAdContent();
 
   // Init event listeners & interactions
@@ -36,6 +37,20 @@ const loadConversionContent = async () => {
     initAddtoCart();
   } catch (error) {
     console.error('Error loading conversion content:', error);
+  }
+};
+
+// --- Reviews Content ---
+const loadReviewsContent = async () => {
+  const productId = getProductIdFromURL();
+  const reviewsWrapper = document.getElementById('reviews');
+  if (!reviewsWrapper) return;
+
+  try {
+    const reviewsHTML = await fetch(`/partials/product/${productId}/reviews`).then((res) => res.text());
+    reviewsWrapper.innerHTML = reviewsHTML;
+  } catch (error) {
+    console.error('Error loading reviews content:', error);
   }
 };
 
