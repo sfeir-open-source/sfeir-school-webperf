@@ -196,18 +196,8 @@ const displayAlert = (text, variant = 'success', duration = 3000) => {
 
 // --- Main image zoom on hover ---
 const initMainImage = () => {
-  const productId = getProductIdFromURL();
   const container = document.getElementById('main-image-container');
-
-  const image = document.createElement('img');
-  image.className = 'product-main-image';
-  image.id = 'main-image';
-  image.width = 500;
-  image.height = 500;
-  image.src = `/images/product/${productId}/1.jpg?quality=100&width=500`;
-  image.srcset = `/images/product/${productId}/1.jpg?quality=100&width=500, /images/product/${productId}/1.jpg?quality=100&width=1000 2x`;
-
-  container?.appendChild(image);
+  const image = document.getElementById('main-image');
 
   const handleZoom = (event) => {
     const x = event.clientX - event.target.offsetLeft;

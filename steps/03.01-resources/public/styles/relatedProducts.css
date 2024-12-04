@@ -1,8 +1,7 @@
 .related-products {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
-  padding: 0 15px;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
 }
 
 .related-product__link {
@@ -38,7 +37,7 @@
 }
 
 .related-product__name {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #333;
   margin-bottom: 8px;
@@ -48,7 +47,7 @@
 }
 
 .related-product__price {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #e76f51;
   margin-top: auto;
