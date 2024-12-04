@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SFEIR Shop</title>
-    <link rel="preload" href="/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/PixelifySans.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/styles/main-{{ buildId }}.css" />
+    <link rel="preload" href="/fonts/PixelifySans.woff2?v={{ buildId }}" as="font" type="font/woff2" crossorigin/>
+    <link rel="preload" href="/fonts/Montserrat-Regular.woff2?v={{ buildId }}" as="font" type="font/woff2" crossorigin/>
+    <link rel="preload" href="/fonts/Montserrat-Bold.woff2?v={{ buildId }}" as="font" type="font/woff2" crossorigin/>
+    <link rel="preload" href="/fonts/Montserrat-SemiBold.woff2?v={{ buildId }}" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/styles/relatedProducts.css?v={{ buildId }}" />
+    <link rel="stylesheet" href="/styles/footer.css?v={{ buildId }}" />
+    <script src="/scripts/tracking.js?v={{ buildId }}"></script>
+    <script src="/scripts/product.js?v={{ buildId }}"></script>
+    <link rel="stylesheet" href="/styles/main.css?v={{ buildId }}" />
   </head>
   <body>
     {% include "partials/header.njk" %}
@@ -24,21 +29,13 @@
               <img
                 width="100"
                 height="100"
-                src="{{ image.source }}"
+                src="{{ image.source }}?width=120"
                 alt="{{ image.name }}"
               />
             </button>
             {% endfor %}
           </div>
-          <img
-            width="1000"
-            height="1000"
-            class="product-main-image"
-            id="main-image"
-            src="{{ product.images[0].source }}"
-            alt="{{ product.images[0].name }}"
-            role="button"
-          />
+          <div id="main-image-container" class="product-main-image__container"></div>
         </div>
         <div class="product-info">
           <h1 class="product-title">{{ product.name }}</h1>
@@ -48,7 +45,7 @@
               <span class="product-preview-review-star">★</span>
               {% endfor %}
             </span>
-            <span class="product-preview-review-count">
+            <span class="product-preview-review-count fw-bold">
               ({{ product.reviews.score }} avis)
             </span>
             <a href="#reviews" class="btn btn-secondary btn-small">Voir tous les avis</a>
@@ -76,7 +73,7 @@
           <h2 class="videosection__title title-bg">EN VIDEO</h2>
           <div class="video-container">
             <div class="video-cover" onclick="playVideo()">
-              <img src="{{product.video.cover}}" alt="Plant in a pot on a windowsill" class="cover-image">
+              <img loading="lazy" src="{{product.video.cover}}?width=800" alt="Plant in a pot on a windowsill" class="cover-image">
               <span class="play-button">▶</span>
             </div>
             <!--
@@ -87,6 +84,10 @@
           </div>
         </section>
       {% endif %}
+
+      <section class="floor container container-small" id="related-products">
+        {% include "partials/related-products.njk" %}
+      </section>
 
       <section class="floor container container-small" id="reviews">
         {% include "partials/reviews.njk" %}
@@ -105,9 +106,6 @@
       </div>
     </div>
 
-    <script src="/scripts/tracking-{{ buildId }}.js"></script>
-    <script src="/scripts/main-{{ buildId }}.js"></script>
+    <script src="/scripts/main.js?v={{ buildId }}"></script>
   </body>
-
-  <link rel="stylesheet" href="/styles/footer-{{ buildId }}.css" />
 </html>
