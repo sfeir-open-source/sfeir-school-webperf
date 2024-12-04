@@ -6,18 +6,22 @@ const initializeApp = () => {
   loadHeaderAdContent();
 
   // Init event listeners & interactions
-  initProductSize();
   initProducThumbnails();
   initMainImage();
   initImageZoom();
+  initReviewForm();
+};
+
+// Simulate some heavy operations
+const longBlockingTask = (delay) => {
+  const start = performance.now();
+  while (performance.now() - start < delay) {}
 };
 
 // --- Product Size Selection ---
 const handleSizeChange = () => {
   const addToCartButton = document.getElementById('btn-add-to-cart');
-  if (addToCartButton) {
-    addToCartButton.disabled = false;
-  }
+  if (addToCartButton) addToCartButton.disabled = false;
   setTimeout(() => {
     window.sendTrackingEvent('product_size_change');
   }, 0);
@@ -30,6 +34,7 @@ const initProductSize = () => {
 
 // --- Conversion Content ---
 const loadConversionContent = async () => {
+  longBlockingTask(100);
   const productId = getProductIdFromURL();
   const conversionWrapper = document.getElementById('conversion');
   if (!conversionWrapper) return;
@@ -60,6 +65,7 @@ const loadReviewsContent = async () => {
 
 // --- Header Advertisement ---
 const loadHeaderAdContent = async () => {
+  longBlockingTask(200);
   const adWrapper = document.getElementById('header-ad');
   if (!adWrapper) return;
 
@@ -109,6 +115,7 @@ const handleThumbnailClick = (event) => {
 };
 
 const initProducThumbnails = () => {
+  longBlockingTask(150);
   const thumbnails = document.querySelectorAll('button.product-thumbnail');
   thumbnails.forEach((thumbnail) => thumbnail.addEventListener('click', handleThumbnailClick));
 };
@@ -127,7 +134,6 @@ const openImageZoom = (event) => {
       height: zoomImage.offsetHeight,
       width: zoomImage.offsetWidth,
     };
-
     setTimeout(() => {
       window.sendTrackingEvent('image_zoom_open', { imageDimensions });
     }, 0);
@@ -148,6 +154,7 @@ const handleOverlayClick = (event) => {
 };
 
 const initImageZoom = () => {
+  longBlockingTask(400);
   const mainImage = document.getElementById('main-image');
   const overlay = document.getElementById('image-zoom');
   const closeButton = document.getElementById('btn-image-zoom-close');
@@ -229,6 +236,20 @@ const initMainImage = () => {
   container?.addEventListener('mousemove', handleZoom);
   container?.addEventListener('mouseover', handleZoom);
   container?.addEventListener('mouseleave', handleLeave);
+};
+
+const handleReviewUpdate = (event) => {
+  const wordCountElement = document.getElementById('words-count');
+  const content = event.target.value;
+  const words = content.trim().split(/\s+/);
+  wordCountElement.innerText = content.trim() === '' ? 0 : words.length;
+  window.sendTrackingEvent('review_comment_type');
+};
+
+const initReviewForm = () => {
+  longBlockingTask(150);
+  const textareaElement = document.getElementById('review-content-textarea');
+  textareaElement?.addEventListener('keyup', handleReviewUpdate);
 };
 
 // --- Initialize App ---
