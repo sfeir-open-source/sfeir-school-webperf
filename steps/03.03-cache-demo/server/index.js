@@ -63,11 +63,11 @@ fastify.addHook('onSend', (request, reply, payload, done) => {
       reply.header('Cache-Control', 'public, max-age=300');
       return done(null, payload);
     }
-
-    // The rest
-    reply.header('Cache-Control', 'private, no-cache');
-    return done(null, payload);
   }
+
+  // The rest
+  reply.header('Cache-Control', 'private, no-cache');
+  return done(null, payload);
 });
 
 /**
