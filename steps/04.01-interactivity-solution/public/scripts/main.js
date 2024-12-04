@@ -1,15 +1,25 @@
+const yieldToMain = () => {
+  return new Promise((resolve) => {
+    setTimeout(resolve, 0);
+  });
+};
+
 // --- Initialization Functions ---
-const initializeApp = () => {
+const initializeApp = async () => {
   // Load async contents
   loadConversionContent();
+  await yieldToMain();
   loadReviewsContent();
   loadHeaderAdContent();
+  await yieldToMain();
 
   // Init event listeners & interactions
   initProducThumbnails();
+  await yieldToMain();
   initMainImage();
+  await yieldToMain();
   initImageZoom();
-  initReviewForm();
+  await yieldToMain();
 };
 
 // Simulate some heavy operations
@@ -58,6 +68,7 @@ const loadReviewsContent = async () => {
   try {
     const reviewsHTML = await fetch(`/partials/product/${productId}/reviews`).then((res) => res.text());
     reviewsWrapper.innerHTML = reviewsHTML;
+    initReviewForm();
   } catch (error) {
     console.error('Error loading reviews content:', error);
   }
@@ -238,12 +249,26 @@ const initMainImage = () => {
   container?.addEventListener('mouseleave', handleLeave);
 };
 
+const debounce = (callback, delay) => {
+  let timer;
+  return function (...args) {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      callback(...args);
+    }, delay);
+  };
+};
+
+const trackInputReview = debounce((content) => {
+  window.sendTrackingEvent('review_comment_type', content);
+}, 1000);
+
 const handleReviewUpdate = (event) => {
   const wordCountElement = document.getElementById('words-count');
   const content = event.target.value;
   const words = content.trim().split(/\s+/);
   wordCountElement.innerText = content.trim() === '' ? 0 : words.length;
-  window.sendTrackingEvent('review_comment_type');
+  trackInputReview(content);
 };
 
 const initReviewForm = () => {

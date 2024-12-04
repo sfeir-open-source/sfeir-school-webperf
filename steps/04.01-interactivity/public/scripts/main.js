@@ -9,7 +9,6 @@ const initializeApp = () => {
   initProducThumbnails();
   initMainImage();
   initImageZoom();
-  initReviewForm();
 };
 
 // Simulate some heavy operations
@@ -56,6 +55,7 @@ const loadReviewsContent = async () => {
   try {
     const reviewsHTML = await fetch(`/partials/product/${productId}/reviews`).then((res) => res.text());
     reviewsWrapper.innerHTML = reviewsHTML;
+    initReviewForm();
   } catch (error) {
     console.error('Error loading reviews content:', error);
   }
