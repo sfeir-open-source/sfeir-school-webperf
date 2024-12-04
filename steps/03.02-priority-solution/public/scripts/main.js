@@ -6,10 +6,15 @@ const initializeApp = () => {
   loadHeaderAdContent();
 
   // Init event listeners & interactions
-  initProductSize();
   initProducThumbnails();
   initMainImage();
   initImageZoom();
+};
+
+// Simulate some heavy operations
+const longBlockingTask = (delay) => {
+  const start = performance.now();
+  while (performance.now() - start < delay) {}
 };
 
 // --- Product Size Selection ---
@@ -26,6 +31,7 @@ const initProductSize = () => {
 
 // --- Conversion Content ---
 const loadConversionContent = async () => {
+  longBlockingTask(100);
   const productId = getProductIdFromURL();
   const conversionWrapper = document.getElementById('conversion');
   if (!conversionWrapper) return;
@@ -49,6 +55,7 @@ const loadReviewsContent = async () => {
   try {
     const reviewsHTML = await fetch(`/partials/product/${productId}/reviews`).then((res) => res.text());
     reviewsWrapper.innerHTML = reviewsHTML;
+    initReviewForm();
   } catch (error) {
     console.error('Error loading reviews content:', error);
   }
@@ -56,6 +63,7 @@ const loadReviewsContent = async () => {
 
 // --- Header Advertisement ---
 const loadHeaderAdContent = async () => {
+  longBlockingTask(200);
   const adWrapper = document.getElementById('header-ad');
   if (!adWrapper) return;
 
@@ -103,6 +111,7 @@ const handleThumbnailClick = (event) => {
 };
 
 const initProducThumbnails = () => {
+  longBlockingTask(150);
   const thumbnails = document.querySelectorAll('button.product-thumbnail');
   thumbnails.forEach((thumbnail) => thumbnail.addEventListener('click', handleThumbnailClick));
 };
@@ -139,6 +148,7 @@ const handleOverlayClick = (event) => {
 };
 
 const initImageZoom = () => {
+  longBlockingTask(400);
   const mainImage = document.getElementById('main-image');
   const overlay = document.getElementById('image-zoom');
   const closeButton = document.getElementById('btn-image-zoom-close');
@@ -217,6 +227,20 @@ const initMainImage = () => {
   container?.addEventListener('mousemove', handleZoom);
   container?.addEventListener('mouseover', handleZoom);
   container?.addEventListener('mouseleave', handleLeave);
+};
+
+const handleReviewUpdate = (event) => {
+  const wordCountElement = document.getElementById('words-count');
+  const content = event.target.value;
+  const words = content.trim().split(/\s+/);
+  wordCountElement.innerText = content.trim() === '' ? 0 : words.length;
+  window.sendTrackingEvent('review_comment_type');
+};
+
+const initReviewForm = () => {
+  longBlockingTask(150);
+  const textareaElement = document.getElementById('review-content-textarea');
+  textareaElement?.addEventListener('keyup', handleReviewUpdate);
 };
 
 // --- Initialize App ---

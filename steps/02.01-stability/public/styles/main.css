@@ -643,6 +643,32 @@ body {
   font-size: var(--font-size-xs);
 }
 
+.review-form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: var(--color-bg-secondary);
+  margin-top: 1rem;
+}
+
+.review-form__label {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.review-form__input {
+  width: 100%;
+  min-height: 100px;
+  font-family: var(--font-sans);
+  padding: 1rem;
+}
+
+.review-form__wordcount {
+  display: block;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
 /* Image zoom */
 
 .image-zoom {
