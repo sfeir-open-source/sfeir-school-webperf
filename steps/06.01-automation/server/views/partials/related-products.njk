@@ -1,0 +1,21 @@
+ <h2 class="title-bg">Produits similaires</h2>
+<div class="related-products">
+  {% for product in relatedProducts %}
+  <div class="related-product">
+    <a href="/product/{{ product.id }}" class="related-product__link">
+      <img
+        class="related-product__image"
+        loading="lazy"
+        srcset="{{ product.images[0].source }}?width=400&quality=80, {{ product.images[0].source }}?width=800&quality=80 2x"
+        src="{{ product.images[0].source }}?width=400&quality=80"
+        alt="{{ product.images[0].name }}"
+        width="235"
+      />
+      <div class="related-product__infos">
+        <span class="related-product__name">{{ product.name }}</span>
+        <span class="related-product__price">{{ product.sizes[0].price.amount }}€</span>
+      </div>
+    </a>
+  </div>
+  {%endfor %}
+</div>
