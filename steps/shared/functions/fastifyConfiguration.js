@@ -3,6 +3,7 @@ import path from 'path';
 import fs from 'fs';
 
 import Logger from 'pino';
+import configuration from './../configuration.js';
 
 export const getFastifyConfiguration = () => {
   /**
@@ -22,7 +23,7 @@ export const getFastifyConfiguration = () => {
   /**
    * SSL / HTTP2
    */
-  if (process.env.ENABLE_SSL === 'true') {
+  if (configuration.enableSSL) {
     try {
       const key = fs.readFileSync(path.join(certificatesPath, 'localhost.key'));
       const cert = fs.readFileSync(path.join(certificatesPath, 'localhost.crt'));
@@ -30,13 +31,13 @@ export const getFastifyConfiguration = () => {
         key,
         cert,
       };
-      fastifyConfiguration.http2 = process.env.ENABLE_HTTP2 === 'true';
+      fastifyConfiguration.http2 = configuration.enableHttp2;
     } catch (err) {
       logger.warn('Impossible to configure SSL, will fallback on default HTTP');
     }
   }
 
-  if (process.env.ENABLE_HTTP2 === 'true' && process.env.ENABLE_SSL !== 'true') {
+  if (configuration.enableHttp2 && !configuration.enableSSL) {
     logger.warn('HTTP/2 needs SSL to be activated, will fallback on HTTP/1.1');
   }
 
