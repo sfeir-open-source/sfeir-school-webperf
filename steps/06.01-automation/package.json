@@ -24,6 +24,7 @@
     "shared": "1.0.0"
   },
   "devDependencies": {
+    "@lhci/cli": "^0.14.0",
     "nodemon": "^3.1.7"
   }
 }

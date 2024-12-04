@@ -1,7 +1,7 @@
 {
   "ci": {
     "collect": {
-      "url": ["http://localhost:3000"],
+      "url": ["http://localhost:3000/product/200"],
       "startServerCommand": "npm run dev -w 06.01",
       "numberOfRuns": 3,
       "settings": {
