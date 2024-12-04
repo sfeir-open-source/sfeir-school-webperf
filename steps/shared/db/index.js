@@ -20,7 +20,7 @@ export const product = {
     return product?.reviews?.userReviews;
   },
   getRelatedProducts: async (id) => {
-    await promiseDelay(2300);
+    await promiseDelay(500);
     const product = products.filter((p) => p.id !== id);
     return product;
   },
