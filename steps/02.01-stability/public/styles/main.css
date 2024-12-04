@@ -341,9 +341,13 @@ body {
   gap: var(--spacing-4);
 }
 
+.product-main-image__container {
+  order: 0;
+  overflow: hidden;
+}
+
 .product-main-image {
   display: block;
-  order: 0;
   width: 100%;
   height: auto;
   cursor: zoom-in;
@@ -369,7 +373,7 @@ body {
 
 .product-thumbnail > img {
   width: 4rem;
-  height: 4rem;
+  height: auto;
   display: block;
 }
 
@@ -715,7 +719,7 @@ body {
   .product-images {
     grid-template-columns: auto 1fr;
   }
-  .product-main-image {
+  .product-main-image__container {
     order: 2;
   }
   .product-thumbnails {

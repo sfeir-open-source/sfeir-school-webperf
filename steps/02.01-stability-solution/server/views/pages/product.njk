@@ -31,15 +31,7 @@
             </button>
             {% endfor %}
           </div>
-          <img
-            class="product-main-image"
-            id="main-image"
-            src=""
-            alt="{{ product.images[0].name }}"
-            role="button"
-            width="500"
-            height="500"
-          />
+          <div id="main-image-container" class="product-main-image__container"></div>
         </div>
         <div class="product-info">
           <h1 class="product-title">{{ product.name }}</h1>

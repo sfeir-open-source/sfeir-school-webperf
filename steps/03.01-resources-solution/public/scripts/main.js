@@ -1,11 +1,14 @@
 // --- Initialization Functions ---
 const initializeApp = () => {
-  initProductSize();
+  // Load async contents
   loadConversionContent();
   loadHeaderAdContent();
-  initProductImage();
+
+  // Init event listeners & interactions
+  initProductSize();
+  initProducThumbnails();
+  initMainImage();
   initImageZoom();
-  initMobileImg();
 };
 
 // --- Product Size Selection ---
@@ -84,7 +87,7 @@ const handleThumbnailClick = (event) => {
   window.sendTrackingEvent('change_thumbnail');
 };
 
-const initProductImage = () => {
+const initProducThumbnails = () => {
   const thumbnails = document.querySelectorAll('button.product-thumbnail');
   thumbnails.forEach((thumbnail) => thumbnail.addEventListener('click', handleThumbnailClick));
 };
@@ -179,17 +182,36 @@ const displayAlert = (text, variant = 'success', duration = 3000) => {
   }, duration);
 };
 
-const initMobileImg = () => {
-  const id = getProductIdFromURL();
-  let isMobile = window.innerWidth <= 600;
-  const mainImage = document.getElementById('main-image');
-  if (isMobile) {
-    mainImage.src = `/images/product/${id}/1.jpg?width=500&height=300`;
-    mainImage.srcset = `/images/product/${id}/1.jpg?width=500&height=300, /images/product/${id}/1.jpg?width=1000&height=600 2x`;
-  } else {
-    mainImage.src = `/images/product/${id}/1.jpg?width=500`;
-    mainImage.srcset = `/images/product/${id}/1.jpg?width=500, /images/product/${id}/1.jpg?width=1000 2x`;
-  }
+// --- Main image zoom on hover ---
+const initMainImage = () => {
+  const productId = getProductIdFromURL();
+  const container = document.getElementById('main-image-container');
+
+  const image = document.createElement('img');
+  image.className = 'product-main-image';
+  image.id = 'main-image';
+  image.width = 500;
+  image.height = 500;
+  image.src = `/images/product/${productId}/1.jpg?quality=100&width=500`;
+  image.srcset = `/images/product/${productId}/1.jpg?quality=100&width=500, /images/product/${productId}/1.jpg?quality=100&width=1000 2x`;
+
+  container?.appendChild(image);
+
+  const handleZoom = (event) => {
+    const x = event.clientX - event.target.offsetLeft;
+    const y = event.clientY - event.target.offsetTop;
+    image.style.transformOrigin = `${x}px ${y}px`;
+    image.style.transform = 'scale(2)';
+  };
+
+  const handleLeave = () => {
+    image.style.transformOrigin = 'center center';
+    image.style.transform = 'scale(1)';
+  };
+
+  container?.addEventListener('mousemove', handleZoom);
+  container?.addEventListener('mouseover', handleZoom);
+  container?.addEventListener('mouseleave', handleLeave);
 };
 
 // --- Initialize App ---

@@ -8,8 +8,11 @@
     <link rel="preload" href="/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin/>
     <link rel="preload" href="/fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin/>
     <link rel="preload" href="/fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/relatedProducts.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <script src="/scripts/tracking.js"></script>
+    <script src="/scripts/product.js"></script>
+    <link rel="stylesheet" href="/styles/main.css" />
   </head>
   <body>
     {% include "partials/header.njk" %}
@@ -26,21 +29,13 @@
               <img
                 width="100"
                 height="100"
-                src="{{ image.source }}"
+                src="{{ image.source }}?width=120"
                 alt="{{ image.name }}"
               />
             </button>
             {% endfor %}
           </div>
-          <img
-            width="1000"
-            height="1000"
-            class="product-main-image"
-            id="main-image"
-            src="{{ product.images[0].source }}"
-            alt="{{ product.images[0].name }}"
-            role="button"
-          />
+          <div id="main-image-container" class="product-main-image__container"></div>
         </div>
         <div class="product-info">
           <h1 class="product-title">{{ product.name }}</h1>
@@ -50,7 +45,7 @@
               <span class="product-preview-review-star">★</span>
               {% endfor %}
             </span>
-            <span class="product-preview-review-count">
+            <span class="product-preview-review-count fw-bold">
               ({{ product.reviews.score }} avis)
             </span>
             <a href="#reviews" class="btn btn-secondary btn-small">Voir tous les avis</a>
@@ -78,7 +73,7 @@
           <h2 class="videosection__title title-bg">EN VIDEO</h2>
           <div class="video-container">
             <div class="video-cover" onclick="playVideo()">
-              <img src="{{product.video.cover}}" alt="Plant in a pot on a windowsill" class="cover-image">
+              <img loading="lazy" src="{{product.video.cover}}?width=800" alt="Plant in a pot on a windowsill" class="cover-image">
               <span class="play-button">▶</span>
             </div>
             <!--
@@ -111,9 +106,6 @@
       </div>
     </div>
 
-    <script src="/scripts/tracking.js"></script>
     <script src="/scripts/main.js"></script>
   </body>
-
-  <link rel="stylesheet" href="/styles/footer.css" />
 </html>

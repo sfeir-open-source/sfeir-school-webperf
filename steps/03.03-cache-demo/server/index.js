@@ -12,6 +12,8 @@ import { promiseDelay, getFastifyConfiguration, imageTransformerHook } from 'sha
 
 import 'dotenv/config';
 
+const BUILD_ID = process.env.BUILD_ID || '1234';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -22,7 +24,7 @@ fastify.addHook('onRequest', async () => {
   await promiseDelay(300);
 });
 
-fastify.addHook('onSend', async (request, reply, payload, done) => {
+fastify.addHook('onSend', (request, reply, payload, done) => {
   if ([request.url, request.headers?.referer]?.some((url) => url?.includes('product/200'))) {
     reply.header('Cache-Control', 'public, max-age=30');
     return done(null, payload);
@@ -45,7 +47,7 @@ fastify.addHook('onSend', async (request, reply, payload, done) => {
 
   if ([request.url, request.headers?.referer]?.some((url) => url?.includes('product/600'))) {
     // Static assets
-    if (request.url.endsWith('.js') || request.url.endsWith('.css') || request.url.endsWith('.woff2')) {
+    if (request.url.includes('.js?v=') || request.url.includes('.css?v=') || request.url.includes('.woff2?v=')) {
       reply.header('Cache-Control', 'public, max-age=31536000, immutable');
       return done(null, payload);
     }
@@ -101,7 +103,7 @@ fastify.get('/product/600', async (request, reply) => {
     productDb.findOne('600'), //
     productDb.getReviews('600'),
   ]);
-  return reply.view('pages/product-build.njk', { product: productData, userReviews: reviewsData, buildId: '1234' });
+  return reply.view('pages/product-build.njk', { product: productData, userReviews: reviewsData, buildId: BUILD_ID });
 });
 
 fastify.get('/product/:id', async (request, reply) => {
