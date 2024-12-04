@@ -22,12 +22,3 @@ DPR de 2 :
 ```
 
 <!-- .element: class="fragment" data-fragment-index="1"-->
-
-```html
-<img
-  src="img/adorable-otters.jpg"
-  srcset="img/adorable-otters.jpg 480w, img/adorable-otters-retina.jpg 480w 2x"
-  alt="Aborable loutres>
-```
-
-<!-- .element: class="fragment" data-fragment-index="2"-->
