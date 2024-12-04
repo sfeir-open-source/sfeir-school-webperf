@@ -175,6 +175,7 @@ function customMetricsSlides() {
     '05-custom-metrics/40-loaf.md',
     '05-custom-metrics/50-event.md',
     '05-custom-metrics/60-resource-timing.md',
+    '05-custom-metrics/61-lab.md',
   ];
 }
 
@@ -191,6 +192,7 @@ function automationSlides() {
     '06-automation/12-tools.md',
     '06-automation/13-example.md',
     '06-automation/14-metric.md',
+    '06-automation/15-demo.md',
   ];
 }
 
