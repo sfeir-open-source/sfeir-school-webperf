@@ -3,28 +3,18 @@
 ## Running the lab
 
 ```
-npm run start -w 02.01
+npm run dev -w 02.01
 ```
 
 ## Instructions
 
 **1. Images**
 
-- Corriger les images produit
-- Corriger les images des recommandations produit
+- Anticiper le chargement des images :
+  - Images produit
+  - Recommendations
+  - ...
 
 **2. Contenu asynchrone**
 
-- Optimiser les contenus asynchrones
-
-## Information / Ressources
-
-### CSS
-
-```css
-img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 8/10;
-}
-```
+- Anticiper les chargements de contenus asynchrones

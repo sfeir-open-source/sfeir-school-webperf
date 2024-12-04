@@ -6,11 +6,16 @@
 
 <small>
 
-- Afficher le texte de contenu des que possible
-- Pour les titres attendre la font pour l'afficher
-- Eviter de charger trop de variants
+Mettre en place une stratégie de chargement des fonts.
+
+- Pour les textes de contenus : afficher dès que possible
+- Pour les titres (Police Pixel) : attendre le chargement
+
+Eviter de charger trop de variants
 
 <br/> <br/>
 
 **ℹ️ Running the lab**<br/>
 `npm run dev -w 02.02`
+
+</small>

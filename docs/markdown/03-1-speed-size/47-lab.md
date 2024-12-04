@@ -8,15 +8,21 @@
 
 **1. Images**
 
-- Utiliser des résolutions d'images adaptées
+La fiche produit charge 26MB d'images 😱
+
+- Charger des résolutions d'image adaptées
 - Charger uniquement les images nécessaires
+
+Au chargement initial, la page devrait pouvoir charger moins d'1MB
 
 **2. Ressouces**
 
-- Nettoyer le code
+- Nettoyer le code inutile
 - Optimiser les ressources
 
-<br/> <br/>
+<br/>
 
 **ℹ️ Running the lab**<br/>
 `npm run dev -w 02.01`
+
+</small>

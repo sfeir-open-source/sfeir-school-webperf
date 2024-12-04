@@ -96,6 +96,7 @@ function speedSizeSlides() {
     '03-1-speed-size/44-comparision.md',
     '03-1-speed-size/45-who.md',
     '03-1-speed-size/46-devtools.md',
+    '03-1-speed-size/47-lab.md',
     '03-1-speed-size/50-cache.md',
     '03-1-speed-size/51-cache-intro.md',
     '03-1-speed-size/52-cache-headers.md',
@@ -124,6 +125,7 @@ function speedCriticalSlides() {
     '03-2-speed-critical/74-http2.md',
     '03-2-speed-critical/75-http3.md',
     '03-2-speed-critical/76-http-devtools.md',
+    '03-2-speed-critical/77-lab.md',
   ];
 }
 
@@ -173,6 +175,7 @@ function customMetricsSlides() {
     '05-custom-metrics/40-loaf.md',
     '05-custom-metrics/50-event.md',
     '05-custom-metrics/60-resource-timing.md',
+    '05-custom-metrics/61-lab.md',
   ];
 }
 
@@ -189,6 +192,7 @@ function automationSlides() {
     '06-automation/12-tools.md',
     '06-automation/13-example.md',
     '06-automation/14-metric.md',
+    '06-automation/15-demo.md',
   ];
 }
 

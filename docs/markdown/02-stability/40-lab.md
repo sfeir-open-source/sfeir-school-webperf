@@ -8,14 +8,18 @@
 
 **1. Images**
 
-- Corriger les images produit
-- Corriger les images des recommandations produit
+- Anticiper le chargement des images :
+  - Images produit
+  - Recommendations
+  - ...
 
 **2. Contenu asynchrone**
 
-- Optimiser les contenus asynchrones
+- Anticiper les chargements de contenus asynchrones
 
 <br/> <br/>
 
 **ℹ️ Running the lab**<br/>
 `npm run dev -w 02.01`
+
+</small>

@@ -1,16 +1,19 @@
-# 02.01 - Fonts
+# 02.02 - Fonts
 
 ## Running the lab
 
 ```
-npm run start -w 02.02
+npm run dev -w 02.02
 ```
 
 ## Instructions
 
-- Afficher le texte de contenu des que possible
-- Pour les titres attendre la font pour l'afficher
-- Eviter de charger trop de variants
+Mettre en place une stratégie de chargement des fonts.
+
+- Pour les textes de contenus : afficher dès que possible
+- Pour les titres (Police Pixel) : attendre le chargement
+
+Eviter de charger trop de variants
 
 ## Information / Ressources
 
