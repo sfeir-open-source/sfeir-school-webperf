@@ -88,7 +88,10 @@ const handleThumbnailClick = (event) => {
 
   const thumbnailImage = clickedThumbnail.querySelector('img');
   if (mainImage && thumbnailImage) {
+    let newFileName = thumbnailImage.src.match(/\/([^\/?]+\.jpg)/)[1];
+    let newValue = mainImage.srcset.replace(/\/\d+\.jpg/g, `/${newFileName}`);
     mainImage.src = thumbnailImage.src.split('?')[0];
+    mainImage.srcset = newValue;
     mainImage.alt = thumbnailImage.alt;
   }
 

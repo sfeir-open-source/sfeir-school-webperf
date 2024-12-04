@@ -39,3 +39,23 @@ Attributs essentiels:
 - <strong>rel="preload"</strong> : Indique au navigateur de précharger la ressource.
 - <strong>as="type"</strong> : Spécifie le type de ressource (image, font, script, etc.) pour optimiser le traitement.
 - <strong>crossorigin="anonymous"</strong> : Nécessaire pour les ressources provenant de domaines tiers (comme des polices Google).
+
+##==##
+
+# Le chemin critique
+
+## et preconnect alors ?
+
+Initialiser une connexion vers l'origine de la ressource de façon préventive.
+
+<br>
+
+```html
+<!-- Preconnect -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link rel="preconnect" href="https://www.google-analytics.com" />
+```
+
+<!-- .element: class="fragment" data-fragment-index="1"-->
