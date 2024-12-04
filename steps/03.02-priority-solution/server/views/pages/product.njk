@@ -10,7 +10,16 @@
     <link rel="preload" href="/fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
     <script async src="/scripts/tracking.js"></script>
     <script defer src="/scripts/product.js"></script>
+    <script defer src="/scripts/main.js"></script>
     <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="preload" href="/styles/secondary.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/styles/relatedProducts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/styles/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="/styles/secondary.css">
+      <link rel="stylesheet" href="/styles/relatedProducts.css">
+      <link rel="stylesheet" href="/styles/footer.css">
+    </noscript>
   </head>
   <body>
     {% include "partials/header.njk" %}
@@ -98,7 +107,12 @@
         {% include "partials/related-products.njk" %}
       </section>
 
-      <section class="floor container container-small" id="reviews"></section>
+      <section class="floor container container-small">
+        <h2 class="title-bg">AVIS CLIENTS</h2>
+        <div id="reviews" class="reviews">
+          {% include "partials/skeleton-reviews.njk" %}
+        </div>
+      </section>
     </main>
     {% include "partials/footer.njk" %}
 
@@ -112,10 +126,5 @@
         <img class="image-zoom__img" src="" width="1000" height="1000" alt="" />
       </div>
     </div>
-
-    <script src="/scripts/main.js"></script>
-    <link rel="stylesheet" href="/styles/secondary.css" />
-    <link rel="stylesheet" href="/styles/relatedProducts.css" />
-    <link rel="stylesheet" href="/styles/footer.css" />
   </body>
 </html>

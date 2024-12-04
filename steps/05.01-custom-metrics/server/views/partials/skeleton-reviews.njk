@@ -1,0 +1,29 @@
+{% for _ in [1, 2, 3, 4] %}
+<div class="review skeleton">
+  <div class="review__header">
+    <div class="review__avatar skeleton-box"></div>
+    <div class="review__author">
+      <div class="review__author-name skeleton-box"></div>
+      <div class="review__date skeleton-box"></div>
+      <div class="review__rating-stars">
+        <span class="review__rating-star skeleton-box"></span>
+        <span class="review__rating-star skeleton-box"></span>
+        <span class="review__rating-star skeleton-box"></span>
+        <span class="review__rating-star skeleton-box"></span>
+        <span class="review__rating-star skeleton-box"></span>
+      </div>
+    </div>
+  </div>
+  <div class="review__text">
+    <div class="skeleton-box"></div>
+    <div class="skeleton-box"></div>
+    <div class="skeleton-box"></div>
+  </div>
+</div>
+{%endfor %}
+<form class="review-form skeleton">
+  <div class="review-form__label skeleton-box"></div>
+  <div class="review-form__input skeleton-box"></div>
+  <div class="review-form__wordcount skeleton-box"></div>
+  <button class="btn btn-primary skeleton-box"></button>
+</form>
