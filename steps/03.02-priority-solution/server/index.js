@@ -55,14 +55,12 @@ fastify.get('/', async (_, reply) => {
 
 fastify.get('/product/:id', async (request, reply) => {
   const productId = request.params.id;
-  const [productData, reviewsData, relatedProductsData] = await Promise.all([
+  const [productData, relatedProductsData] = await Promise.all([
     productDb.findOne(productId), //
-    productDb.getReviews(productId),
     productDb.getRelatedProducts(productId),
   ]);
   return reply.view('pages/product.njk', {
     product: productData,
-    userReviews: reviewsData,
     relatedProducts: relatedProductsData,
   });
 });

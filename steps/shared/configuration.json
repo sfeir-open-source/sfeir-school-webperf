@@ -1,0 +1,6 @@
+{
+  "enableHttps": false,
+  "enableHttp2": false,
+  "enableCompression": false,
+  "enableRUM": false
+}
