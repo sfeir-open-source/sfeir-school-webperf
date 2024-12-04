@@ -1,34 +1,39 @@
- <h2 class="title-bg">AVIS CLIENTS</h2>
-<div class="reviews">
-  {% for review in userReviews %}
-  <div class="review">
-    <div class="review__header">
-      <img
-        class="review__avatar"
-        loading="lazy"
-        src="{{ review.author.avatar }}?width=50"
-        alt="{{ review.author.name }}"
-        width="100"
-        height="100"
-      />
-      <div class="review__author">
-        <span class="review__author-name">{{ review.author.name }}</span>
-        <span class="review__date">{{ review.date }}</span>
-        <span class="review__rating-stars">
-          {% for i in range(0, review.rating) %}
-          <span class="review__rating-star">★</span>
-          {% endfor %}
-        </span>
-      </div>
+{% for review in userReviews %}
+<div class="review">
+  <div class="review__header">
+    <img
+      class="review__avatar"
+      loading="lazy"
+      src="{{ review.author.avatar }}?width=50"
+      alt="{{ review.author.name }}"
+      width="100"
+      height="100"
+    />
+    <div class="review__author">
+      <span class="review__author-name">{{ review.author.name }}</span>
+      <span class="review__date">{{ review.date }}</span>
+      <span class="review__rating-stars">
+        {% for i in range(0, review.rating) %}
+        <span class="review__rating-star">★</span>
+        {% endfor %}
+      </span>
     </div>
-    {{ review.text }}
   </div>
-  {%endfor %}
-
-  <form class="review-form">
-    <label for="review-content-textarea" class="review-form__label">Donnez votre avis</label>
-    <textarea class="review-form__input" id="review-content-textarea" placeholder="Donnez votre avis ici"></textarea>
-    <span class="review-form__wordcount">Mots : <span id="words-count">0</span></span>
-    <button type="submit" class="btn btn-primary">Envoyer</button>
-  </form>
+  {{ review.text }}
 </div>
+{%endfor %}
+
+<form class="review-form">
+  <label for="review-content-textarea" class="review-form__label"
+    >Donnez votre avis</label
+  >
+  <textarea
+    class="review-form__input"
+    id="review-content-textarea"
+    placeholder="Donnez votre avis ici"
+  ></textarea>
+  <span class="review-form__wordcount"
+    >Mots : <span id="words-count">0</span></span
+  >
+  <button type="submit" class="btn btn-primary">Envoyer</button>
+</form>

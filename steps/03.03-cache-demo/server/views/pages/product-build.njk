@@ -98,7 +98,12 @@
         {% include "partials/related-products.njk" %}
       </section>
 
-      <section class="floor container container-small" id="reviews"></section>
+      <section class="floor container container-small">
+        <h2 class="title-bg">AVIS CLIENTS</h2>
+        <div id="reviews" class="reviews">
+          {% include "partials/skeleton-reviews.njk" %}
+        </div>
+      </section>
     </main>
     {% include "partials/footer.njk" %}
 
