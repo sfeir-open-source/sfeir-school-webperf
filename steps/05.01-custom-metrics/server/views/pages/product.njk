@@ -8,10 +8,8 @@
     <link rel="preload" href="/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin/>
     <link rel="preload" href="/fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin/>
     <link rel="preload" href="/fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="/styles/relatedProducts.css" />
-    <link rel="stylesheet" href="/styles/footer.css" />
-    <script src="/scripts/tracking.js"></script>
-    <script src="/scripts/product.js"></script>
+    <script async src="/scripts/tracking.js"></script>
+    <script defer src="/scripts/product.js"></script>
     <link rel="stylesheet" href="/styles/main.css" />
   </head>
   <body>
@@ -35,7 +33,18 @@
             </button>
             {% endfor %}
           </div>
-          <div id="main-image-container" class="product-main-image__container"></div>
+          <div id="main-image-container" class="product-main-image__container">
+            <img
+              id="main-image"
+              class="product-main-image"
+              width="500"
+              height="500"
+              src="{{ product.images[0].source }}?width=120"
+              size="(min-width: 600px) 50vw, 100vw"
+              srcset="{{ product.images[0].source }}?quality=100&width=500, {{ product.images[0].source }}?quality=100&width=1000 2x"
+              alt="{{ image.name }}"
+            />
+          </div>
         </div>
         <div class="product-info">
           <h1 class="product-title">{{ product.name }}</h1>
@@ -45,7 +54,7 @@
               <span class="product-preview-review-star">★</span>
               {% endfor %}
             </span>
-            <span class="product-preview-review-count fw-bold">
+            <span class="product-preview-review-count">
               ({{ product.reviews.score }} avis)
             </span>
             <a href="#reviews" class="btn btn-secondary btn-small">Voir tous les avis</a>
@@ -107,5 +116,8 @@
     </div>
 
     <script src="/scripts/main.js"></script>
+    <link rel="stylesheet" href="/styles/secondary.css" />
+    <link rel="stylesheet" href="/styles/relatedProducts.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
   </body>
 </html>
