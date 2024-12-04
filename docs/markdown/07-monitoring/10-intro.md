@@ -2,17 +2,7 @@
 
 ## Pourquoi collecter de la donnée utilisateur ?
 
-##==##
-
-# Observabilité
-
-## Pourquoi collecter de la donnée utilisateur ?
-
-|            | Local                                                         | Automatisé       |
-| ---------- | ------------------------------------------------------------- | ---------------- |
-| Rôle       | - Pendant les développements <br/>- Optimisation <br/>- Debug | - Non régression |
-| Pertinence | 👍                                                            | 👍👍             |
-| Précision  | 👍👍👍                                                        | 👍👍             |
+<img src="./assets/images/07-monitoring/cycle-1.svg" style="width: 2000px; height: auto; display: block; margin: auto; margin-top: 20px;" />
 
 ##==##
 
@@ -20,8 +10,12 @@
 
 ## Pourquoi collecter de la donnée utilisateur ?
 
-|            | Local                                                         | Automatisé       | Utilisateur (RUM)                                                                                                                                   |
-| ---------- | ------------------------------------------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Rôle       | - Pendant les développements <br/>- Optimisation <br/>- Debug | - Non régression | - Détection d'anomalies en prod <br/>- Prioriser les correctifs / optimisations <br/>- Mesurer les effets des changements <br/>- Faire du reporting |
-| Pertinence | 👍                                                            | 👍👍             | 👍👍👍                                                                                                                                              |
-| Précision  | 👍👍👍                                                        | 👍👍             | 👍                                                                                                                                                  |
+<img src="./assets/images/07-monitoring/cycle-2.svg" style="width: 2000px; height: auto; display: block; margin: auto; margin-top: 20px;" />
+
+##==##
+
+# Observabilité
+
+## Pourquoi collecter de la donnée utilisateur ?
+
+<img src="./assets/images/07-monitoring/cycle-3.svg" style="width: 2000px; height: auto; display: block; margin: auto; margin-top: 20px;" />

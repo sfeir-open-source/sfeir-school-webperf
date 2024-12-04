@@ -197,6 +197,7 @@ function observabilitySlides() {
     '07-monitoring/01-title.md',
     '07-monitoring/10-intro.md',
     '07-monitoring/20-tools.md',
+    '07-monitoring/21-crux.md',
     '07-monitoring/30-metrics.md',
     '07-monitoring/40-sampling.md',
     '07-monitoring/50-reporting.md',
