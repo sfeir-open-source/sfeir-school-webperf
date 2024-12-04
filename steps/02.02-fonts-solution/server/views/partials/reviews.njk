@@ -24,4 +24,11 @@
     {{ review.text }}
   </div>
   {%endfor %}
+
+  <form class="review-form">
+    <label for="review-content-textarea" class="review-form__label">Donnez votre avis</label>
+    <textarea class="review-form__input" id="review-content-textarea" placeholder="Donnez votre avis ici"></textarea>
+    <span class="review-form__wordcount">Mots : <span id="words-count">0</span></span>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+  </form>
 </div>
