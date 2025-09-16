@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Les causes et solutions
 
@@ -20,8 +22,8 @@ function handleOpenMenu() {
 <img src="./assets/images/04-interactivity/task-tracking.svg" style="width: 1000px; height: auto; display: block; margin-top: 20px;" />
 
 </div>
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px">
 
@@ -41,3 +43,4 @@ textBox.addEventListener('input', (inputEvent) => {
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##

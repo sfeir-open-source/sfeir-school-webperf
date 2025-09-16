@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code columns-60-40" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-60-40" -->
+
+##++##
 
 # Protocole HTTP
 
@@ -18,7 +20,8 @@ HTTP décrit :
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="1"-->
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/03-speed/http-tcpip.svg" style="width: 1400px; height: auto; display: block; margin-top: 150px"  />
+##++##

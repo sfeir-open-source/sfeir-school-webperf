@@ -6,7 +6,7 @@
 
 <br>
 
-![sfeir-icons](wifi)<!-- .element: style="--icon-size:300px; --icon-color:var(--light-grey);" -->
+![](wifi 'tc-icons feather')<!-- .element: style="--tc-icon-size:300px; --tc-icon-color:var(--light-grey);" -->
 
 <br>
 
@@ -15,6 +15,6 @@ Identifiants
 <!-- .element: class="center" -->
 <br>
 
-![sfeir-icons big](user)<!-- .element: style="--icon-color:var(--light-grey);" --> SSID
+![](user 'tc-icons feather tc-big')<!-- .element: style="--tc-icon-color:var(--light-grey);" --> SSID
 
-![sfeir-icons big](lock)<!-- .element: style="--icon-color:var(--light-grey);" --> PWD
+![](lock 'tc-icons feather tc-big')<!-- .element: style="--tc-icon-color:var(--light-grey);" --> PWD

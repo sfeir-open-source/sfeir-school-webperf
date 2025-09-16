@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Les causes et solutions
 
@@ -24,6 +26,8 @@ Mais ces fonctions font partie de la même callstack, et donc de la même tâche
 </div>
 
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##
+
 
 Notes:
 

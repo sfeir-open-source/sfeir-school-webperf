@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le chemin critique
 
@@ -25,12 +27,14 @@ valeur possibles :
 </div>
 
 <!-- .element: class="fragment" data-fragment-index="2"-->
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/03-speed/fetchpriority.png" class="03-load" style="width: 1000px; height: auto; margin-top:200px;"  />
 
 <!-- .element: class="fragment" data-fragment-index="3"-->
+##++##
+
 
 Notes:
 

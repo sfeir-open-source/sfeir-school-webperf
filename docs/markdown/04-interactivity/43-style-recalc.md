@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Les causes et solutions
 
@@ -17,10 +19,14 @@ Certaines instructions JavaScript peuvent perturber cette séquence :
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="2"-->
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Les causes et solutions
 
@@ -37,10 +43,14 @@ function reflowExample() {
 ```
 
 <img src="./assets/images/04-interactivity/crp-reflow.png" style="width: 2600px; height: auto; display: block; margin-top: 60px;" />
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Les causes et solutions
 
@@ -57,3 +67,4 @@ function reflowExample() {
 ```
 
 <img src="./assets/images/04-interactivity/crp-default.png" style="width: 2600px; height: auto; display: block; margin-top: 60px;" />
+##++##

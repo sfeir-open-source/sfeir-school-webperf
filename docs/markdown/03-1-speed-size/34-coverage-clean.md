@@ -1,12 +1,18 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Optimisation des ressources
 
 ## Nettoyer le code
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Optimisation des ressources
 
@@ -34,8 +40,8 @@ output.js
 function foo() {}
 console.log(foo());
 ```
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;">
 
@@ -50,10 +56,14 @@ Le tree shaking, c'est pas automatique
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Optimisation des ressources
 
@@ -72,3 +82,4 @@ module.exports = {
   ],
 };
 ```
+##++##

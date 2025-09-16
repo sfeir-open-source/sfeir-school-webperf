@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 # Interactivité
 
@@ -7,14 +9,16 @@
 La boucle d'événements (ou event loop) est au coeur du runtime JavaScript.
 
 Elle permet de jouer des tâches **asynchrones** d'une manière **non blocante**.
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 80px">
   Runtime JavaScript :
   <img src="./assets/images/04-interactivity/event-loop-definition.svg" style="width: 1000px; height: auto; display: block;"  />
 </div>
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##
+
 
 Notes:
 

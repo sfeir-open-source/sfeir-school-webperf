@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Optimisation d'images
 
@@ -11,10 +13,14 @@ Chargement différé, consiste à ne charger une ressource (image, iframe, vidé
 ```
 
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Optimisation d'images
 
@@ -23,3 +29,4 @@ Chargement différé, consiste à ne charger une ressource (image, iframe, vidé
 <img 
   src="./assets/images/03-speed/lazy.svg" 
   style="width: 1000px; height: auto;"  />
+##++##

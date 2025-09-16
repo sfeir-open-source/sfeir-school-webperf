@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # La compression
 
@@ -9,8 +11,8 @@
 - Utilise des syntaxes plus courtes
 - Conserve la syntaxe : pas besoin de "dé-minifier"
 - Le plus efficace
-
-##--##
+##++##
+##++##
 
 <div>
 
@@ -55,10 +57,14 @@ function validatePassword(t) {
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="2"-->
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # La compression
 
@@ -69,8 +75,8 @@ function validatePassword(t) {
 - Utilise des syntaxes plus courtes
 - Conserve la syntaxe : pas besoin de "dé-minifier"
 - Le plus efficace
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px">
 
@@ -82,3 +88,4 @@ function validatePassword(t) {
 - SVG
 - JSON
 </div>
+##++##

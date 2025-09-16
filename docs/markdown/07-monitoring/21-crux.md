@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Observabilité
 
@@ -14,8 +16,8 @@ Permet de :
 - étudier les sites concurrents ou similaires
 - Trouver des éléments de comparaison
 - Base pour définir des budgets ou objectifs
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;">
 
@@ -28,8 +30,12 @@ https://developer.chrome.com/docs/crux/methodology/tools?hl=fr
 </small>
 
 </div>
+##++##
+
 
 ##==##
+
+
 
 # Observabilité
 
@@ -37,7 +43,11 @@ https://developer.chrome.com/docs/crux/methodology/tools?hl=fr
 
 <img src="./assets/images/07-monitoring/crux-yt.png" style="width: 850px; height: auto; display: block; margin: auto;" />
 
+
+
 ##==##
+
+
 
 # Observabilité
 

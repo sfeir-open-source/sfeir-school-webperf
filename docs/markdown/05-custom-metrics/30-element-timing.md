@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Element Timing API
 
@@ -33,8 +35,8 @@ performanceObs.observe({ type: 'element' });
 </div>
 
 <!-- .element: class="fragment" data-fragment-index="1"-->
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;">
 
@@ -68,3 +70,4 @@ Exemple de retour :
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="2"-->
+##++##

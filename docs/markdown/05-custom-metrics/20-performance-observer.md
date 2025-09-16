@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Performance Observer API
 
@@ -13,8 +15,8 @@ Permet de collecter toutes les données liées à la performance de la page :
 <br/><br/>
 
 Fonctionne de manière passive
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;">
 
@@ -44,10 +46,14 @@ performanceObs.observe({
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="2"-->
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Performance Observer API
 
@@ -55,8 +61,8 @@ Pour connaitre tous les types d'entrées disponibles :<br/>
 _PerformanceObserver.supportedEntryTypes_
 
 <img src="./assets/images/05-custom-metrics/obs-supported.png" style="width: 500px; height: auto; display: block; margin-top: 20px;" />
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;">
 
@@ -83,3 +89,4 @@ po.observe({ type: 'largest-contentful-paint', buffered: true });
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##

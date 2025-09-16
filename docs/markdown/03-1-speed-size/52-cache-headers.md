@@ -1,12 +1,14 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
 ## Les entêtes
 
 **cache-control**
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px">
 
@@ -24,10 +26,14 @@ cache-control: ...
 ```
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -38,8 +44,8 @@ cache-control: ...
 - max-age
 
 _Le navigateur a le droit de cacher cette ressource pendant X secondes_
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px">
 
@@ -58,10 +64,14 @@ date: Mon, 25 Oct 2024 22:55:08 GMT
 ```
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -76,8 +86,8 @@ _Le navigateur peut mettre en cache mais doit revalider à chaque fois_
 
 <img src="./assets/images/03-speed/cache-no-cache-wtf.png" style="width: 500px; height: auto; display: block;  margin: auto; margin-top: 50px;"  />
 <!-- .element: class="fragment" data-fragment-index="1"-->
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px">
 
@@ -107,10 +117,14 @@ cache-control: max-age=0
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="2"-->
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -123,8 +137,8 @@ cache-control: max-age=0
 - no-store
 
 _Le navigateur ne peut pas mettre en cache cette ressource_
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px">
 
@@ -142,10 +156,14 @@ cache-control: no-store
 ```
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -159,8 +177,8 @@ cache-control: no-store
 - must-revalidate
 
 _Interdit d'utiliser des ressources périmées, même en cas de serveur indisponible_
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px">
 
@@ -178,10 +196,14 @@ cache-control: max-age=300, must-revalidate
 ```
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -196,8 +218,8 @@ cache-control: max-age=300, must-revalidate
 - immutable
 
 _Le navigateur ne revalidera jamais cette ressource tant qu'elle n'est pas périmée_
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px">
 
@@ -215,10 +237,14 @@ cache-control: public, max-age=31536000, immutable
 ```
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -231,8 +257,8 @@ cache-control: public, max-age=31536000, immutable
 - no-store
 - must-revalidate
 - immutable
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px">
 
@@ -254,10 +280,14 @@ cache-control: public, max-age=31536000, immutable
 ```
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -274,8 +304,8 @@ cache-control: public, max-age=31536000, immutable
 
 _Une version périmée peut être servie pendant X secondes_
 _Permettant une revalidation en tâche de fond_
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px">
 
@@ -293,10 +323,14 @@ cache-control: max-age=604800, stale-while-revalidate=86400
 ```
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -305,8 +339,8 @@ cache-control: max-age=604800, stale-while-revalidate=86400
 **revalidation conditionnelle**
 
 - Etag
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px">
 
@@ -343,10 +377,14 @@ Etag: "ab4gh6ej"
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -356,8 +394,8 @@ Etag: "ab4gh6ej"
 
 - Etag
 - Last-Modified
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px">
 
@@ -394,3 +432,4 @@ last-modified: Tue, 25 Oct 2024 00:30:00 GMT
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##

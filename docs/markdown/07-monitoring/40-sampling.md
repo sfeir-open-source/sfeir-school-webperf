@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Observabilité
 
@@ -15,8 +17,9 @@ Il est primordial de récolter un maximum de contexte pour pouvoir segmenter cor
 - Les feature flags
 - Les A/B tests
   ...
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/07-monitoring/ff.png" style="width: 1400px; height: auto; display: block; margin-top: 205px;" />
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##

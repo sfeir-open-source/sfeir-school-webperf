@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Webfonts
 
@@ -27,8 +29,8 @@ font.load().then(function () {
   document.body.classList.add('font-loaded');
 });
 ```
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 200px"></div>
 
@@ -57,3 +59,4 @@ https://meowni.ca/font-style-matcher/
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##

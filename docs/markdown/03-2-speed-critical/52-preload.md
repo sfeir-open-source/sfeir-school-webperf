@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le chemin critique
 
@@ -45,3 +47,4 @@
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="5"-->
+##++##

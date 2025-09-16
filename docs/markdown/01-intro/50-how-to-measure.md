@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Les outils
 
@@ -8,3 +10,4 @@
 <img src="./assets/images/01-intro/tools.png" style="width: 1500px; height: auto; margin: auto; display: block;"   />
 </div>
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##

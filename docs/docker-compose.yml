@@ -1,7 +1,7 @@
 version: '3'
 services:
   npx:
-    image: node:20.11
+    image: node:20.2
     user: node
     command: bash -c "npm install --ignore-scripts && npm start"
     volumes:

@@ -1,22 +1,32 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
 ## Le BFCache (ou cache amélioré)
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
 ## Le BFCache (ou cache amélioré)
 
 <img src="./assets/images/03-speed/cache-bf.svg" style="width: 700px; height: auto; display: block;  margin: auto; margin-top: 50px;"  />
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -45,8 +55,8 @@ window.addEventListener('pageshow', (event) => {
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="1"-->
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px">
 
@@ -59,3 +69,4 @@ Des conditions doivent être remplies pour bénéficier du BFCache :
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="2"-->
+##++##

@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Les causes et solutions
 
@@ -7,8 +9,8 @@
 Solutions
 
 - Faire le maximum de rendu du côté serveur
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 70px">
 
@@ -18,10 +20,14 @@ Solutions
 </div>
 
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Les causes et solutions
 
@@ -30,8 +36,8 @@ Solutions
 Solutions
 
 - Faire le maximum de rendu du côté serveur
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 70px">
 
@@ -39,10 +45,14 @@ Solutions
 <img src="./assets/images/04-interactivity/load-ssr.svg" style="width: 2000px; height: auto; display: block;" />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Les causes et solutions
 
@@ -59,14 +69,18 @@ Pour un bon compromis entre compression, temps de téléchargement et durée d'�
 
 <!-- .element: class="admonition info" -->
 </div>
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/load-split.svg" style="width: 2000px; height: auto; display: block; margin-top: 140px;" />
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Les causes et solutions
 
@@ -77,5 +91,7 @@ Solutions
 - Faire le maximum de rendu du côté serveur
 - Découper les scripts (code splitting)
 - Charger uniquement l'essentiel
+##++##
+##++##
 
-##--##
+##++##

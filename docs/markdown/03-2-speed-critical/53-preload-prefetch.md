@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le chemin critique
 
@@ -31,6 +33,8 @@ Différence avec prefetch
 ```
 
 <!-- .element: class="fragment" data-fragment-index="3"-->
+##++##
+
 
 Notes:
 
@@ -41,6 +45,8 @@ Attributs essentiels:
 - <strong>crossorigin="anonymous"</strong> : Nécessaire pour les ressources provenant de domaines tiers (comme des polices Google).
 
 ##==##
+
+
 
 # Le chemin critique
 

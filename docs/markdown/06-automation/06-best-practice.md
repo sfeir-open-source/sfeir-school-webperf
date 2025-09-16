@@ -17,7 +17,11 @@
   - En-tête de cache
   - Utilisation de CDN
 
+
+
 ##==##
+
+
 
 # Bonnes pratiques pour l’automatisation
 
@@ -25,7 +29,11 @@
 - Test multi-vue : Testez sur <strong>mobile</strong> et <strong>desktop</strong> pour capturer tous les cas d'usage
 - Seuils dynamiques : Adaptez vos seuils en fonction des objectifs de performance
 
+
+
 ##==##
+
+
 
 # Résultat attendu
 

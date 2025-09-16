@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code columns-60-40" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-60-40" -->
+
+##++##
 
 # Protocole HTTP
 
@@ -20,7 +22,8 @@
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="1"-->
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/03-speed/http1.1.svg" style="width: 500px; height: auto; display: block" />
+##++##

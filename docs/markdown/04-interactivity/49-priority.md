@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Les causes et solutions
 
@@ -20,8 +22,8 @@ https://caniuse.com/?search=posttask
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="1"-->
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;">
 
@@ -54,6 +56,8 @@ textBox.addEventListener('input', async (inputEvent) => {
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="3"-->
+##++##
+
 
 Notes:
 https://web.dev/articles/optimize-long-tasks?hl=fr#scheduler-api

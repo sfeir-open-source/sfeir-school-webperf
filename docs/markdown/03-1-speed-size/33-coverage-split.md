@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Optimisation des ressources
 
@@ -23,26 +25,34 @@
   <script src="/scripts/facets.js"></script>
 </head>
 ```
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Optimisation des ressources
 
 ## Découper le code
 
 Les Frameworks intègrent souvent le code splitting.
-
-##--##
+##++##
+##++##
 
 Exemple avec Next.js :
 
 <img src="./assets/images/03-speed/next-build.png" style="width: 1300px; height: auto; display: block; margin: auto;"  />
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Optimisation des ressources
 
@@ -63,3 +73,4 @@ module.exports = {
   },
 };
 ```
+##++##
