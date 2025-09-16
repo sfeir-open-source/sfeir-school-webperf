@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Optimisation d'images
 
@@ -22,3 +24,4 @@ DPR de 2 :
 ```
 
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##

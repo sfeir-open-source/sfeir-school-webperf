@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Et les autres éléments ?
 
@@ -27,7 +29,8 @@ css :
   height: 100%;
 }
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/02-stability/cls-iframe.png" style="width: 800px; height: auto; display: block; margin: auto; margin-top: 220px;"  />
+##++##

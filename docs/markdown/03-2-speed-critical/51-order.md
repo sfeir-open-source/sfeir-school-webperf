@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le chemin critique
 
@@ -25,3 +27,4 @@
   <script type="application/javascript" src="/footer.js"></script>
 </head>
 ```
+##++##

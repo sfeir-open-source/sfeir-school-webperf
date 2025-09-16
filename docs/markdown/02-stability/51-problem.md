@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code custom-21-problem" -->
+<!-- .slide: class="tc-multiple-columns with-code custom-21-problem" -->
+
+##++##
 
 <style>
   .custom-21-problem .grid-div {
@@ -30,8 +32,9 @@
   src: local('FontTitle'), url('/font-title.woff2') format('woff2');
 }
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/02-stability/font-waterfal-1.svg" style="width: 1200px; height: auto; display: block; margin-top: 200px;"  />
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##

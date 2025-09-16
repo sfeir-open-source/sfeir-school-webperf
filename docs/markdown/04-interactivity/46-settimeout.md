@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Les causes et solutions
 
@@ -24,6 +26,8 @@ Conséquence :
 <img src="./assets/images/04-interactivity/longtask-timeout.svg" style="width: 1000px; height: auto; display: block; margin-top: 20px;" />
 
 </div>
+##++##
+
 
 Notes:
 

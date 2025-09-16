@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Interactivité
 
@@ -15,8 +17,8 @@ Que va afficher cet exemple ?
 ```
 
 </div>
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 360px;">
 
@@ -35,10 +37,14 @@ Réponse B :
 ```
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Interactivité
 
@@ -55,8 +61,8 @@ Que va afficher cet exemple ?
 ```
 
 </div>
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 360px;">
 
@@ -75,3 +81,4 @@ Que va afficher cet exemple ?
 ```
 
 </div>
+##++##

@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Event timing API
 
@@ -21,10 +23,14 @@ Permet de récupérer les informations détaillées sur les interactions :
 - processingStart : moment où le thread principal commence à traiter l'événement
 - processingEnd: moment où le thread principal finit d'éxécuter les tâches synchrones
 - duration: délai entre le startTime et le prochain rendu
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Event timing API
 
@@ -52,10 +58,14 @@ const po = new PerformanceObserver((entryList) => {
 
 po.observe({ type: 'event', buffered: true, durationThreshold: 16 });
 ```
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Event timing API
 
@@ -67,3 +77,4 @@ Très pratique pour mieux comprendre les interactions :
 | /product/\* | button#addtocart | 986      | pointer   | 32               | 140          | 219         | 455      |
 | /           | input#search     | 2549     | keyboard  | 100              | 9            | 11          | 120      |
 | /product/\* | button#open      | 12       | pointer   | 56               | 3349         | 42          | 3456     |
+##++##

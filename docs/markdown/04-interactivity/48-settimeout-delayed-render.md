@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Les causes et solutions
 
@@ -23,6 +25,8 @@ async function handleMenuOpen() {
   trackOpenMenu();
 }
 ```
+##++##
+
 
 Notes:
 

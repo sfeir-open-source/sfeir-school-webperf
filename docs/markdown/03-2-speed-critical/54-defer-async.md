@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 # Le chemin critique
 
@@ -15,8 +17,8 @@ async : Priorité à la vitesse. Les scripts sont chargés dès que possible, ma
 defer : Idéal pour les scripts nécessaires au DOM complet, mais exécutés après son parsing.
 
 <!-- .element: class="fragment" data-fragment-index="3"-->
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/03-speed/script.svg" class="03-load" style="width: 1000px; height: auto; margin-top:200px"  />
 
@@ -29,3 +31,4 @@ defer : Idéal pour les scripts nécessaires au DOM complet, mais exécutés apr
 <img src="./assets/images/03-speed/defer.svg" class="03-load" style="width: 1000px; height: auto; margin-top:30px"  />
 
 <!-- .element: class="fragment" data-fragment-index="3"-->
+##++##

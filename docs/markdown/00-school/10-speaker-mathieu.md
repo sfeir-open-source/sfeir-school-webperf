@@ -1,18 +1,21 @@
 <!-- .slide: class="speaker-slide" -->
 
-# Présentation
+<div class="speaker-slide">
 
-![speaker](./assets/images/00-school/speaker-mathieu.png)
-![badge first-badge](./assets/images/00-school/logo-react.png)
-![badge second-badge](./assets/images/00-school/logo-svelte.png)
-![company](./assets/images/00-school/logo-sfeir-blanc.png)
+# Présentation
 
 ## Mathieu Lemaire
 
-### Développeur frontend
-
-<!-- .element: class="icon-rule icon-first" -->
+### Développeur JS
 
 ### @mlemaire
 
-<!-- .element: class="icon-github icon-second" -->
+![](./assets/images/00-school/speaker-mathieu.png 'speaker')
+
+![](./assets/images/00-school/logo-sfeir-blanc.png 'company')
+
+![](./assets/images/00-school/logo-react.png 'badge')
+
+![](./assets/images/00-school/logo-svelte.png 'badge')
+
+</div>

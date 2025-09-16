@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Comment mesurer ?
 
@@ -9,8 +11,8 @@ Seuls ces types d'interaction sont observés :
 - Clic avec la souris
 - Appui sur écran tactile
 - Appui sur touche de clavier (physique ou à l'écran)
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;">
 
@@ -32,10 +34,14 @@ L'INP correspond à la plus longue interaction
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Comment mesurer ?
 
@@ -46,8 +52,8 @@ Seuls ces types d'interaction sont observés :
 - Clic avec la souris
 - Appui sur écran tactile
 - Appui sur touche de clavier (physique ou à l'écran)
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;">
 
@@ -68,10 +74,14 @@ L'INP correspond à la plus longue interaction
 <strong style="margin-top: 50px; display: block;">INP : <span style="color: orange">240ms</span></strong>
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Comment mesurer ?
 
@@ -82,8 +92,8 @@ Seuls ces types d'interaction sont observés :
 - Clic avec la souris
 - Appui sur écran tactile
 - Appui sur touche de clavier (physique ou à l'écran)
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;">
 
@@ -104,10 +114,14 @@ L'INP correspond à la plus longue interaction
 <strong style="margin-top: 50px; display: block;">INP : <span style="color: orange">240ms</span></strong>
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Comment mesurer ?
 
@@ -118,8 +132,8 @@ Seuls ces types d'interaction sont observés :
 - Clic avec la souris
 - Appui sur écran tactile
 - Appui sur touche de clavier (physique ou à l'écran)
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;">
 
@@ -140,10 +154,14 @@ L'INP correspond à la plus longue interaction
 <strong style="margin-top: 50px; display: block;">INP : <span style="color: red">870ms</span></strong>
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Comment mesurer ?
 
@@ -154,8 +172,8 @@ Seuls ces types d'interaction sont observés :
 - Clic avec la souris
 - Appui sur écran tactile
 - Appui sur touche de clavier (physique ou à l'écran)
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;">
 
@@ -176,3 +194,4 @@ L'INP correspond à la plus longue interaction
 <strong style="margin-top: 50px; display: block;">INP : <span style="color: red">870ms</span></strong>
 
 </div>
+##++##

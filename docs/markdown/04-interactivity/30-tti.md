@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Comment mesurer ?
 
@@ -14,19 +16,25 @@ Mode de calcul :
    <br/>- Pas plus de deux appels HTTP
 3. Revenir sur la dernière tâche longue
 4. Le TTI le timing de fin de cette tâche <br/>(ou le FCP si aucune tâche n'est trouvée)
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/tti.svg"  style="width: 1300px; height: auto; display: block; margin-top: 250px;"  />
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Comment mesurer ?
 
 ## Les autres métriques : <br/>Time To Interactive (TTI)
 
 <img src="./assets/images/04-interactivity/tti.svg"  style="width: 1300px; height: auto; display: block; margin: auto;"  />
+##++##
+
 
 Notes:

@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Interactivité
 
@@ -7,8 +9,8 @@
 Par défaut, JavaScript est un langage à thread unique qui exécute des tâches sur le **thread principal**
 
 <img src="./assets/images/04-interactivity/mainthread.svg" class="02-cls" style="width: 800px; height: auto; display: block;"  />
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 200px">
 
@@ -20,6 +22,8 @@ Par défaut, JavaScript est un langage à thread unique qui exécute des tâches
 - Limitations du DOM
 </div>
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##
+
 
 Notes:
 

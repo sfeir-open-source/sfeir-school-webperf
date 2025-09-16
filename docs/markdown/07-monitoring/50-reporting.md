@@ -8,7 +8,11 @@ Pour partager l'état de la webperf auprès de tous, il faut :
 - Avoir un historique suffisamment long
 - Partager régulièrement les résultats
 
+
+
 ##==##
+
+
 
 # Observabilité
 

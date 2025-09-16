@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Comment mesurer ?
 
@@ -7,8 +9,8 @@
 Cumul des temps de blocage du thread principal.
 
 Calcul : somme des délais dépassant 50ms, jusqu'au Time To Interactive (TTI)
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 220px">
 
@@ -28,5 +30,7 @@ Calcul : somme des délais dépassant 50ms, jusqu'au Time To Interactive (TTI)
 </div>
 
 </div>
+##++##
+
 
 Notes:

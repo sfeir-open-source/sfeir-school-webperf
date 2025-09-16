@@ -17,7 +17,11 @@
 </div>
 
 
+
+
 ##==##
+
+
 
 # Outils d'automatisation 
 
@@ -36,8 +40,14 @@
 <img src="./assets/images/06-automation/webpagetest-04.png" style="width: 500px; height: auto; display: block; margin-top: 20px;"  />
 </div>
 
+
+
 ##==##
-<!-- .slide: class="two-column with-code " -->
+
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
+
 ## Sitespeed.io
 - [https://www.sitespeed.io/](https://www.sitespeed.io/)
 
@@ -45,6 +55,9 @@
 <div style="display: flex;">
 
 <img src="./assets/images/06-automation/sitespeedio-01.png" style="width: auto; height: 500px; display: block;margin-top: 20px;"  />
-##--##
+##++##
+##++##
+
 <img src="./assets/images/06-automation/sitespeedio-02.png" style="width: auto; height: 3000px; display: block;margin-top: 20px;"  />
 </div>
+##++##

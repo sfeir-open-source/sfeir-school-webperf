@@ -1,22 +1,32 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
 ## Service Worker
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
 ## Service Worker
 
 <img src="./assets/images/03-speed/cache-sw.svg" style="width: 700px; height: auto; display: block;  margin: auto; margin-top: 50px;"  />
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -46,3 +56,4 @@ self.addEventListener('install', (event) => {
   );
 });
 ```
+##++##

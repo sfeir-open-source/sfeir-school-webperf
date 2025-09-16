@@ -1,32 +1,46 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
 ## Le cache partagé (public)
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
 ## Le cache partagé (public)
 
 <img src="./assets/images/03-speed/cache-proxy.svg" style="width: 1000px; height: auto; display: block;  margin: auto; margin-top: 50px;"  />
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
 ## Le cache partagé (public)
 
 <img src="./assets/images/03-speed/cache-cdn.svg" style="width: 1000px; height: auto; display: block;  margin: auto; margin-top: 50px;"  />
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -41,10 +55,14 @@ Avantages :
 <br/><br/>
 
 **Hit Ratio = HITS / MISS + HITS**
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -67,10 +85,14 @@ date: Tue, 25 Oct 2024 01:00:00 GMT
 Age: 349
 X-Cache: hit
 ```
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -88,10 +110,14 @@ Toutes les entêtes peuvent s'appliquer aux caches publics
 - Etag
 - Last-Modified
 - ...
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -100,10 +126,14 @@ Toutes les entêtes peuvent s'appliquer aux caches publics
 Pour interdire le cache public :
 
 - `Cache-Control: private, max-age=300`
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -116,10 +146,14 @@ Pour interdire le cache public :
 Pour l'autoriser explicitement :
 
 - `Cache-Control: public, max-age=300`
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -136,10 +170,14 @@ Pour l'autoriser explicitement :
 Pour distinguer cache public / cache privé :
 
 - `Cache-Control: max-age=300, s-maxage=3600`
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -164,10 +202,14 @@ Les contenus privés ne doivent **jamais** être stockés en cache public
 
 <!-- .element: class="admonition warning" -->
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -183,8 +225,8 @@ Réponse:
 ```
 Vary: Accept-Language
 ```
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;"></div>
 
@@ -213,10 +255,14 @@ Ici il y'aura autant d'entrées en cache qu'il y'a de préférences de langues
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="2"-->
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -231,3 +277,4 @@ Réponse:
 ```
 Vary: Accept-Encoding
 ```
+##++##

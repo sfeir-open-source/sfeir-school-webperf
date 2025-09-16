@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Long Animation Frames API
 
@@ -28,8 +30,8 @@ po.observe({
 <!-- .element: class="fragment" data-fragment-index="1"-->
 
 <div>
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;">
 
@@ -82,3 +84,4 @@ Exemple de retour :
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="2"-->
+##++##

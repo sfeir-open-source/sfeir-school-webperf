@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Contenus asynchrones
 
@@ -11,7 +13,8 @@ Les contenus à chargement tardif (ou contenus asynchrones) changent la mise en 
 - Appels longs
 - A/B tests
 - ...
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/02-stability/space-problem.svg" style="width: 800px; height: auto; display: block; margin: auto; margin-top: 220px;"  />
+##++##

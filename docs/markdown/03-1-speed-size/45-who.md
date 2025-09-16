@@ -1,22 +1,29 @@
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 # La compression
 
 ## Configuration
+##++##
+##++##
 
-##--##
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 # La compression
 
 ## Configuration
 
 - <strong>Sur le serveur</strong>
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;">
 
@@ -41,10 +48,14 @@ app.use(compression());
 ```
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 # La compression
 
@@ -52,8 +63,8 @@ app.use(compression());
 
 - Sur le serveur
 - <strong>Sur un reverse proxy</strong>
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;">
 
@@ -74,10 +85,14 @@ brotli_types text/xml image/svg+xml application/x-font-ttf image/vnd.microsoft.i
 ```
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 # La compression
 
@@ -86,8 +101,8 @@ brotli_types text/xml image/svg+xml application/x-font-ttf image/vnd.microsoft.i
 - Sur le serveur
 - Sur un reverse proxy
 - <strong>Sur un CDN</strong>
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 100px;">
 
@@ -95,10 +110,14 @@ Fastly :
 <img src="./assets/images/03-speed/compression-fastly.png" style="width: 800px; height: auto; display: block; margin-top: 20px; border: 2px solid #000;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 # La compression
 
@@ -108,8 +127,8 @@ Fastly :
 - Sur un reverse proxy
 - Sur un CDN
 - <strong>Au build</strong>
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;">
 
@@ -126,10 +145,14 @@ rollup({
 ```
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 # La compression
 
@@ -139,8 +162,8 @@ rollup({
 - Sur un reverse proxy
 - Sur un CDN
 - Au build
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;">
 
@@ -150,3 +173,4 @@ rollup({
 - des fichiers plus volumineux
 
 </div>
+##++##

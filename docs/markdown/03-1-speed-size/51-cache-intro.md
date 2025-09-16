@@ -1,54 +1,76 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
 ## Qu'est-ce que le cache HTTP ?
 
 <img src="./assets/images/03-speed/cache-1.svg" style="width: 800px; height: auto; display: block;  margin: auto; margin-top: 50px;"  />
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
 ## Qu'est-ce que le cache HTTP ?
 
 <img src="./assets/images/03-speed/cache-2.svg" style="width: 800px; height: auto; display: block;  margin: auto; margin-top: 50px;"  />
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
 ## Qu'est-ce que le cache HTTP ?
 
 <img src="./assets/images/03-speed/cache-3.svg" style="width: 800px; height: auto; display: block;  margin: auto; margin-top: 50px;"  />
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
 ## Qu'est-ce que le cache HTTP ?
 
 <img src="./assets/images/03-speed/cache-4.svg" style="width: 800px; height: auto; display: block;  margin: auto; margin-top: 50px;"  />
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
 ## Qu'est-ce que le cache HTTP ?
 
 <img src="./assets/images/03-speed/cache-5.svg" style="width: 1000px; height: auto; display: block;  margin: auto; margin-top: 50px;"  />
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -62,18 +84,22 @@
 
 - Réduire la bande passante
 <!-- .element: class="fragment" data-fragment-index="3"-->
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
 ## Comment ça marche ?
 
 1. Des directives, via des entêtes HTTP
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px">
 
@@ -95,10 +121,14 @@ vary: accept-encoding
 ```
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
@@ -107,8 +137,8 @@ vary: accept-encoding
 1. Des directives, via des entêtes HTTP
 
 2. Des sources (extension, nom de fichier, compatibilités ...)
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px">
 
@@ -130,13 +160,18 @@ accept-encoding: gzip, deflate, br
 ```
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Le cache HTTP
 
 ## Cache navigateur
 
 <img src="./assets/images/03-speed/cache-browser.svg" style="width: 1000px; height: auto; display: block;  margin: auto; margin-top: 50px;"  />
+##++##

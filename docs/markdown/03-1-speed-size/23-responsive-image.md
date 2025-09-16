@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Optimisation d'images
 
@@ -37,10 +39,14 @@
 </div>
 
 <!-- .element: class="fragment" data-fragment-index="4"-->
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Optimisation d'images
 
@@ -63,10 +69,14 @@
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="2"-->
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Optimisation d'images
 
@@ -102,10 +112,14 @@
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="3"-->
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Optimisation d'images
 
@@ -119,3 +133,4 @@
 | Syntaxe                   | Plus complexe à écrire mais très puissante.                                                   | Plus simple et suffisante pour les cas où seul le dimensionnement compte.                         |
 
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##

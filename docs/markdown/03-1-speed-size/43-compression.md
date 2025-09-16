@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # La compression
 
@@ -8,8 +10,8 @@
 - Nécessite d'être dé-compressé
 - Plusieurs algorithmes possibles : Brotli, Gzip ...
 - Le flux de compression / décompression n'est pas bloquant
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px">
 
@@ -36,3 +38,4 @@ G4MAwOToJunPibsSnUJn9U45cCuqeRrod+KD8sE5hqWqRRinnxGW46lwhlu6MFZYAQLtKCfSZ7wOfz6R
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="2"-->
+##++##

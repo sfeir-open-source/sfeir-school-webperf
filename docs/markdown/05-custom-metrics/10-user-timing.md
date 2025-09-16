@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # User Timing API
 
@@ -6,8 +8,8 @@ API navigateur qui permet de :
 
 1. Définir des marqueurs dans le temps
 2. Mesurer des durées entre ces marqueurs
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;">
 
@@ -30,10 +32,14 @@ const addToCart = async (item) => {
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # User Timing API
 
@@ -48,3 +54,4 @@ S'intègre par défaut dans les devtools :
 </div>
 
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##

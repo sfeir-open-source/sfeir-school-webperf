@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Les étapes bloquantes
 
@@ -21,8 +23,12 @@ if (product.sale) {
   loadImg('/images/product/normal.jpg');
 }
 ```
+##++##
+
 
 ##==##
+
+
 
 # Les étapes bloquantes
 

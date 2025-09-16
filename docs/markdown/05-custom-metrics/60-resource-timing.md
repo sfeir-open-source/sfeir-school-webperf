@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Resource Timing API
 
@@ -21,10 +23,14 @@ Permet de récupérer les informations détaillées sur les chargements de resso
 - nextHopProtocol: http1, http2, http3
 - encodedBodySize / decodedBodySize
 - transferSize
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Resource Timing API
 
@@ -43,3 +49,4 @@ const po = new PerformanceObserver((list) => {
 
 po.observe({ type: 'resource', buffered: true });
 ```
+##++##

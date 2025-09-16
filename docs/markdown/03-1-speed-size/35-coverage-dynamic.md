@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Optimisation des ressources
 
@@ -14,10 +16,14 @@ if (window.location.pathname === '/home') {
 ```
 
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="tc-multiple-columns with-code" -->
+
+##++##
 
 # Optimisation des ressources
 
@@ -49,8 +55,8 @@ import('./myModule.js').then((module) => {
 </div>
 
 <!-- .element: class="fragment" data-fragment-index="2"-->
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 480px;">
 
@@ -62,3 +68,4 @@ Ce que Webpack génère :
 </div>
 
 <!-- .element: class="fragment" data-fragment-index="3"-->
+##++##

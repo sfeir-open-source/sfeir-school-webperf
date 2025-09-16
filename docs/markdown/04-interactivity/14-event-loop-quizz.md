@@ -1,4 +1,6 @@
-<!-- .slide: class="two-column with-code " -->
+<!-- .slide: class="tc-multiple-columns with-code " -->
+
+##++##
 
 # Interactivité
 
@@ -20,8 +22,8 @@ Promise.resolve().then(() => console.log(5));
 
 console.log(6);
 ```
-
-##--##
+##++##
+##++##
 
 <div style="margin-top: 205px;">
 La réponse :
@@ -37,10 +39,14 @@ La réponse :
 
 </div>
 <!-- .element: class="fragment" data-fragment-index="1"-->
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -69,16 +75,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-empty.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -107,16 +117,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-1.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -145,16 +159,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-2.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -183,16 +201,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-3.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -221,16 +243,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-4.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -259,16 +285,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-5.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -297,16 +327,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-6.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -335,16 +369,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-9.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -373,16 +411,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-10.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -411,16 +453,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-11.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -449,16 +495,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-12.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -487,16 +537,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-13.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -525,16 +579,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-14.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -563,16 +621,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-15.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -601,16 +663,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-16.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -639,16 +705,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-17.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -677,16 +747,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-18.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -715,16 +789,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-19.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -753,16 +831,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-20.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -791,16 +873,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-21.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -829,16 +915,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-22.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -867,16 +957,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-23.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -905,16 +999,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-25.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -943,16 +1041,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-26.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -981,16 +1083,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-27.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -1019,16 +1125,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-28.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -1057,16 +1167,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-29.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -1095,16 +1209,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-30.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -1133,16 +1251,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-31.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -1171,16 +1293,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-32.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -1209,16 +1335,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-33.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -1247,16 +1377,20 @@ console.log(6);
 
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-34.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -1285,16 +1419,20 @@ console.log(6);
 2
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-35.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -1323,16 +1461,20 @@ console.log(6);
 2
 
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-36.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -1361,16 +1503,20 @@ console.log(6);
 2
 3
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-37.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
+
 
 ##==##
 
-<!-- .slide: class="two-column with-code columns-40-60" -->
+<!-- .slide: class="tc-multiple-columns with-code columns-40-60" -->
+
+##++##
 
 <h1 style="margin-bottom: 40px;">Interactivité</h1>
 
@@ -1399,9 +1545,10 @@ console.log(6);
 2
 3
 ```
-
-##--##
+##++##
+##++##
 
 <img src="./assets/images/04-interactivity/event-loop-steps/event-loop-38.svg" class="02-cls" style="width: 1000px; height: auto; display: block; margin-top: 100px;"  />
 
 </div>
+##++##
