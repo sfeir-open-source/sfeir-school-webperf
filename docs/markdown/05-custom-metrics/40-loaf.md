@@ -30,8 +30,9 @@ po.observe({
 <!-- .element: class="fragment" data-fragment-index="1"-->
 
 <div>
-##++##
-##++##
+##==##
+
+# Long Animation Frames API
 
 <div style="margin-top: 205px;">
 
@@ -83,5 +84,3 @@ Exemple de retour :
 ```
 
 </div>
-<!-- .element: class="fragment" data-fragment-index="2"-->
-##++##
