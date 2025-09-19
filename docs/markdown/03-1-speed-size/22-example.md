@@ -1,73 +1,60 @@
-# Optimisation d'images
+<!-- .slide: class="tc-multiple-columns custom-speed-size" -->
 
-## Format : GIF
+##++##
 
-<img src="./assets/images/03-speed/adorable-pair-cuddling-river-otters-sitting-together-log-bridge.gif" style="width: 1300px; height: auto; float: left; margin-right: 20px;"  />
-
-original size : 4928 × 3264
-
-weight: 8,9 MO
-
-
-
-##==##
-
-
-
-# Optimisation d'images
-
-## Format : JPG
-
-<img src="./assets/images/03-speed/adorable-pair-cuddling-river-otters-sitting-together-log-bridge.jpg" style="width: 1300px; height: auto; float: left; margin-right: 20px;"  />
-
-original size : 4928 × 3264
-
-weight: 7,8 MO
-
-
-
-##==##
-
-
+<style>
+    .custom-speed-size>div:first-child {
+        flex: 2!important;
+    }
+    .custom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    .custom-grid div {
+    margin: auto;
+    }
+    .custom-grid img {
+    width: 100%;
+    }
+</style>
 
 # Optimisation d'images
 
-## Format: PNG
+<div class="custom-grid">
+    <div>
+        <p>GIF</p>
+        <img src="./assets/images/03-speed/adorable-pair-cuddling-river-otters-sitting-together-log-bridge.gif" />
+    </div>
+    <div>
+        <p>JPG</p>
+        <img src="./assets/images/03-speed/adorable-pair-cuddling-river-otters-sitting-together-log-bridge.jpg" />
+    </div>
+    <div>
+        <p>PNG</p>
+        <img src="./assets/images/03-speed/adorable-pair-cuddling-river-otters-sitting-together-log-bridge.png" />
+    </div>
+    <div>
+        <p>WEBP</p>
+        <img src="./assets/images/03-speed/adorable-pair-cuddling-river-otters-sitting-together-log-bridge.webp" />
+    </div>
+    <div>
+        <p>AVIF</p>
+        <img src="./assets/images/03-speed/adorable-pair-cuddling-river-otters-sitting-together-log-bridge.avif" />
+    </div>
+</div>
 
-<img src="./assets/images/03-speed/adorable-pair-cuddling-river-otters-sitting-together-log-bridge.png" style="width: 1300px; height: auto; float: left; margin-right: 20px;"  />
+##++##
 
-original size : 4928 × 3264
+##++##
 
-weight: 20,4 MO
+## Original size : 4928 × 3264
 
+|      | weight  |
+| ---- | ------- |
+| gif  | 8,9 MO  |
+| jpg  | 7,8 MO  |
+| png  | 20,4 MO |
+| webp | 4,8 MO  |
+| avif | 1,3 MO  |
 
-
-##==##
-
-
-
-# Optimisation d'images
-
-## Format : WEBP
-
-<img src="./assets/images/03-speed/adorable-pair-cuddling-river-otters-sitting-together-log-bridge.webp" style="width: 1300px; height: auto; float: left; margin-right: 20px;"  />
-
-original size : 4928 × 3264
-
-weight: 4,8 MO
-
-
-
-##==##
-
-
-
-# Optimisation d'images
-
-## Format : AVIF
-
-<img src="./assets/images/03-speed/adorable-pair-cuddling-river-otters-sitting-together-log-bridge.avif" style="width: 1300px; height: auto; float: left; margin-right: 20px;"  />
-
-original size : 4928 × 3264
-
-weight: 1,3 MO
+##++##
