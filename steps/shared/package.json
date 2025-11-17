@@ -7,5 +7,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "pino": "^9.9.5",
+    "pino-pretty": "^13.1.1"
+  }
 }
